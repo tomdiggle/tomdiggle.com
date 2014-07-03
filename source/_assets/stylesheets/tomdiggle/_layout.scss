@@ -1,0 +1,87 @@
+.container {
+    max-width: $max-width;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    background: $brown;
+    padding: 1em;
+    @include clearfix;
+    
+    h1 {
+        text-align: left;
+        float: left;
+        width: 30%;
+        
+        a {
+            span {
+                color: $blue;
+            }
+        }
+        
+        a:hover {
+            color: #FFF;
+        }
+    }
+  
+    menu {
+        float: right;
+        width: 60%;
+        text-align: right;
+        list-style: none;
+        font-weight: 200;
+        @include adjust-font-size-to(21px);
+    
+        li {
+            margin: 0;
+            padding: 0;
+            @include inline-block;
+        }
+        
+        a {
+            padding: 0 .9em;
+            margin: 0;
+            display: block;
+        }
+    }
+    
+    @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
+        padding: 0.5em;
+        h1 {
+            width: 100%;
+            text-align: center;
+        }
+            
+        menu {
+            text-align: center;
+            width: 100%;
+            clear: both;
+            
+            a {
+                padding: 0 .5em;
+            }
+        }
+    }
+}
+
+footer {
+    background: $brown;
+    color: #ececec;
+    padding: 1em;
+    @include clearfix;
+    
+    h3 {
+        color: #a1a1a1;
+        text-align: left;
+        border-bottom: 1px #a1a1a1 solid;
+    }
+    
+    .latest-post {
+        margin-right: 8%;
+    }
+    
+    .about-me {
+        float: right;
+    }
+}

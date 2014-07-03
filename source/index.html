@@ -2,19 +2,42 @@
 layout: default
 ---
 
-<div class="home">
+<div class="about">
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim, nulla sed pellentesque aliquam, sapien erat cursus lorem, nec bibendum enim velit sed mi. Phasellus in iaculis enim.
+        </p>
+        <a href="" class="btn">Get in touch</a>
+    </div>
+</div>
 
-  <h1>Posts</h1>
+<div class="latest-work container">
+    <h2>Latest work</h2>
+    
+    <ul class="projects">
+        <li>
+            <a href="{{ baseurl }}">{% image project-template.png %}</a>
+            <p>Company Name</p>
+        </li>
+        <li>
+            <a href="{{ baseurl }}">{% image project-template.png %}</a>
+            <p>Company Name</p>
+        </li>
+        <li>
+            <a href="{{ baseurl }}">{% image project-template.png %}</a>
+            <p>Company Name</p>
+        </li>
+    </ul>
+</div>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="available-for-work">
+    <div class="container">
+        <div class="align-left">
+            <h2>I'm available for freelance work!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim, nulla sed pellentesque aliquam.</p>
+        </div>
+        <div class="align-right">
+            <a href="{{ baseurl }}" class="btn large">Get in touch</a>
+        </div>
+    </div>
 </div>

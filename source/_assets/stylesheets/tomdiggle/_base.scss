@@ -1,0 +1,56 @@
+@include establish-baseline;
+
+body {
+    background-color: #FFF;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $blue;
+    @include single-transition(all, .3s, ease-in-out, 0);
+}
+
+a.btn {
+    background: $brown;
+    color: #FFF;
+    padding: .3em .9em;
+    @include inline-block;
+    @include border-radius(6px 6px);
+}
+
+a.btn:hover {
+    background: $blue;
+}
+
+a.btn.large {
+    padding: .8em 2.9em;
+}
+
+#{ headings(1, 4) } {
+    font-family: "Museo", "Georgia";
+}
+
+h1 {
+    @include adjust-font-size-to(36px);
+    font-weight: 500;
+}
+
+h2 {
+    @include adjust-font-size-to(24px);
+    font-weight: 500;
+}
+
+h3 {
+    @include adjust-font-size-to(21px);
+    font-weight: 300;
+}
+
+h4 {
+    @include adjust-font-size-to(18px);
+    font-weight: 300;
+}

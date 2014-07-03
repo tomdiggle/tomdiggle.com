@@ -1,12 +1,23 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://yourdomain.com"
+title: Tom Diggle
+email: tom@tomdiggle.com
+description: "Write an awesome description for your new site here."
+baseurl: /
+url: "http://tomdiggle.com"
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 source: source
 destination: public
+layouts: ./_tomdiggle
+
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/posts
+#  css_compressor: sass
+  cache: false
+  
