@@ -8,38 +8,52 @@
         <meta name="description" content="{{ site.description }}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         {% stylesheet museo %}
+        {% stylesheet fontello %}
         {% stylesheet tomdiggle %}
     </head>
     <body>
-        <header>
+        <header id="header" role="banner">
             <div class="container">
-                <h1><a href="{{ site.baseurl }}">tom<span>diggle</span></a></h1>
-                <menu>
-                    <li><a href="{{ site.baseurl }}">Home</a></li>
-                    <li><a href="{{ site.baseurl }}">Work</a></li>
-                    <li><a href="{{ site.baseurl }}">Hire</a></li>
-                    <li><a href="{{ site.baseurl }}">Blog</a></li>
+                <h1 class="grid-30 mobile-grid-100"><a href="{{ site.baseurl }}">tom<span>diggle</span></a></h1>
+                <menu class="grid-60 mobile-grid-100">
+                    <li><a href="{{ site.baseurl }}/about">About</a></li>
+                    <li><a href="{{ site.baseurl }}/work">Work</a></li>
+                    <li><a href="{{ site.baseurl }}/hire">Hire</a></li>
+                    <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
                 </menu>
             </div>
         </header>
 
         {{ content }}
         
-        <footer>
+        <footer id="footer" role="contentinfo">
             <div class="container">
-                <div class="latest-post grid-28 mobile-grid-100">
+                <div class="latest-post grid-28 tablet-grid-100 mobile-grid-100">
                     <h3>Latest post</h3>
-                    <h4 class="title">Lorem ipsum dolor</h4>
-                    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim, nulla sed pellentesque aliquam, sapien erat cursus lorem, nec bibendum enim velit sed mi.</p>
-                    <p class="continue"><a href="{{ site.baseurl }}">Continue...</a></p>
+                    <article>
+                        <header><h4 class="title">Lorem ipsum dolor</h4></header>
+                        <section>
+                            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim, nulla sed pellentesque aliquam, sapien erat cursus lorem, nec bibendum enim velit sed mi.</p>
+                            <p class="continue"><a href="{{ site.baseurl }}">Continue...</a></p>
+                        </section>
+                    </article>
                 </div>
                 
-                <div class="connect grid-28 mobile-grid-100">
+                <div class="connect grid-28 tablet-grid-100 mobile-grid-100">
                     <h3>Connect with me</h3>
+                    <ul>
+                    {% for account in site.data.social_accounts %}
+                        <li class="{{ account.css-selector }}"><a href="{{ account.link }}">{{ account.site }}</a></li>
+                    {% endfor %}
+                    </ul>
                 </div>
                 
-                <div class="about-me grid-28 mobile-grid-100">
+                <div class="about-me grid-28 tablet-grid-100 mobile-grid-100">
                     <h3>About me</h3>
+                </div>
+                
+                <div class="copyright">
+                    Copyright &copy; 2014 Tom Diggle
                 </div>
             </div>
         </footer>

@@ -3,12 +3,34 @@
     width: 28%;
 }
 
+.grid-30 {
+    float: left;
+    width: 30%;
+}
+
 .grid-33 {
     float: left;
     width: 33.333333%;
 }
 
-@include breakpoint($breakpoint-mobile-min $breakpoint-tablet-max) {
+.grid-60 {
+    float: left;
+    width: 60%;
+}
+
+.grid-40 {
+    float: left;
+    width: 40%;
+}
+
+@include breakpoint($breakpoint-tablet-min $breakpoint-tablet-max) {
+    .tablet-grid-100 {
+        float: left;
+        width: 100%;
+    }   
+}
+
+@include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
     .mobile-grid-100 {
         float: left;
         width: 100%;

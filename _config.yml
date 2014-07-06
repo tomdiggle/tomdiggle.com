@@ -2,7 +2,7 @@
 title: Tom Diggle
 email: tom@tomdiggle.com
 description: "Write an awesome description for your new site here."
-baseurl: /
+baseurl: ""
 url: "http://tomdiggle.com"
 
 # Build settings

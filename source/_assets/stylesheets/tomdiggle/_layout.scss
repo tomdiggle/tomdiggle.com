@@ -1,19 +1,14 @@
 .container {
     max-width: $max-width;
     margin: 0 auto;
-    text-align: center;
 }
 
-header {
+#header {
     background: $brown;
     padding: 1em;
     @include clearfix;
     
     h1 {
-        text-align: left;
-        float: left;
-        width: 30%;
-        
         a {
             span {
                 color: $blue;
@@ -21,59 +16,58 @@ header {
         }
         
         a:hover {
-            color: #FFF;
+            color: $font-color;
         }
     }
   
     menu {
         float: right;
-        width: 60%;
         text-align: right;
-        list-style: none;
-        font-weight: 200;
         @include adjust-font-size-to(21px);
     
         li {
-            margin: 0;
-            padding: 0;
+            padding: 0 .9em;
             @include inline-block;
+            
+            &:last-child {
+                padding-right: 0;
+            }
         }
         
         a {
-            padding: 0 .9em;
-            margin: 0;
             display: block;
+        }
+        
+        @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
+            li {
+                padding: 0 .6em;
+                
+                &:last-child {
+                    padding-right: .6em;
+                }
+            }
         }
     }
     
     @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
         padding: 0.5em;
-        h1 {
-            width: 100%;
-            text-align: center;
-        }
-            
+        
+        h1, 
         menu {
             text-align: center;
-            width: 100%;
-            clear: both;
-            
-            a {
-                padding: 0 .5em;
-            }
         }
     }
 }
 
-footer {
+#footer {
     background: $brown;
-    color: #ececec;
+    @include adjust-font-size-to(14px);
+    color: $font-color;
     padding: 1em;
     @include clearfix;
     
     h3 {
         color: #a1a1a1;
-        text-align: left;
         border-bottom: 1px #a1a1a1 solid;
     }
     
@@ -81,7 +75,18 @@ footer {
         margin-right: 8%;
     }
     
+    .connect {
+        ul {
+            margin-top: .5em;
+        }
+    }
+    
     .about-me {
         float: right;
+    }
+    
+    .copyright {
+        padding-top: 3em;
+        clear: both;
     }
 }

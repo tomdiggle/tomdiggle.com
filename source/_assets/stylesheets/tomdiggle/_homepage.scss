@@ -1,7 +1,8 @@
 .about {
+    text-align: center;
     background: #F5F5F5;
     border-bottom: 1px #CCC solid;
-    padding: 2em 1em;
+    padding: .5em 0 1.2em;
     
     p {
         @include adjust-font-size-to(18px);
@@ -10,8 +11,7 @@
 }
 
 .latest-work {
-    text-align: left;
-    padding: .5em 1em 1.5em;
+    padding: .4em 1em 0;
     
     h2 {
         margin-bottom: 1em;
@@ -21,17 +21,13 @@
     ul.projects {
         margin: 0 auto;
         text-align: center;
+        
         @include column-count(3);
         
         li {
+            margin-bottom: 1.4em;
             text-align: left;
             @include inline-block;
-        }
-    }
-    
-    @include breakpoint($breakpoint-tablet-min $breakpoint-tablet-max) {
-        ul.projects {
-           @include column-count(2); 
         }
     }
     
@@ -48,21 +44,17 @@
     border-top: 1px #CCC solid;
     @include clearfix;
     
-    h3 {
-        width: 60%;
-        text-align: left;
-    }
-    
-    .align-left {
-        backhground: green;
-        width: 60%;
-        float: left;
-        text-align: left;
-    }
-    
-    .align-right {
-        width: 40%;
-        float: left;
+    .contact {
         text-align: center;
+    }
+    
+    a {
+        margin-top: 1.5em;
+    }
+    
+    @include breakpoint($breakpoint-mobile-min $breakpoint-tablet-max) {
+        h2, p {
+            text-align: center;
+        }
     }
 }

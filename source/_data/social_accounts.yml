@@ -1,0 +1,16 @@
+- site: Twitter
+  link: https://twitter.com/tomdiggle
+  css-selector: icon-twitter-squared
+    
+- site: Github
+  link: https://github.com/tomdiggle
+  css-selector: icon-github-squared
+  
+- site: LinkedIn
+  link: https://linkedin.com/tomdiggle
+  css-selector: icon-linkedin-squared
+  
+- site: Mail
+  link: tom+website@tomdiggle.com
+  css-selector: icon-mail-alt
+    
