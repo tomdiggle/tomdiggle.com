@@ -25,9 +25,20 @@
         @include column-count(3);
         
         li {
+            border: 1px #EDEDED solid;
             margin-bottom: 1.4em;
             text-align: left;
             @include inline-block;
+            
+            p {
+                background: #EDEDED;
+                padding: .1em 0;
+                @include adjust-font-size-to(14px);
+                
+                a {
+                    color: #000;
+                }
+            }
         }
     }
     
