@@ -30,20 +30,22 @@
             <div class="container">
                 <div class="latest-post grid-28 tablet-grid-100 mobile-grid-100">
                     <h3>Latest post</h3>
+                    {% for post in site.posts limit:1 %}
                     <article>
-                        <header><h4 class="title">Lorem ipsum dolor</h4></header>
+                        <header><h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4></header>
                         <section>
-                            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim, nulla sed pellentesque aliquam, sapien erat cursus lorem, nec bibendum enim velit sed mi.</p>
-                            <p class="continue"><a href="{{ site.baseurl }}">Continue...</a></p>
+                            <p class="excerpt">{{ post.excerpt }}</p>
+                            <p class="continue"><a href="{{ site.baseurl }}">Read more...</a></p>
                         </section>
                     </article>
+                    {% endfor %}
                 </div>
                 
                 <div class="connect grid-28 tablet-grid-100 mobile-grid-100">
                     <h3>Connect with me</h3>
                     <ul>
                     {% for account in site.data.social_accounts %}
-                        <li class="{{ account.css-selector }}"><a href="{{ account.link }}">{{ account.site }}</a></li>
+                        <li><a href="{{ account.link }}"><span class="{{ account.css-selector }}"></span>{{ account.site }}</a></li>
                     {% endfor %}
                     </ul>
                 </div>
