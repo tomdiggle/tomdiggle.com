@@ -19,6 +19,7 @@ a.btn {
     background: $brown;
     color: $font-color;
     padding: .3em .9em;
+    @include adjust-font-size-to(14px);
     @include inline-block;
     @include border-radius(6px 6px);
 }
