@@ -89,6 +89,18 @@
     
     .about-me {
         float: right;
+        
+        p {
+            margin-top: .8em;
+        }
+        
+        img {
+            float: right;
+            max-width: 90px;
+            max-height: 87px;
+            display: inline;
+            margin-right: .4em;
+        }
     }
     
     .copyright {
