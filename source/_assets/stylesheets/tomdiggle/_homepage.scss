@@ -2,11 +2,18 @@
     text-align: center;
     background: #F5F5F5;
     border-bottom: 1px #CCC solid;
-    padding: .5em 0 1.2em;
+    padding: .4em 1em .4em;
     
     p {
         @include adjust-font-size-to(18px);
-        margin: 0 1.5em 1.2em;
+        margin: 0 0 1em;
+        
+        @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
+            span {
+                display: block;
+                margin: .5em;
+            }
+        }
     }
 }
 
