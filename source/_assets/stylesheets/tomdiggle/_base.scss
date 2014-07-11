@@ -25,7 +25,8 @@ a.btn {
     @include border-radius(6px 6px);
 }
 
-a.btn:hover {
+a.btn:hover,
+a.btn:active {
     color: #FFFFFF;
     background: $blue;
 }
