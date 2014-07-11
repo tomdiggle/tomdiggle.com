@@ -22,6 +22,12 @@ a.more:after {
     margin-left: .6em;
 }
 
+[class^="btn"]:after {
+    font-family: "fontello";
+    content: '\e804';
+    margin-left: .6em;
+}
+
 a.btn {
     background: $brown;
     color: $font-color;
