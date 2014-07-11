@@ -32,7 +32,7 @@ a.btn:hover {
 
 a.btn.large {
     padding: .8em 3em;
-    @include adjust-font-size-to(16px);
+    @include adjust-font-size-to(18px);
 }
 
 #{ headings(1, 2) } {
