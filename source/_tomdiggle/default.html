@@ -41,7 +41,7 @@
                         <header><h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4></header>
                         <section>
                             <p class="excerpt">{{ post.excerpt }}</p>
-                            <p class="continue"><a href="{{ site.baseurl }}">Continue reading...</a></p>
+                            <p class="continue"><a href="{{ site.baseurl }}" class="more">Continue reading</a></p>
                         </section>
                     </article>
                     {% endfor %}
@@ -58,7 +58,7 @@
                 
                 <div class="about-me grid-28 tablet-grid-100 mobile-grid-100">
                     <h3>About me</h3>
-                    <p>{% image tomdiggle_ellipse.png %} I am a iOS and front end web developer. I started by building Wager a simple betting odds calculator that was released onto the App Store in 2010. <a href="{{ site.baseurl }}/about/">Learn more about me.</a></p>
+                    <p>{% image tomdiggle_ellipse.png %} I am a iOS and front end web developer. I started by building Wager a simple betting odds calculator that was released onto the App Store in 2010. <a href="{{ site.baseurl }}/about/" class="more">Learn more about me</a></p>
                 </div>
                 
                 <div class="copyright">

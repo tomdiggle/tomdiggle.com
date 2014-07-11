@@ -16,6 +16,12 @@ a:active {
     @include single-transition(all, .3s, ease-in-out, 0);
 }
 
+a.more:after {
+    font-family: "fontello";
+    content: '\e805';
+    margin-left: .6em;
+}
+
 a.btn {
     background: $brown;
     color: $font-color;
