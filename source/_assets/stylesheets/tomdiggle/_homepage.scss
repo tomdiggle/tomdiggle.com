@@ -21,7 +21,6 @@
     ul.projects {
         margin: 0 auto;
         text-align: center;
-        
         @include column-count(3);
         
         li {
