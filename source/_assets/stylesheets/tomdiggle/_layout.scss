@@ -1,12 +1,12 @@
 .container {
     max-width: $max-width;
     margin: 0 auto;
+    @include clearfix;
 }
 
 #header {
     background: $brown;
     padding: 1em;
-    @include clearfix;
     
     h1 {
         a {
@@ -64,7 +64,6 @@
     @include adjust-font-size-to(14px);
     color: $font-color-light;
     padding: 1em;
-    @include clearfix;
         
     h3 {
         color: #a1a1a1;
