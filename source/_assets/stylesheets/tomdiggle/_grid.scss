@@ -1,38 +1,36 @@
-.grid-28 {
+@mixin grid($width) {
     float: left;
-    width: 28%;
+    width: $width;
+}
+
+.grid-28 {
+    @include grid(28%);
 }
 
 .grid-30 {
-    float: left;
-    width: 30%;
+    @include grid(30%);
 }
 
 .grid-33 {
-    float: left;
-    width: 33.333333%;
-}
-
-.grid-60 {
-    float: left;
-    width: 60%;
+    @include grid(33.333333%);
 }
 
 .grid-40 {
-    float: left;
-    width: 40%;
+    @include grid(40%);
+}
+
+.grid-60 {
+    @include grid(60%);
 }
 
 @include breakpoint($breakpoint-tablet-min $breakpoint-tablet-max) {
     .tablet-grid-100 {
-        float: left;
-        width: 100%;
+        @include grid(100%);
     }   
 }
 
 @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
     .mobile-grid-100 {
-        float: left;
-        width: 100%;
+        @include grid(100%);
     }   
 }
