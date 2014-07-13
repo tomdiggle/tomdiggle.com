@@ -1,12 +1,13 @@
 @include establish-baseline;
 
 body {
-    background-color: #FFF;
     font-family: "MuseoSans-300", Helvetica, sans-serif;
+    color: $font-color-dark;
+    background-color: #FFF;
 }
 
 a {
-    color: $font-color;
+    color: $font-color-light;
     text-decoration: none;
 }
 
@@ -30,7 +31,7 @@ a.more:after {
 
 a.btn {
     background: $brown;
-    color: $font-color;
+    color: $font-color-light;
     padding: .4em .9em;
     @include adjust-font-size-to(14px);
     @include inline-block;

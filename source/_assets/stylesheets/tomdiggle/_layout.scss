@@ -16,7 +16,7 @@
         }
         
         a:hover {
-            color: $font-color;
+            color: $font-color-light;
         }
     }
   
@@ -62,7 +62,7 @@
 #footer {
     background: $brown;
     @include adjust-font-size-to(14px);
-    color: $font-color;
+    color: $font-color-light;
     padding: 1em;
     @include clearfix;
         
