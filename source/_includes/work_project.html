@@ -1,0 +1,18 @@
+<li class="project">
+    <article>
+        <div class="grid-60 grid-mobile-100 image">
+            <img src="{{ project.image | asset_path }}" alt="Preview of {{ project.title }}">
+        </div>
+        <div class="grid-33 grid-mobile-100 info">
+            <h3>
+                {{ project.title }}
+                <em><p><a href="{{ project.url }}" class="more">{{ project.url }}</a></p></em>
+            </h3>
+            <p>{{ project.description }}</p>
+            <h4>Roles</h4>
+            <p>{{ project.roles }}</p>
+            <h4>Launched</h4>
+            <p>{{ project.launched }}</p>
+        </div>
+    </article>
+</li>

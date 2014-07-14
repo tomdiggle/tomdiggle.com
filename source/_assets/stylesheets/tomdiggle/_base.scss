@@ -75,6 +75,14 @@ h4 {
     @include adjust-font-size-to(18px);
 }
 
+em {
+   font-size: .6em;
+   
+   a {
+        color: #8e8e8e;
+   }
+}
+
 img {
     width: 100%;
     height: auto;

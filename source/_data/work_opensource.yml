@@ -1,0 +1,13 @@
+- title: BriefPlayer
+  url: http://briefplayer.com
+  description: A simple JavaScript library allowing easy audio streaming using SoundManager2.
+  roles: HTML, CSS and JavaScript
+  launched: May, 2014
+  image: project-briefplayer-01.png
+
+- title: TDNotificationPanel
+  url: https://github.com/tomdiggle/
+  description: TDNotificationPanel is a drop in class that displays a notification which can contain a title, subtitle, icon, progress bar or activity indicator.
+  roles: Design and Objective-C
+  launched: Febuary, 2013
+  image: project-tdnotificationpanel-01.jpg

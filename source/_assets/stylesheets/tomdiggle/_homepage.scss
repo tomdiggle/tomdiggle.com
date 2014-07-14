@@ -1,8 +1,5 @@
 .about {
     text-align: center;
-    background: #F5F5F5;
-    border-bottom: 1px #CCC solid;
-    padding: .4em 1em .4em;
     
     p {
         @include adjust-font-size-to(18px);

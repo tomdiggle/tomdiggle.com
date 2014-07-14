@@ -1,0 +1,29 @@
+ul.projects {
+    
+    li.project {
+        float: left;
+        padding: 0 .2em 1.4em;
+        margin: 1.9em .4em 0;
+        border-bottom: 1px #e0e0e0 solid;
+        
+        &:last-child {
+            border: none;
+        }
+                  
+        .info {
+            margin-left: 1em;
+            
+            @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
+                margin-left: 0;
+            }
+            
+            h3 {
+                line-height: normal;
+            }
+            
+            p {
+                margin: .2em 0;
+            }
+        }
+    }
+}

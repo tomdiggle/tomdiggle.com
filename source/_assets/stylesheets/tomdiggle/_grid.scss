@@ -24,13 +24,13 @@
 }
 
 @include breakpoint($breakpoint-tablet-min $breakpoint-tablet-max) {
-    .tablet-grid-100 {
+    .grid-tablet-100 {
         @include grid(100%);
     }   
 }
 
 @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
-    .mobile-grid-100 {
+    .grid-mobile-100 {
         @include grid(100%);
     }   
 }
