@@ -1,5 +1,11 @@
 @include establish-baseline;
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
     font-family: "MuseoSans-300", Helvetica, sans-serif;
     color: $font-color-dark;
