@@ -3,7 +3,7 @@ ul.projects {
         float: left;
         padding: 0 .2em 1.4em;
         margin: 1.9em .4em 0;
-        border-bottom: 1px #e0e0e0 solid;
+        border-bottom: 1px $separator-color solid;
         
         &:last-child {
             border: none;

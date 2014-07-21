@@ -19,7 +19,7 @@
     
     h2 {
         margin-bottom: 1em;
-        border-bottom: 1px #CCC solid;
+        border-bottom: 1px $separator-color solid;
     }
     
     ul.projects {
@@ -65,7 +65,7 @@
 .available-for-work {
     background: #F5F5F5;
     padding: 1em 1em;
-    border-top: 1px #CCC solid;
+    border-top: 1px $separator-color solid;
     
     .contact {
         text-align: center;
