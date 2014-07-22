@@ -25,7 +25,7 @@ form#contact {
         font-size: 1em;
         height: auto;
         outline: none;
-        border: none;
+        border: 1px $separator-color solid;
         border-radius: 4px;
     }
     
