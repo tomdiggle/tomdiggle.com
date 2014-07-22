@@ -1,27 +1,21 @@
 ---
-layout: default
+layout: page
+title: Say Hello!
+description: Thanks for your interest. I'd love to hear from you.
 ---
-<div class="seperator-top">
-    <div class="container">
-        <h2>Say Hello!</h2>
-        <p>Thanks for your interest. I'd love to hear from you.</p>
-    </div>
-</div>
-<div class="container">
-    <form action="{{ site.baseurl }}/assets/contact.php" method="post" id="contact" class="grid-40 grid-mobile-100" role="form">
-        
-        <div id="contact_status"></div>
-        
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
-        
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-        
-        <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
-        
-        <button type="submit" id="submit">Send Message</button>
-        
-    </form>
-</div>
+<form action="{{ site.baseurl }}/assets/contact.php" method="post" id="contact-form" class="grid-40 grid-mobile-100" role="form">
+    
+    <div id="contact_status"></div>
+    
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+    
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+    
+    <label for="message">Message</label>
+    <textarea name="message" id="message"></textarea>
+    
+    <button type="submit" id="submit">Send Message</button>
+    
+</form>

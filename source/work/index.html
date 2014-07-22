@@ -1,41 +1,24 @@
 ---
-layout: default
+layout: page
+title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ---
-<div class="seperator-top">
-    <div class="container">
-        <h2>Freelance</h2>
-    </div>
-</div>
+<h2>Freelance</h2>
+<ul class="projects">
+    {% for project in site.data.work_freelance %}
+        {% include work_project.html %}
+    {% endfor %}
+</ul>
 
-<div class="container">
-    <ul class="projects">
-        {% for project in site.data.work_freelance %}
-            {% include work_project.html %}
-        {% endfor %}
-    </ul>
-</div>
+<h2>Personal</h2>
+<ul class="projects">
+    {% for project in site.data.work_personal %}
+        {% include work_project.html %}
+    {% endfor %}
+</ul>
 
-<div class="seperator-middle">
-    <div class="container">
-        <h2>Personal</h2>
-    </div>
-</div>
-<div class="container">
-    <ul class="projects">
-        {% for project in site.data.work_personal %}
-            {% include work_project.html %}
-        {% endfor %}
-    </ul>
-</div>
-<div class="seperator-middle">
-    <div class="container">
-        <h2>Open Source</h2>
-    </div>
-</div>
-<div class="container">
-    <ul class="projects">
-        {% for project in site.data.work_opensource %}
-            {% include work_project.html %}
-        {% endfor %}
-    </ul>
-</div>
+<h2>Open Source</h2>
+<ul class="projects">
+    {% for project in site.data.work_opensource %}
+        {% include work_project.html %}
+    {% endfor %}
+</ul>
