@@ -22,16 +22,19 @@
         border-bottom: 1px $separator-color solid;
     }
     
-    ul.projects {
+    .projects {
         margin: 0 auto;
         text-align: center;
         @include column-count(3);
         
         li {
+            background: #EDEDED;
             border: 1px #EDEDED solid;
+            color: #BBBBBB;
             margin-bottom: 1.4em;
             text-align: left;
             @include inline-block;
+            
             
             img {
                 max-width: 326px;
@@ -43,14 +46,17 @@
                 }
             }
             
-            p {
-                background: #EDEDED;
-                padding: .1em 0;
+            span {
                 @include adjust-font-size-to(14px);
-                
-                a {
-                    color: #000;
-                }
+                margin-left: .4em;
+            }
+            
+            a {
+                 color: #000;
+            }
+            
+            a:hover {
+                color: $blue;
             }
         }
     }
