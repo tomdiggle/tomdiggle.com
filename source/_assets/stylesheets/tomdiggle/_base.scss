@@ -60,7 +60,7 @@ a.btn.large {
     font-weight: 500;
 }
 
-#{ headings(3, 4) } {
+#{ headings(3, 6) } {
     font-family: "Museo-300", Georgia, Serif;
     font-weight: 300;
 }
@@ -79,6 +79,14 @@ h3 {
 
 h4 {
     @include adjust-font-size-to(18px);
+}
+
+h5 {
+    @include adjust-font-size-to(16px);
+}
+
+h6 {
+    @include adjust-font-size-to(14px);
 }
 
 em {
