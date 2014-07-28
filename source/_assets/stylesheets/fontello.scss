@@ -1,10 +1,12 @@
+@import "tomdiggle/variables";
+
 @font-face {
   font-family: 'fontello';
-  src: url('fonts/fontello/fontello.eot?2817388');
-  src: url('fonts/fontello/fontello.eot?2817388#iefix') format('embedded-opentype'),
-       url('fonts/fontello/fontello.woff?2817388') format('woff'),
-       url('fonts/fontello/fontello.ttf?2817388') format('truetype'),
-       url('fonts/fontello/fontello.svg?2817388#fontello') format('svg');
+  src: url('fonts/fontello/fontello.eot?#{$fontello-id}');
+  src: url('fonts/fontello/fontello.eot?#{$fontello-id}#iefix') format('embedded-opentype'),
+       url('fonts/fontello/fontello.woff?#{$fontello-id}') format('woff'),
+       url('fonts/fontello/fontello.ttf?#{$fontello-id}') format('truetype'),
+       url('fonts/fontello/fontello.svg?#{$fontello-id}#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
