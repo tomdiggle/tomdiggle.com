@@ -131,7 +131,6 @@ select {
     @include transition(all .30s ease-in-out);
     
     &:focus {
-        @include box-shadow(0 0 1px $blue);
         border: 1px solid $blue;
     }
 }
