@@ -8,15 +8,20 @@
     background: $brown;
     padding: 1em;
     
+    @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
+        padding: .5em;
+        text-align: center;
+    }
+    
     h1 {
         a {
             span {
                 color: $blue;
             }
-        }
-        
-        a:hover {
-            color: $font-color-light;
+            
+            &:hover {
+                color: $font-color-light;
+            }
         }
     }
   
@@ -29,33 +34,22 @@
             padding: 0 .9em;
             @include inline-block;
             
+            @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
+                padding: 0 .6em;
+            }
+            
             &:last-child {
                 padding-right: 0;
+                
+                @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
+                    padding-right: .6em;
+                }
             }
         }
         
         a {
             display: block;
-        }
-        
-        @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
-            li {
-                padding: 0 .6em;
-                
-                &:last-child {
-                    padding-right: .6em;
-                }
-            }
-        }
-    }
-    
-    @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
-        padding: .5em;
-        
-        h1, 
-        menu {
-            text-align: center;
-        }
+        }    
     }
 }
 
