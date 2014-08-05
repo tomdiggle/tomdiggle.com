@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "MuseoSans-300", Helvetica, sans-serif;
+    font-family: $font-main;
     color: $font-color-dark;
     background-color: #FFF;
 }
@@ -24,13 +24,13 @@ a {
 }
 
 a.more:after {
-    font-family: "fontello";
+    font-family: $font-icons;
     content: '\e805';
     margin-left: .6em;
 }
 
 [class^="btn"]:after {
-    font-family: "fontello";
+    font-family: $font-icons;
     content: '\e804';
     margin-left: .6em;
 }
@@ -56,12 +56,12 @@ a.btn.large {
 }
 
 #{ headings(1, 2) } {
-    font-family: "Museo-500", Georgia, Serif;
+    font-family: $font-secondary;
     font-weight: 500;
 }
 
 #{ headings(3, 6) } {
-    font-family: "Museo-300", Georgia, Serif;
+    font-family: $font-secondary;
     font-weight: 300;
 }
 
