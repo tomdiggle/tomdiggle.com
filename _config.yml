@@ -12,6 +12,9 @@ source: source
 destination: public
 layouts: ./_tomdiggle
 
+gems:
+  - jekyll-sitemap
+
 assets:
   sources:
     - _assets/images
