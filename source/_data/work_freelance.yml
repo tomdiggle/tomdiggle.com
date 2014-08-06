@@ -7,7 +7,7 @@
 
 - title: NSBrief
   url: http://nsbrief.com
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim, nulla sed pellentesque aliquam, sapien erat cursus lorem, nec bibendum enim velit sed mi. Phasellus in iaculis enim.
+  description: I worked with Saul to redesign and build the website for the NSBrief podcast. The redesign supports mobile, tablet and desktop and has a built in audio player that allows each episode to be played through the browser.
   roles: Design, HTML, CSS, JavaScript and ruhoh integration
   launched: May, 2014
   image: project-nsbrief-01.jpg
