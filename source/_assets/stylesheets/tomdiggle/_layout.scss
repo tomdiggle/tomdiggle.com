@@ -26,6 +26,9 @@
     }
   
     menu {
+        font-family: MuseoSans-100;
+        font-weight: normal;
+        font-style: normal;
         float: right;
         list-style: none;
         @include adjust-font-size-to(21px);
