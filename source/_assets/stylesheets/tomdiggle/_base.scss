@@ -12,6 +12,16 @@ body {
     background-color: #FFF;
 }
 
+::selection {
+    background: $brown;
+    color: $font-color-light;
+}
+
+::-moz-selection {
+    background: $brown;
+    color: $font-color-light;
+}
+
 a {
     color: $font-color-light;
     text-decoration: none;
