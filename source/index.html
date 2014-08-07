@@ -1,13 +1,12 @@
 ---
 layout: default
+description: I'm a passionate iOS and front end web developer based in Ormskirk, England. I typically work with individuals, start-ups and small to medium sized businesses to help increase their presence online.
 ---
 
 <div class="content-header about">
     <div class="container">
         <h2>Hello there, I'm Tom Diggle.</h2>
-        <p>
-            I'm a passionate iOS and front end web developer based in Ormskirk, England. I typically work with individuals, start-ups and small to medium sized businesses to help increase their presence online.
-        </p>
+        <p>{{ page.description }}</p>
         <p>
             <a href="{{ site.baseurl }}/about/" class="btn">Learn more about me</a>
             <span>or</span>
@@ -21,15 +20,18 @@ layout: default
     <ul class="projects">
         <li>
             <a href="{{ site.baseurl }}/">{% image preview-jjd.jpg %}</a>
-            <h5><a href="{{ site.baseurl }}/">J.J. Diggle Ltd</a> <span>Website</span></h5>
+            <h5><a href="{{ site.baseurl }}/">J.J. Diggle</a></h5>
+            <p>Website</p>
         </li>
         <li>
             <a href="{{ site.baseurl }}/">{% image preview-nsbrief.jpg %}</a>
-            <h5><a href="{{ site.baseurl }}/">NSBrief</a> <span>Website</span></h5>
+            <h5><a href="{{ site.baseurl }}/">NSBrief</a></h5>
+            <p>Website</p>
         </li>
         <li>
             <a href="{{ site.baseurl }}/">{% image project-template.png %}</a>
-            <p><a href="{{ site.baseurl }}/">Precious</a></p>
+            <h5><a href="{{ site.baseurl }}/">Precious</a></h5>
+            <p>iOS App</p>
         </li>
     </ul>
 </div>
