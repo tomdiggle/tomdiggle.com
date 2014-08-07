@@ -4,6 +4,7 @@ email: tom@tomdiggle.com
 description: "Write an awesome description for your new site here."
 baseurl: ""
 url: "http://tomdiggle.com"
+rssfeed: "feed.xml"
 
 # Build settings
 markdown: kramdown

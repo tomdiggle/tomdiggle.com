@@ -27,6 +27,10 @@
     @include grid(60%);
 }
 
+.grid-100 {
+    @include grid(100%);
+}
+
 @include breakpoint($breakpoint-tablet-min $breakpoint-tablet-max) {
     .grid-tablet-100 {
         @include grid(100%);

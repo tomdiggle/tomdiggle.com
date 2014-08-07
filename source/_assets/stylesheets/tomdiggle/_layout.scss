@@ -89,13 +89,16 @@
         }
     }
     
-    .copyright {
+    .credits {
         border-top: 1px #a1a1a1 solid;
         margin-top: 1.5em;
         padding-top: 1em;
-        clear: both;
-        float: left;
-        width: 100%;
+        @include clearfix;
+        
+        .rss {
+            text-align: right;
+            font-size: 2em;
+        }
     }
 }
 
