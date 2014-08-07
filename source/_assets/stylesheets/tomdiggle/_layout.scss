@@ -27,23 +27,16 @@
   
     menu {
         float: right;
-        text-align: right;
+        list-style: none;
         @include adjust-font-size-to(21px);
+        @include column-count(4);
+        @include column-gap(0);
     
         li {
-            padding: 0 .9em;
-            @include inline-block;
-            
-            @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
-                padding: 0 .6em;
-            }
-            
-            &:last-child {
-                padding-right: 0;
-                
-                @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
-                    padding-right: .6em;
-                }
+            text-align: center;
+                        
+            &:hover {
+                background: tint($brown, 4%);
             }
         }
         
