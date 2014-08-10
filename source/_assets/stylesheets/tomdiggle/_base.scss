@@ -14,16 +14,16 @@ body {
 
 ::selection {
     background: $jet;
-    color: $font-color-light;
+    color: $white-smoke;
 }
 
 ::-moz-selection {
     background: $jet;
-    color: $font-color-light;
+    color: $white-smoke;
 }
 
 a {
-    color: $font-color-light;
+    color: $white-smoke;
     text-decoration: none;
     
     &:hover,
