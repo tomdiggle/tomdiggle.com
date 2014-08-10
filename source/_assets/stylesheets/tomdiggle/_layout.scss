@@ -56,8 +56,8 @@
     padding: 1em;
         
     h3 {
-        color: #a1a1a1;
-        border-bottom: 1px #a1a1a1 solid;
+        color: tint($jet, 50%);
+        border-bottom: 1px tint($jet, 50%) solid;
     }
     
     .latest-post {
@@ -93,7 +93,7 @@
     }
     
     .credits {
-        border-top: 1px #a1a1a1 solid;
+        border-top: 1px tint($jet, 50%) solid;
         margin-top: 1.5em;
         padding-top: 1em;
         @include clearfix;
