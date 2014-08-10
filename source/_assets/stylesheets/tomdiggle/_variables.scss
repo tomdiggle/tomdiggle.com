@@ -21,7 +21,7 @@ $breakpoint-mobile-min: 320px;
 $deep-sky-blue: #00BFFF;
 $jet: #343434;
 $white-smoke: #F5F5F5;
-$separator-color: #e0e0e0;
+$separator-color: shade($white-smoke, 14%);
 
 // Fonts
 $font-main: "MuseoSans-300", Helvetica, sans-serif;
