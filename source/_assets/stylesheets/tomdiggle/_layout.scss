@@ -5,7 +5,7 @@
 }
 
 #header {
-    background: $brown;
+    background: $jet;
     padding: 1em;
     
     @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
@@ -16,7 +16,7 @@
     h1 {
         a {
             span {
-                color: $blue;
+                color: $deep-sky-blue;
             }
             
             &:hover {
@@ -39,7 +39,7 @@
             text-align: center;
                         
             &:hover {
-                background: tint($brown, 4%);
+                background: tint($jet, 4%);
             }
         }
         
@@ -50,7 +50,7 @@
 }
 
 #footer {
-    background: $brown;
+    background: $jet;
     @include adjust-font-size-to(14px);
     color: $font-color-light;
     padding: 1em;
