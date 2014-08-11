@@ -11,6 +11,7 @@
         <link rel="apple-touch-icon" sizes="120x120" href="{{ 'favicon.png' | asset_path }}">
         <link rel="apple-touch-icon" sizes="152x152" href="{{ 'favicon.png' | asset_path }}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.rssfeed }}" />
         {% stylesheet museo %}
         {% stylesheet museosans %}
         {% stylesheet fontello %}
@@ -57,7 +58,7 @@
                 
                 <div class="about-me grid-28 grid-tablet-100 grid-mobile-100">
                     <h3>About me</h3>
-                    <p>{% image tomdiggle_ellipse.png %} I am a iOS and front end web developer. I started by building Wager a simple betting odds calculator that was released onto the App Store in 2010. <a href="{{ site.baseurl }}/about/" class="more">Learn more about me</a></p>
+                    <p>{% image tomdiggle_ellipse.png %} I'm a passionate iOS and front end web developer. I started by building <a href="http://getwagerapp.com" target="_blank">Wager</a> a betting odds calculator for iPhone that was released on the App Store in 2010. <a href="{{ site.baseurl }}/about/" class="more">Learn more about me</a></p>
                 </div>
                 
                 <div class="credits grid-100">
@@ -65,7 +66,7 @@
                         <p>Copyright &copy; 2014 <a href="{{ site.baseurl }}/">{{ site.title }}</a>.</p> 
                     </div>
                     <div class="rss grid-40 grid-mobile-100">
-                        <p><a href="{{ site.url }}/{{ site.rssfeed }}" class="icon-rss-squared" title="Subscribe to {{ site.title }}"></a></p>
+                        <p><a href="{{ site.rssfeed }}" class="icon-rss-squared" title="Subscribe to {{ site.title }}"></a></p>
                     </div>
                 </div>
             </div>
