@@ -110,6 +110,14 @@
     background: $white-smoke;
     border-bottom: 1px $separator-color solid;
     padding: .4em 1em .4em;
+    
+    a {
+        color: $deep-sky-blue;
+        
+        &:hover {
+            @extend a:hover;
+        }
+    }
 }
 
 .content-footer {
