@@ -210,7 +210,7 @@ module Jekyll
         category_dir = GenerateCategories.category_dir(base_dir, category)
         # Make sure the category directory begins with a slash.
         category_dir = "/#{category_dir}" unless category_dir =~ /^\//
-        "<a class='category' href='#{category_dir}/'>#{category}</a>"
+        "<a href='#{category_dir}/' class='category'>#{category}</a>"
       end
 
       case categories.length
