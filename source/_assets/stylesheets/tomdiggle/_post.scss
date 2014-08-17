@@ -19,7 +19,12 @@
 
     aside {
         // background: blue;
+        color: tint($jet, 20%);
         @include adjust-font-size-to(14px);
+        
+        a {
+            color: tint($jet, 20%);
+        }
     }
     
     section {
