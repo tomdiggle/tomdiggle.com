@@ -62,6 +62,14 @@
     
     .latest-post {
         margin-right: 8%;
+        
+        .title {
+            margin-top: .6em;
+        }
+    
+        .excerpt {
+            margin: .2em 0;
+        }
     }
     
     .connect {

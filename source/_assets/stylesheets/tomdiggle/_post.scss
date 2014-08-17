@@ -1,16 +1,36 @@
-.latest-post,
 .post {
-    text-align: left;
+    // background: green;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    @include clearfix;
     
-    h4.title {
-        margin-top: .6em;
-    }
-    
-    p.excerpt {
-        margin: .2em 0;
-    }
-    
-    p.continue {
+    a {
+        color: $jet;
         
+        &:hover {
+            @extend a:hover;
+        }
+    }
+    
+    .title {
+        padding-left: 20%;
+        border: none;
+    }
+
+    aside {
+        // background: blue;
+        @include adjust-font-size-to(14px);
+    }
+    
+    section {
+        // background: green;
+        
+        p:first-child {
+            margin-top: 0;
+        }
+        
+        .continue {
+            margin-top: .4em;
+        } 
     }
 }
