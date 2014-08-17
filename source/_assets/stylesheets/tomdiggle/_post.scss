@@ -29,6 +29,9 @@
     
     section {
         // background: green;
+        position: relative;
+        z-index: 1;
+        backface-visibility: hidden;
         
         p:first-child {
             margin-top: 0;
@@ -36,6 +39,22 @@
         
         .continue {
             margin-top: .4em;
-        } 
+        }
+        
+        a {
+            outline: none;
+            text-decoration: none;
+            white-space: nowrap;
+            position: relative;
+            display: inline-block;
+            vertical-align: bottom;
+            @extend .link-fadeinbg;
+            
+            &:before,
+            &:after {
+                pointer-events: none;
+                backface-visibility: hidden;
+            }
+        }
     }
 }
