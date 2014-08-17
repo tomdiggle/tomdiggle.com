@@ -1,5 +1,5 @@
 <ul>
     <li class="icon-calendar-empty">{% include post/pubdate.html %}</li>
     <li class="icon-tags">{% include post/categories.html %}</li>
-    <li class="icon-link"><a href="{{ post.short-link }}" title="Short link to {{ post.title }}">{{ post.short-link }}</a></li>
+    <li class="icon-link"><a href="{{ site.shorturl }}/{{ post.shorturlpath }}" title="Short URL to {{ post.title }}">{{ site.shorturl }}/{{ post.shorturlpath }}</a></li>
 </ul>

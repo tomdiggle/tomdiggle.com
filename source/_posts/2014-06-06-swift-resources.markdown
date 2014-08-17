@@ -3,7 +3,7 @@ layout: post
 title: "Swift Resources"
 date: 2014-06-06 06:55
 categories: Swift
-short-link: http://diggle.co/1234
+shorturlpath: 1234
 ---
 
 The other day I managed to sit down and start to get to grips with Apple's new programming language Swift. Already there appears to be a huge amount of top quality learning material. Below I have listed resources that I found useful.

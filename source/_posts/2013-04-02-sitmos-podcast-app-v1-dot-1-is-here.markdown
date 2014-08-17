@@ -3,7 +3,7 @@ layout: post
 title: "SITMOS - Podcast App v1.1 is here"
 date: 2013-04-02 11:57
 categories: iOS SITMOS
-short-link: http://diggle.co/1234
+shorturlpath: 1234
 ---
 
 The SITMOS Podcast App v1.1 has finally landed and can be downloaded for free [from the App Store](https://itunes.apple.com/gb/app/sitmos-podcast-app/id567269025?mt=8).

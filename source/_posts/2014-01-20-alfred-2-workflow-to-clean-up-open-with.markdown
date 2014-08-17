@@ -3,7 +3,7 @@ layout: post
 title: "Alfred 2 Workflow to Clean Up \"Open With\""
 date: 2014-01-20 17:27
 categories: Alfred
-short-link: http://diggle.co/1234
+shorturlpath: 1234
 ---
 My "Open With" menu option was getting way out of hand and I can never remember the command to clean it up so, I created [this Alfred 2 workflow](https://github.com/tomdiggle/CleanUpOpenWith).
 
