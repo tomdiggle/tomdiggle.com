@@ -24,24 +24,22 @@ body {
 
 a {
     color: $white-smoke;
+    outline: none;
     text-decoration: none;
-    
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    @include single-transition(color, .3s, ease-in-out, 0);
+
     &:hover,
     &:active {
         color: $deep-sky-blue;
-        @include single-transition(all, .3s, ease-in-out, 0); 
     }
 }
 
 a.more:after {
     font-family: $font-icons;
     content: '\e805';
-    margin-left: .6em;
-}
-
-[class^="btn"]:after {
-    font-family: $font-icons;
-    content: '\e804';
     margin-left: .6em;
 }
 
@@ -52,11 +50,18 @@ a.btn {
     @include adjust-font-size-to(14px);
     @include inline-block;
     @include border-radius(4px 4px);
+    @include single-transition(all, .3s, ease-in-out, 0);
     
     &:hover,
     &:active {
-        color: #FFFFFF;
+        color: $white-smoke;
         background: $deep-sky-blue;
+    }
+    
+    &:after {
+        font-family: $font-icons;
+        content: '\e804';
+        margin-left: .6em;
     }
 }
 
@@ -66,17 +71,20 @@ a.btn.large {
 }
 
 .link-fadeinbg {
-    // font-family: $museo-sans-500;
-    // font-weight: normal;
-    // font-style: normal;
     border-bottom: 1px solid rgba($jet, 0.4);
-    -webkit-transition: background-color 0.3s, border-color 0.3s;
-    transition: background-color 0.3s, border-color 0.3s;
-    
+    @include single-transition(all, .3s, ease-in-out, 0);
+
     &:hover,
     &:focus {
+        color: $deep-sky-blue;
         border-color: rgba($jet, 0);
         background-color: rgba($white-smoke, 0.5);
+    }
+
+    &:before,
+    &:after {
+        pointer-events: none;
+        backface-visibility: hidden;
     }
 }
 
