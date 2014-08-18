@@ -6,12 +6,25 @@ title: Blog
 {% for post in paginator.posts %}
     <article class="post">
         <header><h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2></header>
-        <aside class="grid-20 grid-mobile-100">
+        <aside class="grid-20 grid-tablet-100 grid-mobile-100">
             {% include post/meta.html %}
         </aside>
-        <section class="grid-80 grid-mobile-100">
+        <section class="grid-80 grid-tablet-100 grid-mobile-100">
             {{ post.excerpt }}
         </section>
     </article>
 {% endfor %}
 </div>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+    {% if paginator.previous_page %}
+        <!-- <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer</a> -->
+    {% endif %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer">Newer</a>
+    {% if paginator.next_page %}
+        <!-- <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older</a> -->
+    {% endif %}
+</div>
+{% endif %}

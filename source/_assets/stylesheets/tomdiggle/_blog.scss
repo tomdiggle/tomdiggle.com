@@ -18,9 +18,14 @@
     .title {
         padding-left: 20%;
         border: none;
+        
+        @include breakpoint($breakpoint-mobile-min $breakpoint-tablet-max) {
+            padding: 0;
+        }
     }
 
     aside {
+        margin-bottom: 1em;
         color: tint($jet, 20%);
         @include adjust-font-size-to(14px);
 
@@ -61,6 +66,28 @@
     text-align: center;
     
     a {
+        padding: 1em;
+        margin: 0 1em;
         color: $jet;
+        
+        &:hover {
+            @extend .link-fadeinbg:hover;
+        }
+        
+        &:focus {
+            @extend .link-fadeinbg:focus;
+        }
+    }
+    
+    .older:before {
+        font-family: $font-icons;
+        content: '\e80d';
+        margin-right: .6em;
+    }
+    
+    .newer:after {
+        font-family: $font-icons;
+        content: '\e80e';
+        margin-left: .6em;
     }
 }
