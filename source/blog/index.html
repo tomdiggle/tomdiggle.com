@@ -18,13 +18,11 @@ title: Blog
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
-    {% if paginator.previous_page %}
-        <!-- <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer</a> -->
-    {% endif %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older</a>
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer">Newer</a>
     {% if paginator.next_page %}
-        <!-- <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older</a> -->
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older">Older</a>
+    {% endif %}
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer">Newer</a>
     {% endif %}
 </div>
 {% endif %}
