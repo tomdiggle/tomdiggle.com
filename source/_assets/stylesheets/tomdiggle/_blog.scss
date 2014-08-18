@@ -1,59 +1,66 @@
 .post {
-    // background: green;
     padding-bottom: 2em;
     margin-bottom: 2em;
     @include clearfix;
-    
+
     a {
         color: $jet;
-        
+
         &:hover {
-            @extend a:hover;
+            @extend .link-fadeinbg:hover;
+        }
+
+        &:focus {
+            @extend .link-fadeinbg:focus;
         }
     }
-    
+
     .title {
         padding-left: 20%;
         border: none;
     }
 
     aside {
-        // background: blue;
         color: tint($jet, 20%);
         @include adjust-font-size-to(14px);
-        
+
         a {
             color: tint($jet, 20%);
+            
+            &:hover {
+                @extend .link-fadeinbg:hover;
+            }
+
+            &:focus {
+                @extend .link-fadeinbg:focus;
+            }
         }
     }
-    
+
     section {
-        // background: green;
         position: relative;
         z-index: 1;
         backface-visibility: hidden;
-        
+
         p:first-child {
             margin-top: 0;
         }
-        
+
         .continue {
             margin-top: .4em;
         }
-        
+
         a {
-            outline: none;
-            text-decoration: none;
-            white-space: nowrap;
-            position: relative;
-            display: inline-block;
             @extend .link-fadeinbg;
-            
-            &:before,
-            &:after {
-                pointer-events: none;
-                backface-visibility: hidden;
-            }
         }
+    }
+}
+
+.pagination {
+    margin-bottom: 1em;
+    text-align: center;
+    
+    a {
+        color: $jet;
     }
 }
