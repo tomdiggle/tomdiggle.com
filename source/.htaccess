@@ -1,0 +1,4 @@
+Redirect 301 /feed /feed.xml
+Redirect 301 /atom.xml /feed.xml
+Redirect 301 /projects /portfolio
+Redirect 301 /cv /assets/tom-diggle-cv.pdf
