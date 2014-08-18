@@ -11,6 +11,7 @@ title: Blog
         </aside>
         <section class="grid-80 grid-tablet-100 grid-mobile-100">
             {{ post.excerpt }}
+            <a href="{{ post.url }}" class="continue-reading" title="Continue reading {{ post.title }}">Continue reading</a>
         </section>
     </article>
 {% endfor %}

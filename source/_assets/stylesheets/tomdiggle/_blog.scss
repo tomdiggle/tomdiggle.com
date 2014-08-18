@@ -23,6 +23,17 @@
             padding: 0;
         }
     }
+    
+    .continue-reading {
+        border: none;
+        @include adjust-font-size-to(14px);
+        
+        &:after {
+            font-family: $font-icons;
+            content: '\e80e';
+            margin-left: .6em;
+        }
+    }
 
     aside {
         margin-bottom: 1em;
@@ -43,16 +54,8 @@
     }
 
     section {
-        position: relative;
-        z-index: 1;
-        backface-visibility: hidden;
-
         p:first-child {
             margin-top: 0;
-        }
-
-        .continue {
-            margin-top: .4em;
         }
 
         a {
