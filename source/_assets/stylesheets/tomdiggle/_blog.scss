@@ -5,6 +5,10 @@
         border-bottom: 1px $separator-color solid;
         @include clearfix;
         
+        &:first-child {
+            margin-top: 0;
+        }
+        
         &:last-child {
             border: none;
         }
