@@ -1,65 +1,72 @@
-.post {
-    padding-bottom: 2em;
-    margin-bottom: 2em;
-    @include clearfix;
-
-    a {
-        color: $jet;
-
-        &:hover {
-            @extend .link-fadeinbg:hover;
-        }
-
-        &:focus {
-            @extend .link-fadeinbg:focus;
-        }
-    }
-
-    .title {
-        padding-left: 20%;
-        border: none;
+.posts {
+    .post {
+        padding-bottom: 2em;
+        margin-top: 2em;
+        border-bottom: 1px $separator-color solid;
+        @include clearfix;
         
-        @include breakpoint($breakpoint-mobile-min $breakpoint-tablet-max) {
-            padding: 0;
+        &:last-child {
+            border: none;
         }
-    }
     
-    .continue-reading {
-        border: none;
-        @include adjust-font-size-to(14px);
-        
-        &:after {
-            font-family: $font-icons;
-            content: '\e80e';
-            margin-left: .6em;
-        }
-    }
-
-    aside {
-        margin-bottom: 1em;
-        color: tint($jet, 20%);
-        @include adjust-font-size-to(14px);
-
         a {
-            color: tint($jet, 20%);
-            
+            color: $jet;
+    
             &:hover {
                 @extend .link-fadeinbg:hover;
             }
-
+    
             &:focus {
                 @extend .link-fadeinbg:focus;
             }
         }
-    }
-
-    section {
-        p:first-child {
-            margin-top: 0;
+    
+        .title {
+            padding-left: 20%;
+            border: none;
+    
+            @include breakpoint($breakpoint-mobile-min $breakpoint-tablet-max) {
+                padding: 0;
+            }
         }
-
-        a {
-            @extend .link-fadeinbg;
+    
+        .continue-reading {
+            border: none;
+            @include adjust-font-size-to(14px);
+    
+            &:after {
+                font-family: $font-icons;
+                content: '\e80e';
+                margin-left: .6em;
+            }
+        }
+    
+        aside {
+            margin-bottom: 1em;
+            color: tint($jet, 20%);
+            @include adjust-font-size-to(14px);
+    
+            a {
+                color: tint($jet, 20%);
+    
+                &:hover {
+                    @extend .link-fadeinbg:hover;
+                }
+    
+                &:focus {
+                    @extend .link-fadeinbg:focus;
+                }
+            }
+        }
+    
+        section {
+            p:first-child {
+                margin-top: 0;
+            }
+    
+            a {
+                @extend .link-fadeinbg;
+            }
         }
     }
 }

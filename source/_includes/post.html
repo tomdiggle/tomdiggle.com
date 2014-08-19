@@ -1,0 +1,12 @@
+{% if index %}
+<header><h2 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h2></header>
+{% endif %}
+<aside class="grid-20 grid-tablet-100 grid-mobile-100">
+    {% include post/meta.html %}
+</aside>
+<section class="grid-80 grid-tablet-100 grid-mobile-100">
+    {{ content }}
+    {% if index %}
+    <a href="{{ post.url }}" class="continue-reading" title="Continue reading {{ post.title }}">Continue reading</a>
+    {% endif %}
+</section>

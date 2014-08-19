@@ -21,16 +21,6 @@
         @include inline-block;
         width: 100px;
     }
-    
-    .posts {
-        article {
-            border-bottom: 1px $separator-color solid;
-
-            &:last-child {
-                border: none;
-            }
-        }
-    }
 }
 
 .available-for-work {
