@@ -5,6 +5,15 @@
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="{{ site.description }}">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@tomdiggle">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="{{ page.twitter_description }}">
+        <meta name="twitter:creator" content="@tomdiggle">
+        {% if page.twitter_image %}
+        <meta name="twitter:image:src" content="{{ page.twitter_image}}">
+        {% endif %}
+        <meta name="twitter:domain" content="{{ site.url }}">
         <link rel="shortcut icon" type="image/x-icon" href="{{ 'favicon.ico' | asset_path }}">
         <link rel="apple-touch-icon" href="{{ 'favicon.png' | asset_path }}">
         <link rel="apple-touch-icon" sizes="76x76" href="{{ 'favicon.png' | asset_path }}">
@@ -31,7 +40,7 @@
         </header>
 
         {{ content }}
-        
+
         <footer id="footer" role="contentinfo">
             <div class="container">
                 <div class="latest-post grid-28 grid-tablet-100 grid-mobile-100">
