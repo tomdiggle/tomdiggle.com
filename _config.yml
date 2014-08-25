@@ -30,4 +30,7 @@ assets:
     - _assets/posts
 #  css_compressor: sass
   cache: false
-  
+
+# Twitter
+twitter_user: tomdiggle
+twitter_tweet_button: true
