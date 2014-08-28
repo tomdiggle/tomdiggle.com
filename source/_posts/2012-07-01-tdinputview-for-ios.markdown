@@ -4,6 +4,7 @@ title: "TDInputView for iOS"
 date: 2012-07-01 3:33
 categories: iOS
 shorturlpath: 1234
+twitter_description: TDInputView is an open source replacement for the standard system keyboard in iOS 4.0+.
 ---
 
 TDInputView is an open source replacement for the standard system keyboard in iOS 4.0+. TDInputView subclasses UITextField and replaces the inputView with a custom UIView that you can design. Below is a screenshot of TDInputView in action from my app Wager which can be downloaded from the App Store for free [here](http://itunes.apple.com/us/app/wager-lite/id405046159?mt=8).

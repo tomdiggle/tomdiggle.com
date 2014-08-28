@@ -4,6 +4,7 @@ title: "Alfred 2 Custom Search for CocoaDocs &amp; CocoaPods"
 date: 2013-05-31 09:08
 categories: Alfred CocoaDocs CocoaPods
 shorturlpath: 1234
+twitter_description: Alfred 2 Custom Search for CocoaDocs &amp; CocoaPods.
 ---
 I'm a huge fan of [Alfred](http://www.alfredapp.com/) and find myself using it more and more, especially since the release of version 2. Alfred allows you to create custom searches which is what I've done to help me quickly search [CocoaDocs](http://cocoadocs.org/) for documentation or [CocoaPods](http://cocoapods.org/) for a pod.
 

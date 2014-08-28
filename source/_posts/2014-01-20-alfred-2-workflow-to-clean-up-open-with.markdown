@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Alfred 2 Workflow to Clean Up \"Open With\""
+title: "Alfred 2 workflow to clean up Open With"
 date: 2014-01-20 17:27
 categories: Alfred
 shorturlpath: 1234
+twitter_description: Alfred 2 workflow to clean up Open With menu item.
 ---
 My "Open With" menu option was getting way out of hand and I can never remember the command to clean it up so, I created [this Alfred 2 workflow](https://github.com/tomdiggle/CleanUpOpenWith).
 
