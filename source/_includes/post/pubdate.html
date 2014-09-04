@@ -1,5 +1,5 @@
 {% capture date %}{{ page.date }}{{ post.date }}{% endcapture %}
-<time pubdate datetime="{{ post.date }}">
+<time pubdate datetime="{{ date }}">
 {% assign d = date | date: "%d" %}
 {{ date | date: "%b" }}
 {% case d %}
