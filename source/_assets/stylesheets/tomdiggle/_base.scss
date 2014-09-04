@@ -1,9 +1,9 @@
 @include establish-baseline;
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -36,7 +36,7 @@ a {
     }
 }
 
-a.more:after {
+.more:after {
     font-family: $font-icons;
     content: '\e805';
     margin-left: .6em;
@@ -70,6 +70,7 @@ a.btn.large {
 }
 
 .link-fadeinbg {
+    color: $jet;
     border-bottom: 1px solid rgba($jet, 0.4);
     @include single-transition(all, .3s, ease-in-out, 0);
 
@@ -85,6 +86,10 @@ a.btn.large {
         pointer-events: none;
         backface-visibility: hidden;
     }
+}
+
+a.more {
+    border: none;
 }
 
 #{ headings(1, 2) } {
@@ -124,11 +129,7 @@ h6 {
 }
 
 em {
-   font-size: .6em;
-   
-   a {
-        color: #8e8e8e;
-   }
+    font-size: .6em;
 }
 
 img {

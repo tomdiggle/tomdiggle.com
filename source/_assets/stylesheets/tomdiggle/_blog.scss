@@ -13,21 +13,13 @@
             border: none;
         }
     
-        a {
-            color: $jet;
-    
-            &:hover {
-                @extend .link-fadeinbg:hover;
-            }
-    
-            &:focus {
-                @extend .link-fadeinbg:focus;
-            }
-        }
-    
         .title {
             padding-left: 20%;
             border: none;
+            
+            a {
+                border: none;
+            }
     
             @include breakpoint($breakpoint-mobile-min $breakpoint-tablet-max) {
                 padding: 0;
@@ -52,11 +44,12 @@
     
             a {
                 color: tint($jet, 20%);
+                border: none;
     
                 &:hover {
                     @extend .link-fadeinbg:hover;
                 }
-    
+                
                 &:focus {
                     @extend .link-fadeinbg:focus;
                 }
@@ -66,10 +59,6 @@
         section {
             p:first-child {
                 margin-top: 0;
-            }
-    
-            a {
-                @extend .link-fadeinbg;
             }
         }
     }
@@ -82,15 +71,7 @@
     a {
         padding: 1em;
         margin: 0 1em;
-        color: $jet;
-        
-        &:hover {
-            @extend .link-fadeinbg:hover;
-        }
-        
-        &:focus {
-            @extend .link-fadeinbg:focus;
-        }
+        border: none;
     }
     
     .older:before {
