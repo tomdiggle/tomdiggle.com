@@ -6,11 +6,12 @@
 
 #header {
     background: $jet;
-    padding: 1em;
+    padding: .5em;
+    text-align: center;
     
-    @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
-        padding: .5em;
-        text-align: center;
+    @include breakpoint($breakpoint-mobile-max) {
+        padding: 1em;
+        text-align: left;
     }
     
     h1 {
@@ -45,7 +46,7 @@
         
         a {
             display: block;
-        }    
+        }
     }
 }
 

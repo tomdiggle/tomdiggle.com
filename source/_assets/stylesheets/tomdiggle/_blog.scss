@@ -14,15 +14,14 @@
         }
     
         .title {
-            padding-left: 20%;
             border: none;
             
             a {
                 border: none;
             }
     
-            @include breakpoint($breakpoint-mobile-min $breakpoint-tablet-max) {
-                padding: 0;
+            @include breakpoint($breakpoint-tablet-max) {
+                padding-left: 20%;
             }
         }
     

@@ -23,10 +23,10 @@
     }
 
     .skills {
-        @include column-count(3);
+        @include column-count(1);
         
-        @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
-           @include column-count(1);
+        @include breakpoint($breakpoint-tablet-max) {
+           @include column-count(3);
         }
     }
 
@@ -47,11 +47,5 @@
 
     a {
         margin-top: 1.5em;
-    }
-
-    @include breakpoint($breakpoint-mobile-min $breakpoint-tablet-max) {
-        h2, p {
-            text-align: center;
-        }
     }
 }

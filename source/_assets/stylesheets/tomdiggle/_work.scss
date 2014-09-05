@@ -10,10 +10,8 @@
         }
                   
         .info {
-            margin-left: 1em;
-            
-            @include breakpoint($breakpoint-mobile-min $breakpoint-mobile-max) {
-                margin-left: 0;
+            @include breakpoint($breakpoint-mobile-max) {
+                margin-left: 1em;
             }
             
             h3 {
