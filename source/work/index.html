@@ -7,20 +7,20 @@ twitter_description: A small collection of my latest work.
 <h2>Freelance</h2>
 <ul class="projects">
     {% for project in site.data.work_freelance %}
-        {% include work_project.html %}
+        {% include work/project.html %}
     {% endfor %}
 </ul>
 
 <h2>Personal</h2>
 <ul class="projects">
     {% for project in site.data.work_personal %}
-        {% include work_project.html %}
+        {% include work/project.html %}
     {% endfor %}
 </ul>
 
 <h2>Open Source</h2>
 <ul class="projects">
     {% for project in site.data.work_opensource %}
-        {% include work_project.html %}
+        {% include work/project.html %}
     {% endfor %}
 </ul>
