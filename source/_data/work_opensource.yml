@@ -6,7 +6,7 @@
   image: project-briefplayer-01.png
 
 - title: TDNotificationPanel
-  url: https://github.com/tomdiggle/
+  url: http://diggle.co/TDNotificationPanel
   description: TDNotificationPanel is a drop in class that displays a notification which can contain a title, subtitle, icon, progress bar or activity indicator.
   roles: Design and Objective-C
   launched: Febuary, 2013
