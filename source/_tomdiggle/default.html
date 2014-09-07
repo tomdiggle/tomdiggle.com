@@ -20,66 +20,19 @@
         <link rel="apple-touch-icon" sizes="120x120" href="{{ 'favicon.png' | asset_path }}">
         <link rel="apple-touch-icon" sizes="152x152" href="{{ 'favicon.png' | asset_path }}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-        <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.rssfeed }}" />
+        <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.rssfeed }}">
         {% stylesheet museo %}
         {% stylesheet museosans %}
         {% stylesheet fontello %}
         {% stylesheet tomdiggle %}
     </head>
-    <body>
-        <header id="header">
-            <div class="container">
-                <h1 class="grid-30 grid-mobile-100"><a href="{{ site.baseurl }}/">tom<span>diggle</span></a></h1>
-                <menu class="grid-53 grid-mobile-100">
-                    <li><a href="{{ site.baseurl }}/about/">About</a></li>
-                    <li><a href="{{ site.baseurl }}/work/">Work</a></li>
-                    <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
-                    <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-                </menu>
-            </div>
-        </header>
+    <body {% if page.path == "index.html" %} class="home" {% endif %}>
+        {% include header.html %}
 
         {{ content }}
 
-        <footer id="footer" role="contentinfo">
-            <div class="container">
-                <div class="latest-post grid-28 grid-tablet-100 grid-mobile-100">
-                    <h3>Latest post</h3>
-                    {% for post in site.posts limit:1 %}
-                    <article>
-                        <header><h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4></header>
-                        <section>
-                            <p class="excerpt">{{ post.excerpt }}</p>
-                            <p class="continue"><a href="{{ post.url }}" class="more">Continue reading</a></p>
-                        </section>
-                    </article>
-                    {% endfor %}
-                </div>
-                
-                <div class="connect grid-28 grid-tablet-100 grid-mobile-100">
-                    <h3>Connect with me</h3>
-                    <ul>
-                    {% for account in site.data.social_accounts %}
-                        <li><a href="{{ account.link }}"><span class="{{ account.css-selector }}"></span>{{ account.site }}</a></li>
-                    {% endfor %}
-                    </ul>
-                </div>
-                
-                <div class="about-me grid-28 grid-tablet-100 grid-mobile-100">
-                    <h3>About me</h3>
-                    <p>{% image tomdiggle_ellipse.png %} I'm a passionate iOS and front end web developer. I started by building <a href="http://getwagerapp.com" target="_blank">Wager</a> a betting odds calculator for iPhone that was released on the App Store in 2010. <a href="{{ site.baseurl }}/about/" class="more">Learn more about me</a></p>
-                </div>
-                
-                <div class="credits grid-100">
-                    <div class="grid-60 grid-mobile-100">
-                        <p>Copyright &copy; 2014 <a href="{{ site.baseurl }}/">{{ site.title }}</a>.</p> 
-                    </div>
-                    <div class="rss grid-40 grid-mobile-100">
-                        <p><a href="{{ site.rssfeed }}" class="icon-rss-squared" title="Subscribe to {{ site.title }}"></a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        {% include footer.html %}
+
         {% javascript jquery-2.1.1.min %}
         {% javascript main %}
     </body>

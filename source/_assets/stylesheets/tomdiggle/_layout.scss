@@ -6,12 +6,16 @@
 
 #header {
     background: $jet;
-    padding: .5em;
+    color: $white-smoke;
     text-align: center;
     
-    @include breakpoint($breakpoint-mobile-max) {
-        padding: 1em;
-        text-align: left;
+    .logo {
+        padding: .4em;
+        
+        @include breakpoint($breakpoint-mobile-max) {
+            padding: 1em 1em 3.9em;
+            text-align: left;
+        }
     }
     
     h1 {
@@ -25,7 +29,7 @@
             }
         }
     }
-  
+    
     menu {
         font-family: $museo-sans-100;
         font-weight: normal;
@@ -114,18 +118,29 @@
     }
 }
 
-.content-header,
-.content-footer {
-    background: $white-smoke;
-    border-bottom: 1px $separator-color solid;
+.page-header,
+.page-footer {
     padding: .4em 1em .4em;
+    background: $white-smoke;
+    color: $jet;
+    text-align: left;
+    border-bottom: 1px $separator-color solid;
     
     a {
         color: $deep-sky-blue;
     }
 }
 
-.content-footer {
+.page-footer {
+    padding: 1em;
     border-top: 1px $separator-color solid;
     border-bottom: none;
+    
+    .get-in-touch {
+        text-align: center;
+        
+        a {
+            margin-top: 1.5em;
+        }
+    }
 }
