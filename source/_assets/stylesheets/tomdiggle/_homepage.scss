@@ -4,11 +4,25 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        
+        .logo {
+            background: rgba($jet, 0.3);
+        }
+        
+        .btn {
+            color: #FFFFFF;
+            border: 1px #FFFFFF solid;
+            
+            &:hover {
+                border: 1px $deep-sky-blue solid;
+            }
+        }
     }
 }
 
 .header-intro {
     padding: 3em 1em 6em;
+    background: rgba($jet, 0.3);
     text-align: center;
 
     h2 {
