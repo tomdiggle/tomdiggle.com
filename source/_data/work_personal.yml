@@ -4,6 +4,7 @@
   roles: Design, Objective-C and Core Data
   launched: July, 2010
   image: project-wager-01.jpg
+  anchor: wagerapp
   
 - title: SITMOS
   url: http://diggle.co/sitmosapp
@@ -11,4 +12,5 @@
   roles: Design, Objective-C and Core Data
   launched: October, 2012
   image: project-sitmos-01.jpg
+  anchor: sitmosapp
   

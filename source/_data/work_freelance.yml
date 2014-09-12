@@ -4,6 +4,7 @@
   roles: Design, HTML, CSS/Sass, jQuery, PHP and Jekyll integration
   launched: January, 2014
   image: project-jjd-01.jpg
+  anchor: jjdiggle
 
 - title: NSBrief
   url: http://nsbrief.com
@@ -11,4 +12,5 @@
   roles: Design, HTML, CSS, JavaScript and ruhoh integration
   launched: May, 2014
   image: project-nsbrief-01.jpg
+  anchor: nsbrief
   

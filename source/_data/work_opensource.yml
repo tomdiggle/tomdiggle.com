@@ -4,6 +4,7 @@
   roles: HTML, CSS and JavaScript
   launched: May, 2014
   image: project-briefplayer-01.png
+  anchor: briefplayer
 
 - title: TDNotificationPanel
   url: http://diggle.co/TDNotificationPanel
@@ -11,3 +12,4 @@
   roles: Design and Objective-C
   launched: Febuary, 2013
   image: project-tdnotificationpanel-01.jpg
+  anchor: tdnotificationpanel
