@@ -4,21 +4,21 @@ title: Work
 description: You can see some of my work below. As I complete more, I'll add it here.
 twitter_description: A small collection of my latest work.
 ---
-<h2>Freelance</h2>
+<h2 id="freelance">Freelance</h2>
 <ul class="projects">
     {% for project in site.data.work_freelance %}
         {% include work/project.html %}
     {% endfor %}
 </ul>
 
-<h2>Personal</h2>
+<h2 id="personal">Personal</h2>
 <ul class="projects">
     {% for project in site.data.work_personal %}
         {% include work/project.html %}
     {% endfor %}
 </ul>
 
-<h2>Open Source</h2>
+<h2 id="opensource">Open Source</h2>
 <ul class="projects">
     {% for project in site.data.work_opensource %}
         {% include work/project.html %}
