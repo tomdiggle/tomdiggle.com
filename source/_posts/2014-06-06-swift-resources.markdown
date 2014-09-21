@@ -10,7 +10,7 @@ twitter_description: A List of great Swift resources.
 The other day I managed to sit down and start to get to grips with Apple's new programming language Swift. Already there appears to be a huge amount of top quality learning material. Below I have listed resources that I found useful.
 
 ## Apple
-The first place to look is Apple's developer site. There's lots of material here from the official Swift blog to videos from WWDC 2014 and of course the Swift book.
+The first place to look is Apple's developer site. There's lots of material, from the official Swift blog to videos of WWDC 2014 sessions and of course the Swift book.
 
 - [Swift Blog](https://developer.apple.com/swift/blog/)
 - [The Swift Book](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/)
