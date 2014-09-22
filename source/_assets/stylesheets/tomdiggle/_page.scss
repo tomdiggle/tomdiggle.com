@@ -21,6 +21,10 @@
     ul, p {
         margin: .6em 0;
     }
+    
+    ol {
+        list-style-type: decimal;
+    }
 
     .skills {
         @include column-count(1);
