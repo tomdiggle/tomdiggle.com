@@ -31,6 +31,9 @@ assets:
 #  css_compressor: sass
   cache: false
 
+# Analytics
+google_analytics_tracking_id: UA-39506392-1
+
 # Twitter
 twitter_user: tomdiggle
 twitter_tweet_button: true
