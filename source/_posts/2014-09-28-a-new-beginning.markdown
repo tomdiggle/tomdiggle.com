@@ -7,7 +7,7 @@ shorturlpath:
 twitter_description: A new beginning for http://tomdiggle.com.
 ---
 
-You might or might not have noticed, my website looks a little different. I’ve completely changed the entire design and switched from [Octopress](http://octopress.org) to [Jekyll](http://jekyllrb.com).
+You might or might not have noticed, my website looks a little different. I’ve completely changed the entire design and switched from <a href="http://octopress.org">Octopress</a> to <a href="http://jekyllrb.com">Jekyll</a>
 
 My main goals for the redesign where:
 
