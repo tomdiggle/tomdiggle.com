@@ -15,11 +15,13 @@ twitter_description: The blog of Tom Diggle.
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
+    <nav role="navigation">
     {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="older" title="View older posts">Older</a>
     {% endif %}
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="newer" title="View newer posts">Newer</a>
     {% endif %}
+    </nav>
 </div>
 {% endif %}
