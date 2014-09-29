@@ -1,7 +1,7 @@
 <?php
 
 class contactForm {
- 
+
 	function formValidate() {
 
 		$name = @$_POST['name'];
@@ -38,7 +38,7 @@ class contactForm {
 			$headers = 'From: '.$email.'' . "\r\n" .
 					   'Reply-To: '.$email.'' . "\r\n" .
         				   'X-Mailer: PHP/' . phpversion();
-        				   
+
             if (mail($to, $subject, $body, $headers)) 
 		    { 
 	     		$return['msg'] = 'Your message was sent successfully. You will receive a response shortly.';
