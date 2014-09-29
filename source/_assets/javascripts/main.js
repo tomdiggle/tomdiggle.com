@@ -1,14 +1,14 @@
 jQuery(document).ready(function($) {
-    $('#contact').on('submit', function(event) {
+    $('#contact-form').on('submit', function(event) {
         event.preventDefault();
         $.ajax({
             type: 'POST',
-            url: 'contact.php',
+            url: '/assets/contact.php',
             data: $(this).serialize(),
             dataType: 'json',
             timeout: 3000,
             success: function(s) {
-                if (s.error == false) {
+                if (s.error === false) {
                     $('#contact_status').html('<p class="success">' + s.msg + '</p>');  
                     $('#submit').prop('value', 'Message sent');
                     $('#submit').prop('disabled', true);
