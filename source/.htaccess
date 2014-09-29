@@ -11,3 +11,6 @@ Redirect 301 /2014/01/20/alfred-2-workflow-to-clean-up-open-with/ /blog/2014/01/
 Redirect 301 /2013/05/31/alfred-2-custom-search-for-cocoadocs-and-cocoapods/ /blog/2013/05/31/alfred-2-custom-search-for-cocoadocs-and-cocoapods/
 Redirect 301 /2013/04/02/sitmos-podcast-app-v1-dot-1-is-here/ /blog/2013/04/02/sitmos-podcast-app-v1-dot-1-is-here/
 Redirect 301 /2012/07/01/tdinputview-for-ios/ /blog/2012/07/01/tdinputview-for-ios/
+
+Redirect 301 /tdnotificationpanel https://github.com/tomdiggle/TDNotificationPanel
+Redirect 301 /sitmosapp https://github.com/tomdiggle/sitmos

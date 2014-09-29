@@ -7,7 +7,7 @@
   anchor: wagerapp
   
 - title: SITMOS
-  url: http://diggle.co/sitmosapp
+  url: http://tomdiggle.com/sitmosapp
   description: Stay up to date with each episode of SITMOS (Stuck in the Middle of Somewhere) podcast on your iPhone or iPod Touch. The source code is released under the MIT license.
   roles: Design, Objective-C and Core Data
   launched: October, 2012
