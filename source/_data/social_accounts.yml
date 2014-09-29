@@ -11,5 +11,5 @@
   css-selector: icon-linkedin-squared
   
 - site: Mail
-  link: tom+website@tomdiggle.com
+  link: mailto:tom+website@tomdiggle.com
   css-selector: icon-mail-alt
