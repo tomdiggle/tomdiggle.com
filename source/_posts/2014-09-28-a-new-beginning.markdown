@@ -4,7 +4,7 @@ title: "A New Beginning"
 date: 2014-09-28 16:00
 categories: general
 shorturlpath:
-twitter_description: A new beginning for http://tomdiggle.com.
+twitter_description: A new beginning for tomdiggle.com.
 ---
 
 You might or might not have noticed, my website looks a little different. I’ve completely changed the entire design and switched from <a href="http://octopress.org">Octopress</a> to <a href="http://jekyllrb.com">Jekyll</a>.
