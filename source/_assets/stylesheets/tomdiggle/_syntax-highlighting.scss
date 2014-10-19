@@ -1,0 +1,26 @@
+/* Code blocks */
+pre {
+    background: #F5F5F5;
+    padding: .2em;
+    font-family: $consolas;
+    @include adjust-font-size-to(14px);
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    overflow: auto;
+    @include hyphens(none);
+    @include border-radius(6px, 6px);
+}
+
+/* Inline code */
+:not(pre) > code {
+    background: #F5F5F5;
+    padding: .2em;
+    font-family: $consolas;
+    @include adjust-font-size-to(14px);
+    @include border-radius(4px, 4px);
+}
