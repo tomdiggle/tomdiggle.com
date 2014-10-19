@@ -35,11 +35,15 @@
                 margin-left: .6em;
             }
         }
-    
+
         aside {
             margin-bottom: 1em;
             color: tint($jet, 20%);
             @include adjust-font-size-to(14px);
+
+            @include breakpoint($breakpoint-tablet-max) {
+                padding-right: .4em;
+            }
     
             a {
                 color: tint($jet, 20%);
