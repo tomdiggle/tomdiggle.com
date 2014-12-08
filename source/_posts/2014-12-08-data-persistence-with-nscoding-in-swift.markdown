@@ -13,7 +13,7 @@ I created a class to save and load data using NSKeyedArchiver/NSKeyedUnarchiver 
 
 To save data call `saveData(data: AnyObject, directory: NSSearchPathDirectory, filename: String)` and to load data call `loadDataFromDirectory(directory: NSSearchPathDirectory, filename: String)` methods.
 
-The data persistence class is below but if you want to make changes it is also available as a [GitHub Gist](https://gist.github.com/tomdiggle/75906f60a485affaabd2).
+The data persistence class is below, if you want to make changes it is also available as a [GitHub Gist](https://gist.github.com/tomdiggle/75906f60a485affaabd2).
 
 ~~~ swift
 import Foundation
