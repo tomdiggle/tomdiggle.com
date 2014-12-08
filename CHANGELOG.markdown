@@ -1,3 +1,10 @@
+### Version 1.0.3.1
+
+*Released on 08.12.2014*
+
+Add blog post 'Data Persistence with NSCoding in Swift'
+Update gems
+
 ### Version 1.0.3
 
 *Released on 20.10.2014*
