@@ -2,6 +2,9 @@ RewriteEngine On
 RewriteCond %{HTTP_REFERER} buttons\-for\-website\.com
 RewriteRule ^.* - [F,L]
 
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteRule .* – [F,L]
+
 ErrorDocument 404 /404.html
 
 Redirect 301 /feed /feed.xml
