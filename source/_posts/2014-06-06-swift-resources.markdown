@@ -3,7 +3,7 @@ layout: post
 title: "Swift Resources"
 date: 2014-06-06 06:55
 categories: Swift
-shorturlpath: 1234
+vanityurlpath: 1234
 twitter_description: A List of great Swift resources.
 ---
 

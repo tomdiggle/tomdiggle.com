@@ -4,7 +4,7 @@ email: tom@tomdiggle.com
 description: "iOS and front end web developer."
 baseurl: ""
 url: "http://staging.tomdiggle.com"
-shorturl: "http://diggle.co"
+vanityurl: "http://diggle.co"
 rssfeed: "http://staging.tomdiggle.com/feed"
 
 # Build settings

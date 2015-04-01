@@ -3,7 +3,7 @@ layout: post
 title: "TDInputView for iOS"
 date: 2012-07-01 3:33
 categories: iOS
-shorturlpath: 1234
+vanityurlpath: 1234
 twitter_description: TDInputView is an open source replacement for the standard system keyboard in iOS 4.0+.
 ---
 

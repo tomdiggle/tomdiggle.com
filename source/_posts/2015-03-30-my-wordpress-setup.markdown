@@ -3,7 +3,7 @@ layout: post
 title: "My WordPress Setup"
 date: 2015-03-30 16:28
 categories: WordPress
-shorturlpath:
+vanityurlpath:
 twitter_description:
 ---
 

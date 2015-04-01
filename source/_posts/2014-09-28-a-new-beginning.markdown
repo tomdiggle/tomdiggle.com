@@ -3,7 +3,7 @@ layout: post
 title: "A New Beginning"
 date: 2014-09-28 16:00
 categories: general
-shorturlpath:
+vanityurlpath:
 twitter_description: A new beginning for tomdiggle.com.
 ---
 
