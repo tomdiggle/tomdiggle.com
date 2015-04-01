@@ -1,0 +1,40 @@
+# Site settings
+title: Tom Diggle
+email: tom@tomdiggle.com
+description: "iOS and front end web developer."
+baseurl: ""
+url: "http://staging.tomdiggle.com"
+shorturl: "http://diggle.co"
+rssfeed: "http://staging.tomdiggle.com/feed"
+
+# Build settings
+production: false
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+source: source
+destination: public
+layouts: ./_tomdiggle
+paginate: 6
+paginate_path: "blog/page:num"
+
+gems:
+  - jekyll-sitemap
+
+# Generate categories
+category_dir: /blog/categories
+
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/posts
+  css_compressor: sass
+  cache: false
+
+# Analytics
+google_analytics_tracking_id: UA-39506392-1
+
+# Twitter
+twitter_user: tomdiggle
+twitter_tweet_button: true
