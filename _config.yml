@@ -8,6 +8,7 @@ shorturl: "http://diggle.co"
 rssfeed: "http://tomdiggle.com/feed"
 
 # Build settings
+production: true
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 source: source
