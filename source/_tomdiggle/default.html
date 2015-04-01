@@ -6,6 +6,9 @@ layout: compress
     <head>
         <meta charset="utf-8">
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        {% unless site.production %}
+            <meta name="robots" content="noindex, nofollow">
+        {% endunless %}
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="{{ site.description }}">
         <meta name="author" content="Tom Diggle">
@@ -36,8 +39,9 @@ layout: compress
         {{ content }}
 
         {% include footer.html %}
-
-        {% include analytics/google.html %}
+        {% if site.production %}
+            {% include analytics/google.html %}
+        {% endif %}
         {% javascript main %}
         
         {% if page.custom_js %}
