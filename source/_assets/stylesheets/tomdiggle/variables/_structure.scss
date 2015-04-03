@@ -1,0 +1,14 @@
+// Legacy support
+$legacy-support-for-ie: false;
+$legacy-support-for-ie8: false;
+$legacy-support-for-mozilla: false;
+
+// Experimental support
+$experimental-support-for-opera: false;
+
+// Layout
+$max-width: 1024px;
+$breakpoint-tablet-max: 1024px;
+$breakpoint-tablet-min: 611px;
+$breakpoint-mobile-max: 610px;
+$breakpoint-mobile-min: 320px;
