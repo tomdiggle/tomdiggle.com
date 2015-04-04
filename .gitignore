@@ -21,3 +21,6 @@ public
 .jekyll-assets-cache
 .sass-cache
 Gemfile.lock
+
+# BBEdit
+.bbprojectd
