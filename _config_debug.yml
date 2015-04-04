@@ -6,6 +6,7 @@ baseurl: ""
 url: "http://staging.tomdiggle.com"
 vanityurl: "http://diggle.co"
 rssfeed: "http://staging.tomdiggle.com/feed"
+available_for_work: true
 
 # Build settings
 production: false
