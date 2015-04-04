@@ -6,18 +6,18 @@
 
 body {
     font-family: $museo-sans-300;
-    color: $jet;
-    background: $jet;
+    color: $color__jet;
+    background: $color__jet;
 }
 
 ::selection {
-    background: $deep-sky-blue;
-    color: $white-smoke;
+    background: $color__deep-sky-blue;
+    color: $color__white-smoke;
 }
 
 ::-moz-selection {
-    background: $deep-sky-blue;
-    color: $white-smoke;
+    background: $color__deep-sky-blue;
+    color: $color__white-smoke;
 }
 
 @import "../layout/header";

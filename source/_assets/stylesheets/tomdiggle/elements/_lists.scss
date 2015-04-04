@@ -43,7 +43,7 @@
 
     li {
         text-align: center;
-        border: 1px $white-smoke solid;
+        border: 1px $color__white-smoke solid;
         margin-bottom: 1.4em;
         @include inline-block;
 
@@ -52,7 +52,7 @@
         }
 
         hr {
-            background: $white-smoke;
+            background: $color__white-smoke;
             border: none;
             height: 1px;
             width: 30%;

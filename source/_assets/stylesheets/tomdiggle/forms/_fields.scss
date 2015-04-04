@@ -22,7 +22,7 @@ select {
     @include transition(all .30s ease-in-out);
     
     &:focus {
-        border: 1px solid $deep-sky-blue;
+        border: 1px solid $color__deep-sky-blue;
     }
 }
 

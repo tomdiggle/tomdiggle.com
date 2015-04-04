@@ -6,13 +6,13 @@
 .page-header,
 .page-footer {
     padding: .4em 1em .4em;
-    background: $white-smoke;
-    color: $jet;
+    background: $color__white-smoke;
+    color: $color__jet;
     text-align: left;
     border-bottom: 1px $separator-color solid;
     
     a {
-        color: $deep-sky-blue;
+        color: $color__deep-sky-blue;
     }
 }
 

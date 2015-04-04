@@ -1,7 +1,7 @@
 button {
     padding: .6em;
-    background: adjust-lightness($deep-sky-blue, 10%);
-    border: 1px adjust-lightness($deep-sky-blue, 30%) solid;
+    background: adjust-lightness($color__deep-sky-blue, 10%);
+    border: 1px adjust-lightness($color__deep-sky-blue, 30%) solid;
     color: #FFFFFF;
     width: 100%;
     font-size: 1em;
@@ -10,7 +10,7 @@ button {
 
     &:hover,
     &:active {
-        background: $deep-sky-blue;
+        background: $color__deep-sky-blue;
         @include single-transition(all, .3s, ease-in-out, 0);
     }
 }

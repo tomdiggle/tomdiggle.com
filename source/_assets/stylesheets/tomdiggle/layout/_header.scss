@@ -1,6 +1,6 @@
 .site-header {
-    background: $jet;
-    color: $white-smoke;
+    background: $color__jet;
+    color: $color__white-smoke;
     text-align: center;
     
     .logo {
@@ -15,11 +15,11 @@
     h1 {
         a {
             span {
-                color: $deep-sky-blue;
+                color: $color__deep-sky-blue;
             }
             
             &:hover {
-                color: $white-smoke;
+                color: $color__white-smoke;
             }
         }
     }
@@ -34,13 +34,13 @@
         background-size: cover;
         
         .logo {
-            background: rgba($jet, 0.3);
+            background: rgba($color__jet, 0.3);
         }
         
         .header-intro {
             color: $color__snow;
             padding: 3em 1em 6em;
-            background: rgba($jet, 0.3);
+            background: rgba($color__jet, 0.3);
             text-align: center;
 
             p {
