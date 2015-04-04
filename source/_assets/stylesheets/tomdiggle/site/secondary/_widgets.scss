@@ -1,0 +1,14 @@
+.widget-available-for-work {
+    padding: 1em;
+    background: $color__white-smoke;
+    border-top: 1px $separator-color solid;
+    border-bottom: none;
+    
+    .get-in-touch {
+        text-align: center;
+        
+        a {
+            margin-top: 1.5em;
+        }
+    }
+}
