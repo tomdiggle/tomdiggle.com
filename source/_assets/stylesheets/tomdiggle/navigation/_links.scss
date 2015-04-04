@@ -1,0 +1,144 @@
+a {
+    color: $color__snow;
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    @include single-transition(color, .3s, ease-in-out, 0);
+
+    &:hover,
+    &:active {
+        color: $deep-sky-blue;
+    }
+}
+
+.btn {
+    color: $deep-sky-blue;
+    border: 1px $deep-sky-blue solid;
+    padding: .4em .9em;
+    @include adjust-font-size-to(14px);
+    @include inline-block;
+    @include border-radius(4px 4px);
+    @include single-transition(all, .3s, ease-in-out, 0);
+
+    &:hover,
+    &:active {
+        color: $color__snow;
+        background: $deep-sky-blue;
+    }
+
+    &:after {
+        font-family: $font-icons;
+        content: '\e804';
+        margin-left: .6em;
+    }
+}
+
+.home .site-header .btn {
+    color: #FFFFFF;
+    border: 1px #FFFFFF solid;
+
+    &:hover {
+        border: 1px $deep-sky-blue solid;
+    }
+}
+
+.btn.large {
+    padding: .8em 3em;
+    @include adjust-font-size-to(18px);
+}
+
+.more {
+    border: none;
+}
+
+.more:after {
+    font-family: $font-icons;
+    content: '\e805';
+    margin-left: .6em;
+}
+
+.link-fadeinbg {
+    color: $jet;
+    border-bottom: 1px solid rgba($jet, 0.4);
+    @include single-transition(all, .3s, ease-in-out, 0);
+
+    &:hover,
+    &:focus {
+        color: $deep-sky-blue;
+        border-color: rgba($jet, 0);
+        background-color: rgba($color__snow, 0.5);
+    }
+
+    &:before,
+    &:after {
+        pointer-events: none;
+        backface-visibility: hidden;
+    }
+}
+
+.page { 
+    a {
+        @extend .link-fadeinbg;
+
+        &:hover {
+            @extend .link-fadeinbg:hover;
+        }
+
+        &:focus {
+            @extend .link-fadeinbg:focus;
+        }
+    }
+}
+
+.projects-preview {
+    a {
+        border: none;
+
+        .container {
+            color: rgba(255, 255, 255, 1);
+            display: block;
+            position: relative;
+
+            .overlay {
+                padding: 4em 0;
+                background: rgba($deep-sky-blue, .7);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                visibility: hidden;
+                opacity: 0;
+                @include single-transition(opacity, .3s, ease-in-out, 0);
+            }
+        }
+
+        &:hover {
+            .overlay {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.site-header .main-navigation {
+    font-family: $museo-sans-100;
+    font-weight: normal;
+    font-style: normal;
+    float: right;
+    list-style: none;
+    @include adjust-font-size-to(21px);
+    @include column-count(4);
+    @include column-gap(0);
+
+    li {
+        text-align: center;
+    }
+
+    a {
+        display: block;
+    }
+}

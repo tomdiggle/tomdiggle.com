@@ -1,0 +1,88 @@
+/* Projects shown on projects page */
+.projects {
+    @include clearfix;
+
+    .project {
+        float: left;
+        padding: 0 .2em 1.4em;
+        margin: 1.9em .4em 0;
+        border-bottom: 1px $separator-color solid;
+        
+        &:last-child {
+            border: none;
+        }
+
+        .info {
+            @include breakpoint($breakpoint-mobile-max) {
+                margin-left: 1em;
+            }
+            
+            h3 {
+                line-height: normal;
+            }
+
+            p {
+                margin: .2em 0;
+            }
+        }
+    }
+}
+
+/* Projects preview shown on the homepage */
+.projects-preview {
+    margin-top: 1.6em;
+    @include column-count(1);
+
+    @include breakpoint($breakpoint-mobile-max) {
+        @include column-count(2);
+    }
+
+    @include breakpoint($breakpoint-tablet-max) {
+        @include column-count(3);
+    }
+
+    li {
+        text-align: center;
+        border: 1px $white-smoke solid;
+        margin-bottom: 1.4em;
+        @include inline-block;
+
+        p {
+            margin-top: 1.45em;
+        }
+
+        hr {
+            background: $white-smoke;
+            border: none;
+            height: 1px;
+            width: 30%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.page {
+    ul {
+        margin: .6em 0;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+    
+    .skills {
+        @include column-count(1);
+        
+        @include breakpoint($breakpoint-tablet-max) {
+           @include column-count(3);
+        }
+    }
+
+    .skill {
+        @include inline-block;
+        width: 100px;
+    }
+}

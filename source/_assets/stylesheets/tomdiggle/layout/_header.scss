@@ -1,0 +1,61 @@
+.site-header {
+    background: $jet;
+    color: $white-smoke;
+    text-align: center;
+    
+    .logo {
+        padding: .4em;
+        
+        @include breakpoint($breakpoint-mobile-max) {
+            padding: 1em 1em 1em;
+            text-align: left;
+        }
+    }
+    
+    h1 {
+        a {
+            span {
+                color: $deep-sky-blue;
+            }
+            
+            &:hover {
+                color: $white-smoke;
+            }
+        }
+    }
+}
+
+/* Homepage has a custom page class */
+.home {
+    .site-header {
+        background-image: url('/assets/images/home-cover-01.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .logo {
+            background: rgba($jet, 0.3);
+        }
+        
+        .header-intro {
+            color: $color__snow;
+            padding: 3em 1em 6em;
+            background: rgba($jet, 0.3);
+            text-align: center;
+
+            p {
+                margin: 2.7em 0;
+                @include adjust-font-size-to(18px);
+
+                span {
+                    display: block;
+                    margin: .4em;
+            
+                    @include breakpoint($breakpoint-mobile-max) {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

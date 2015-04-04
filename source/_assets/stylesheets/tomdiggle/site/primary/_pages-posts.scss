@@ -1,0 +1,31 @@
+.page {
+    background: $color__snow;
+    padding: 1em 1em;
+}
+
+.page-header,
+.page-footer {
+    padding: .4em 1em .4em;
+    background: $white-smoke;
+    color: $jet;
+    text-align: left;
+    border-bottom: 1px $separator-color solid;
+    
+    a {
+        color: $deep-sky-blue;
+    }
+}
+
+.page-footer {
+    padding: 1em;
+    border-top: 1px $separator-color solid;
+    border-bottom: none;
+    
+    .get-in-touch {
+        text-align: center;
+        
+        a {
+            margin-top: 1.5em;
+        }
+    }
+}

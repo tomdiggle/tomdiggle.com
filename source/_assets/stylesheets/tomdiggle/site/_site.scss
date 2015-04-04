@@ -1,0 +1,26 @@
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $museo-sans-300;
+    color: $jet;
+    background: $jet;
+}
+
+::selection {
+    background: $deep-sky-blue;
+    color: $white-smoke;
+}
+
+::-moz-selection {
+    background: $deep-sky-blue;
+    color: $white-smoke;
+}
+
+@import "../layout/header";
+@import "primary/_pages-posts";
+@import "primary/_asides";
+@import "../layout/footer";

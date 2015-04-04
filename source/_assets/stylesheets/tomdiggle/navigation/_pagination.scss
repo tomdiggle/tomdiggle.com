@@ -1,0 +1,35 @@
+.page .pagination,
+.post .pagination{
+    margin-bottom: 1em;
+    text-align: center;
+    @include clearfix;
+    
+    @include breakpoint($breakpoint-tablet-max) {
+        padding-left: 20%;
+    }
+    
+    a {
+        padding: .4em 0;
+        border: none;
+    }
+    
+    .older {
+        float: left;
+        
+        &:before {
+            font-family: $font-icons;
+            content: '\e80d';
+            margin-right: .6em;
+        }
+    }
+    
+    .newer {
+        float: right;
+        
+        &:after {
+            font-family: $font-icons;
+            content: '\e80e';
+            margin-left: .6em;
+        }
+    }
+}

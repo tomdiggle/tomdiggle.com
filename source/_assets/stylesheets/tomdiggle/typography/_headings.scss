@@ -33,3 +33,21 @@ h5 {
 h6 {
     @include adjust-font-size-to(14px);
 }
+
+.home .site-header .header-intro {
+    h2 {
+        @include breakpoint($breakpoint-mobile-max) {
+            margin: 0 5em;
+        }
+
+        @include breakpoint($breakpoint-tablet-max) {
+            margin: 0 10em;
+        }
+    }
+}
+
+.page {
+    h2 {
+        border-bottom: 1px $separator-color solid;
+    }
+}

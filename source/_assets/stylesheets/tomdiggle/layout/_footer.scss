@@ -1,0 +1,63 @@
+.site-footer {
+    background: $jet;
+    @include adjust-font-size-to(14px);
+    color: $white-smoke;
+    padding: 1em;
+        
+    h3 {
+        color: tint($jet, 50%);
+        border-bottom: 1px tint($jet, 50%) solid;
+    }
+    
+    .latest-post {
+        margin-right: 8%;
+        
+        .title {
+            margin-top: .6em;
+        }
+    
+        .excerpt {
+            margin: .2em 0;
+        }
+    }
+    
+    .connect {
+        ul {
+            margin-top: .8em;
+            
+            li {
+                span {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+
+    .about-me {
+        float: right;
+
+        p {
+            margin-top: .8em;
+        }
+
+        img {
+            float: right;
+            max-width: 90px;
+            max-height: 87px;
+            display: inline;
+            margin-left: .4em;
+        }
+    }
+
+    .credits {
+        border-top: 1px tint($jet, 50%) solid;
+        margin-top: 1.5em;
+        padding-top: 1em;
+        @include clearfix;
+
+        .rss {
+            text-align: right;
+            font-size: 2em;
+        }
+    }
+}

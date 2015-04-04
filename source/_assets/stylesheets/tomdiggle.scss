@@ -3,14 +3,12 @@
 
 @import "tomdiggle/variables/variables";
 @import "compass/reset";
-@import "tomdiggle/typography/typography";
 @import "tomdiggle/grid";
-@import "tomdiggle/base";
-@import "tomdiggle/typography/copy";
-@import "tomdiggle/layout";
-@import "tomdiggle/page";
+@import "tomdiggle/typography/typography";
+@import "tomdiggle/elements/elements";
+@import "tomdiggle/forms/forms";
+@import "tomdiggle/navigation/navigation";
+@import "tomdiggle/site/site";
+@import "tomdiggle/site/secondary/widgets";
+
 @import "tomdiggle/blog";
-@import "tomdiggle/syntax-highlighting";
-@import "tomdiggle/homepage";
-@import "tomdiggle/work";
-@import "tomdiggle/contact";
