@@ -121,16 +121,11 @@ a {
     @include column-count(4);
     @include column-gap(0);
 
-    li {
+    @at-root #{&}__list {
         text-align: center;
     }
 
-    a {
+    @at-root #{&}__link {
         color: $color__snow;
-        display: block;
-        
-        &:hover {
-            color: $color__deep-sky-blue;
-        }
     }
 }
