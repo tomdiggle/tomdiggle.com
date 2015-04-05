@@ -3,14 +3,10 @@
     padding: 1em 1em;
 }
 
-.page-header {
+.page__title {
     padding: .4em 1em .4em;
     background: $color__white-smoke;
     color: $color__jet;
     text-align: left;
     border-bottom: 1px $separator-color solid;
-    
-    a {
-        color: $color__deep-sky-blue;
-    }
 }
