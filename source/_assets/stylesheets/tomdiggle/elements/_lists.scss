@@ -26,39 +26,26 @@
     }
 }
 
-/* Projects preview shown on the homepage */
-.projects-preview {
-    margin-top: 1.6em;
-    @include column-count(1);
+/* Latest work section on homepage */
+.latest-work {
+    @at-root #{&}__row {
+        margin-top: 1.6em;
+        @include column-count(1);
 
-    @include breakpoint($breakpoint-mobile-max) {
-        @include column-count(2);
+        @include breakpoint($breakpoint-mobile-max) {
+            @include column-count(2);
+        }
+
+        @include breakpoint($breakpoint-tablet-max) {
+            @include column-count(3);
+        }
     }
-
-    @include breakpoint($breakpoint-tablet-max) {
-        @include column-count(3);
-    }
-
-    li {
-        text-align: center;
-        border: 1px $color__white-smoke solid;
+    
+    @at-root #{&}__list {
+        border: 1px solid $color__white-smoke;
         margin-bottom: 1.4em;
         @include inline-block;
-
-        p {
-            margin-top: 1.45em;
-        }
-
-        hr {
-            background: $color__white-smoke;
-            border: none;
-            height: 1px;
-            width: 30%;
-        }
-
-        img {
-            max-width: 100%;
-        }
+        width: 100%;
     }
 }
 

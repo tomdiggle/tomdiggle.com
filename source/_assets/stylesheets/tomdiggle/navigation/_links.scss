@@ -78,37 +78,8 @@ a {
     }
 }
 
-.projects-preview {
-    a {
-        border: none;
-
-        .container {
-            color: rgba(255, 255, 255, 1);
-            display: block;
-            position: relative;
-
-            .overlay {
-                padding: 4em 0;
-                background: rgba($color__deep-sky-blue, .7);
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: block;
-                visibility: hidden;
-                opacity: 0;
-                @include single-transition(opacity, .3s, ease-in-out, 0);
-            }
-        }
-
-        &:hover {
-            .overlay {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
-    }
+.latest-work__link {
+    width: 100%;
 }
 
 .main-navigation {

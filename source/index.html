@@ -6,33 +6,39 @@ twitter_description: Tom Diggle is a passionate iOS & front end developer based 
 ---
 <div class="page">
     <div class="container">
-        <h2>Latest work</h2>
-        <ul class="projects-preview">
-            <li>
-                <a href="{{ site.baseurl }}/work/">
-                    <span class="container">
-                        {% image preview-jjd.jpg %}
-                        <span class="overlay">
-                            <h3>J.J. Diggle</h3>
-                            <hr>
-                            <p>Web Design</p>
+        <section id="latest-work" class="latest-work">
+            <h2>Latest work</h2>
+            <ul class="latest-work__row">
+                <li class="latest-work__list">
+                    <a href="{{ site.baseurl }}/work/" class="latest-work__link">
+                        <span class="latest-work__preview">
+                            {% image preview-jjd.jpg class="image" alt="J.J. Diggle" %}
+                            <span class="latest-work__preview-overlay">
+                                <h3>J.J. Diggle</h3>
+                                <p>Web Design</p>
+                            </span>
                         </span>
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ site.baseurl }}/work/">
-                    <span class="container">
-                        {% image preview-nsbrief.jpg %}
-                        <span class="overlay">
-                            <h3>NSBrief</h3>
-                            <hr>
-                            <p>Web Design</p>
+                    </a>
+                    <p class="latest-work__copy">
+                        <a href="{{ site.baseurl }}/work/">J.J. Diggle</a>
+                    </p>
+                </li>
+                <li class="latest-work__list">
+                    <a href="{{ site.baseurl }}/work/" class="latest-work__link">
+                        <span class="latest-work__preview">
+                            {% image preview-nsbrief.jpg class="image" alt="NSBrief Podcast" %}
+                            <span class="latest-work__preview-overlay">
+                                <h3>NSBrief</h3>
+                                <p>Web Design</p>
+                            </span>
                         </span>
-                    </span>
-                </a>
-            </li>
-        </ul>
+                    </a>
+                    <p class="latest-work__copy">
+                        <a href="{{ site.baseurl }}/work/">NSBrief</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
     </div>
 </div>
 
