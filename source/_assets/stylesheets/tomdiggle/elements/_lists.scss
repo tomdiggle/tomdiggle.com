@@ -57,17 +57,17 @@ ol {
     ul {
         margin: .6em 0;
     }
-    
-    .skills {
-        @include column-count(1);
-        
-        @include breakpoint($breakpoint-tablet-max) {
-           @include column-count(3);
-        }
-    }
+}
 
-    .skill {
-        @include inline-block;
-        width: 100px;
+.skills {
+    @include column-count(1);
+    
+    @include breakpoint($breakpoint-tablet-max) {
+       @include column-count(3);
     }
+}
+
+.skill {
+    @include inline-block;
+    width: 100px;
 }
