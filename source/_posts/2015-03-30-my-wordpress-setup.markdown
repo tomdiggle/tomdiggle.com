@@ -29,7 +29,7 @@ VVV also has a dashboard containing several usefully tools which can be accessed
 ### Variable VVV
 > [VV](https://github.com/bradp/vv) makes it extremely easy to create a new WordPress site using Varying Vagrant Vagrants. vv supports site creation with many different options; site blueprints to set up all your plugins, themes, and more; deployments; and lots more features.
 
-Using one command you can quickly and easily create a WordPress site. You can also create a [blueprint](https://github.com/bradp/vv#blueprints) which in can setup different plugins, themes, options that will be installed when you create a new site. Blueprints can save a lot time because you don’t have to manually install plugins or themes and can be distributed between team members. vv is also available via [Homebrew](http://brew.sh).
+Using one command you can quickly and easily create a WordPress site. You can also create a [blueprint](https://github.com/bradp/vv#blueprints) which can setup different plugins, themes, options that will be installed when you create a new site. Blueprints can save a lot time because you don’t have to manually install plugins or themes and can be distributed between team members. vv is also available via [Homebrew](http://brew.sh).
 
 ### Vassh
 When connecting to your Vagrant environment via ssh you have to `cd` to the directory you want to run the command that needs to be executed. [Vassh](https://github.com/xwp/vassh) solves this problem by making sure you start out in the corresponding directory. Vassh is also available via [Homebrew](http://brew.sh).
