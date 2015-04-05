@@ -1,20 +1,19 @@
-.page .pagination,
-.post .pagination{
+.pagination {
     margin-bottom: 1em;
     text-align: center;
-    
+
     @include breakpoint($breakpoint-tablet-max) {
         padding-left: 20%;
     }
-    
-    a {
+
+    @at-root #{&}__link {
         padding: .4em 0;
         border: none;
     }
     
-    .older {
+    @at-root #{&}__previous {
         float: left;
-        
+
         &:before {
             font-family: $font-icons;
             content: '\e80d';
@@ -22,9 +21,9 @@
         }
     }
     
-    .newer {
+    @at-root #{&}__next {
         float: right;
-        
+
         &:after {
             font-family: $font-icons;
             content: '\e80e';

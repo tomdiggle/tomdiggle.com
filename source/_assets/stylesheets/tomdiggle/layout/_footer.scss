@@ -3,6 +3,14 @@
     @include adjust-font-size-to(14px);
     color: $color__white-smoke;
     padding: 1em;
+    
+    a {
+        color: $color__snow;
+        
+        &:hover {
+            color: $color__deep-sky-blue;
+        }
+    }
         
     h3 {
         color: tint($color__jet, 50%);

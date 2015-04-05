@@ -14,10 +14,12 @@
     
     h1 {
         a {
+            color: $color__snow;
+
             span {
                 color: $color__deep-sky-blue;
             }
-            
+
             &:hover {
                 color: $color__white-smoke;
             }

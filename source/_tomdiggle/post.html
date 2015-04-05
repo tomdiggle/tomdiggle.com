@@ -8,10 +8,12 @@ layout: page
 </div>
 
 <div class="pagination cf">
+    <nav role="navigation">
     {% if page.previous %}
-        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" class="older" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__link pagination__previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
     {% endif %}
     {% if page.next %}
-        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" class="newer" title="{{ page.next.title }}">{{ page.next.title }}</a>
+        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__link pagination__next" title="{{ page.next.title }}">{{ page.next.title }}</a>
     {% endif %}
+    </nav>
 </div>

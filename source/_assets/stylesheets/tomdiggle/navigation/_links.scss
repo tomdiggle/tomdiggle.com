@@ -1,5 +1,5 @@
 a {
-    color: $color__snow;
+    color: $color__jet;
     outline: none;
     text-decoration: none;
     position: relative;
@@ -32,30 +32,31 @@ a {
         content: '\e804';
         margin-left: .6em;
     }
-}
+    
+    @at-root #{&}--large {
+        padding: .8em 3em;
+        @include adjust-font-size-to(18px);
+    }
 
-.btn--large {
-    padding: .8em 3em;
-    @include adjust-font-size-to(18px);
-}
+    @at-root #{&}--white {
+        color: $color__snow;
+        border: 1px $color__snow solid;
 
-.btn--white {
-    color: $color__snow;
-    border: 1px $color__snow solid;
-
-    &:hover {
-        border: 1px $color__deep-sky-blue solid;
+        &:hover {
+            border: 1px $color__deep-sky-blue solid;
+        }
     }
 }
 
-.more {
+.link-more {
+    color: $color__snow;
     border: none;
-}
 
-.more:after {
-    font-family: $font-icons;
-    content: '\e805';
-    margin-left: .6em;
+    &:after {
+        font-family: $font-icons;
+        content: '\e805';
+        margin-left: .6em;
+    }
 }
 
 .link-fadeinbg {
@@ -77,19 +78,19 @@ a {
     }
 }
 
-.page { 
-    a {
-        @extend .link-fadeinbg;
-
-        &:hover {
-            @extend .link-fadeinbg:hover;
-        }
-
-        &:focus {
-            @extend .link-fadeinbg:focus;
-        }
-    }
-}
+// .page { 
+//     a {
+//         @extend .link-fadeinbg;
+// 
+//         &:hover {
+//             @extend .link-fadeinbg:hover;
+//         }
+// 
+//         &:focus {
+//             @extend .link-fadeinbg:focus;
+//         }
+//     }
+// }
 
 .projects-preview {
     a {
@@ -139,6 +140,11 @@ a {
     }
 
     a {
+        color: $color__snow;
         display: block;
+        
+        &:hover {
+            color: $color__deep-sky-blue;
+        }
     }
 }
