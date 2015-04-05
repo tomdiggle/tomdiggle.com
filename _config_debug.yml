@@ -30,7 +30,7 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/posts
-  css_compressor: sass
+  css_compressor: 
   cache: false
 
 # Analytics
