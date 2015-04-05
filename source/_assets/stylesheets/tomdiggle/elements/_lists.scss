@@ -1,3 +1,7 @@
+ol {
+    list-style-type: decimal;
+}
+
 /* Projects shown on projects page */
 .projects {
     .project {
@@ -52,10 +56,6 @@
 .page {
     ul {
         margin: .6em 0;
-    }
-
-    ol {
-        list-style-type: decimal;
     }
     
     .skills {
