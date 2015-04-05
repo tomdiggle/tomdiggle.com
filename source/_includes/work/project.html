@@ -1,18 +1,13 @@
-<li class="project" id="{{ project.anchor }}">
-    <article>
-        <div class="grid-60 grid-mobile-100 image">
-            <img src="{{ project.image | asset_path }}" alt="Preview of {{ project.title }}">
-        </div>
-        <div class="grid-33 grid-mobile-100 info">
-            <h3>
-                {{ project.title }}
-                <em><p><a href="{{ project.url }}" class="link-more">{{ project.url }}</a></p></em>
-            </h3>
-            <p>{{ project.description }}</p>
-            <h4>Roles</h4>
-            <p>{{ project.roles }}</p>
-            <h4>Launched</h4>
-            <p>{{ project.launched }}</p>
-        </div>
-    </article>
+<li id="{{ project.anchor }}" class="project">
+    <div class="image grid-60 grid-mobile-100">
+        <img src="{{ project.image | asset_path }}" alt="Preview of {{ project.title }}">
+    </div>
+    <div class="project__info grid-33 grid-mobile-100">
+        <h3 class="project__title">{{ project.title }}<em><p><a href="{{ project.url }}" class="link-more link-more--reverse">{{ project.url }}</a></p></em></h3>
+        <p class="project__copy">{{ project.description }}</p>
+        <h4>Roles</h4>
+        <p class="project__copy">{{ project.roles }}</p>
+        <h4>Launched</h4>
+        <p class="project__copy">{{ project.launched }}</p>
+    </div>
 </li>
