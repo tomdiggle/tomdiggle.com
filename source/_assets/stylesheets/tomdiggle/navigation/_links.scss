@@ -34,18 +34,18 @@ a {
     }
 }
 
-.home .site-header .btn {
-    color: #FFFFFF;
-    border: 1px #FFFFFF solid;
+.btn--large {
+    padding: .8em 3em;
+    @include adjust-font-size-to(18px);
+}
+
+.btn--white {
+    color: $color__snow;
+    border: 1px $color__snow solid;
 
     &:hover {
         border: 1px $color__deep-sky-blue solid;
     }
-}
-
-.btn.large {
-    padding: .8em 3em;
-    @include adjust-font-size-to(18px);
 }
 
 .more {
