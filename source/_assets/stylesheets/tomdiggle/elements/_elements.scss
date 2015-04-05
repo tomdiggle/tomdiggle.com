@@ -14,6 +14,10 @@ label {
     margin-bottom: .4em;
 }
 
+section {
+    margin-bottom: .6em;
+}
+
 .latest-work {
     @at-root #{&}__preview {
         display: block;
@@ -31,7 +35,6 @@ label {
         top: 0;
         left: 0;
         display: block;
-//         visibility: hidden;
         opacity: 0;
         -webkit-transition: opacity 0.3s ease-in-out;
         -moz-transition: opacity 0.3s ease-in-out;
@@ -40,7 +43,6 @@ label {
         transition: opacity 0.3s ease-in-out;
 
         &:hover {
-//             visibility: visible;
             opacity: 1;
         }
     }
@@ -56,8 +58,7 @@ label {
     margin: .2em 0;
 }
 
-// .page {
-//     p {
-//         margin: .6em 0;
-//     }
-// }
+.post__content p {
+    margin: .6em 0;
+}
+

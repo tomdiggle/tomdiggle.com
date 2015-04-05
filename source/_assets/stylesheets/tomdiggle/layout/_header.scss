@@ -15,13 +15,16 @@
     h1 {
         a {
             color: $color__snow;
+            border-color: transparent;
 
+            &:hover,
+            &:focus {
+                border-color: transparent;
+                background-color: transparent;
+            }
+            
             span {
                 color: $color__deep-sky-blue;
-            }
-
-            &:hover {
-                color: $color__white-smoke;
             }
         }
     }

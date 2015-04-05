@@ -1,7 +1,8 @@
 blockquote {
+    background: $color__white-smoke;
     margin: 0 1.5em;
     padding: .8em .4em .4em;
-    border-left: 2px solid #cccccc;
+    border-left: 2px solid $color__deep-sky-blue;
 }
 
 pre {

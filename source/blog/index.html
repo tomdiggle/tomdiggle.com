@@ -4,14 +4,12 @@ title: Blog
 twitter_description: The blog of Tom Diggle.
 ---
 {% assign index = true %}
-<div class="posts">
 {% for post in paginator.posts %}
 {% assign content = post.excerpt %}
-    <article class="post">
+    <article class="post cf">
         {% include post.html %}
     </article>
 {% endfor %}
-</div>
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination cf">

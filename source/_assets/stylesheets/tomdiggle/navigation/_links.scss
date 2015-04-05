@@ -4,11 +4,32 @@ a {
     text-decoration: none;
     position: relative;
     display: inline-block;
-    @include single-transition(color, .3s, ease-in-out, 0);
+    border-bottom: 1px solid rgba($color__jet, 0.4);
+    @include single-transition(all, .3s, ease-in-out, 0);
 
     &:hover,
-    &:active {
+    &:focus {
         color: $color__deep-sky-blue;
+        border-color: rgba($color__jet, 0);
+        background-color: rgba($color__snow, 0.5);
+    }
+
+    &:before,
+    &:after {
+        pointer-events: none;
+        backface-visibility: hidden;
+    }
+}
+
+.main-navigation__link {
+    color: $color__snow;
+    border-color: transparent;
+
+    &:hover,
+    &:focus {
+        color: $color__deep-sky-blue;
+        border-color: $color__deep-sky-blue;
+        background-color: transparent;
     }
 }
 
@@ -48,6 +69,31 @@ a {
     }
 }
 
+.latest-work__image-link {
+    width: 100%;
+    border: none;
+}
+
+.latest-work__link {
+    border: none;
+}
+
+.post__meta a {
+    border: none;
+}
+
+.post__continue-reading {
+    margin-top: .2em;
+    border: none;
+    @include adjust-font-size-to(14px);
+
+    &:after {
+        font-family: $font-icons;
+        content: '\e80e';
+        margin-left: .6em;
+    }
+}
+
 .link-more {
     color: $color__snow;
     border: none;
@@ -61,46 +107,4 @@ a {
 
 .link-more--reverse {
     color: $color__jet;
-}
-
-.link-fadeinbg {
-    color: $color__jet;
-    border-bottom: 1px solid rgba($color__jet, 0.4);
-    @include single-transition(all, .3s, ease-in-out, 0);
-
-    &:hover,
-    &:focus {
-        color: $color__deep-sky-blue;
-        border-color: rgba($color__jet, 0);
-        background-color: rgba($color__snow, 0.5);
-    }
-
-    &:before,
-    &:after {
-        pointer-events: none;
-        backface-visibility: hidden;
-    }
-}
-
-.latest-work__link {
-    width: 100%;
-}
-
-.main-navigation {
-    font-family: $museo-sans-100;
-    font-weight: normal;
-    font-style: normal;
-    float: right;
-    list-style: none;
-    @include adjust-font-size-to(21px);
-    @include column-count(4);
-    @include column-gap(0);
-
-    @at-root #{&}__list {
-        text-align: center;
-    }
-
-    @at-root #{&}__link {
-        color: $color__snow;
-    }
 }

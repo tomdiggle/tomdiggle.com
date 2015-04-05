@@ -2,9 +2,23 @@ ol {
     list-style-type: decimal;
 }
 
+.main-navigation {
+    font-family: $museo-sans-100;
+    font-weight: normal;
+    font-style: normal;
+    float: right;
+    list-style: none;
+    @include adjust-font-size-to(21px);
+    @include column-count(4);
+    @include column-gap(0);
+
+    @at-root #{&}__list {
+        text-align: center;
+    }
+}
+
 /* Projects shown on work page */
 .project {
-    float: left;
     padding: 0 .2em 1.4em;
     margin: 1.9em .4em 0;
     border-bottom: 1px $separator-color solid;
@@ -42,12 +56,6 @@ ol {
         width: 100%;
     }
 }
-
-// .page {
-//     ul {
-//         margin: .6em 0;
-//     }
-// }
 
 .skills {
     @include column-count(1);

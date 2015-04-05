@@ -8,5 +8,82 @@
     background: $color__white-smoke;
     color: $color__jet;
     text-align: left;
-    border-bottom: 1px $separator-color solid;
+    border-bottom: 1px solid $separator-color;
+}
+
+.post {
+    padding-bottom: 2em;
+    margin-top: 1.4em;
+    border-bottom: 1px solid $separator-color;
+    
+    &:first-of-type{
+        margin-top: 0;
+    }
+    
+    &:last-of-type {
+        border: none;
+    }
+}
+
+.post__content p:first-child {
+    margin-top: 0;
+}
+
+/* TODO: Needs Refactoring */
+.blog-categories {
+    h2 {
+        display: none;
+        
+        @include breakpoint($breakpoint-mobile-max) {
+            display: inline-block;
+            float: left;
+            border: none;
+        }
+    }
+    
+    a {
+        border: none;
+    }
+    
+    article {
+        position: relative;
+        
+        @include breakpoint($breakpoint-mobile-max) {
+            padding-left: 5em;
+            margin-left: 5em;
+        }
+        
+        h3 {
+            border: none;
+        }
+        
+        time {
+            color: tint($color__jet, 20%);
+            
+            @include breakpoint($breakpoint-mobile-max) {
+                position: absolute;
+                text-align: right;
+                left: 0em;
+                top: .6em;
+                
+                .year {
+                    display: none;
+                }
+            }
+        }
+        
+        .categories {
+            a {
+                color: tint($color__jet, 20%);
+                
+                // &:hover {
+//                     @extend .link-fadeinbg:hover;
+//                 }
+//                 
+//                 &:focus {
+//                     @extend .link-fadeinbg:focus;
+//                 }
+            }
+        }
+    }
 }

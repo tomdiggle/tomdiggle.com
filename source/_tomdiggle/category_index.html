@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<div class="blog-archives">
+<div class="blog-categories">
     {% for post in site.categories[page.category] %}
     <h2>{{ post.date | date: "%Y" }}</h2>
     <article>
@@ -14,4 +14,4 @@ layout: page
         <div class="categories">{{ post.categories | category_links }}</div>
     </article>
     {% endfor %}
-</div>
+</div> 

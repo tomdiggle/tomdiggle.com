@@ -44,10 +44,23 @@ h6 {
     }
 }
 
-.page h2 {
+.site-main section h2 {
     border-bottom: 1px $separator-color solid;
+    margin-bottom: .6em;
 }
 
 .project__title {
     line-height: normal;
+}
+
+.post__title {
+    border: none;
+
+    a {
+        border: none;
+    }
+
+    @include breakpoint($breakpoint-tablet-max) {
+        padding-left: 20%;
+    }
 }
