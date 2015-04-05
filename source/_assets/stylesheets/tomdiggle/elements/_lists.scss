@@ -1,7 +1,5 @@
 /* Projects shown on projects page */
 .projects {
-    @include clearfix;
-
     .project {
         float: left;
         padding: 0 .2em 1.4em;

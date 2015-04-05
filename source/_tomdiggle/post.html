@@ -7,7 +7,7 @@ layout: page
     </article>
 </div>
 
-<div class="pagination">
+<div class="pagination cf">
     {% if page.previous %}
         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" class="older" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
     {% endif %}

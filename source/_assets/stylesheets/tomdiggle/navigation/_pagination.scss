@@ -2,7 +2,6 @@
 .post .pagination{
     margin-bottom: 1em;
     text-align: center;
-    @include clearfix;
     
     @include breakpoint($breakpoint-tablet-max) {
         padding-left: 20%;

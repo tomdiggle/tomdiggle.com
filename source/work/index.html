@@ -5,21 +5,21 @@ description: You can see some of my work below. As I complete more, I'll add it 
 twitter_description: A small collection of my latest work.
 ---
 <h2 id="freelance">Freelance</h2>
-<ul class="projects">
+<ul class="projects cf">
     {% for project in site.data.work_freelance %}
         {% include work/project.html %}
     {% endfor %}
 </ul>
 
 <h2 id="personal">Personal</h2>
-<ul class="projects">
+<ul class="projects cf">
     {% for project in site.data.work_personal %}
         {% include work/project.html %}
     {% endfor %}
 </ul>
 
 <h2 id="opensource">Open Source</h2>
-<ul class="projects">
+<ul class="projects cf">
     {% for project in site.data.work_opensource %}
         {% include work/project.html %}
     {% endfor %}
