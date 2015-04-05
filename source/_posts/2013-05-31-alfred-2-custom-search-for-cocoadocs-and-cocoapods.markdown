@@ -2,7 +2,7 @@
 layout: post
 title: "Alfred 2 Custom Search for CocoaDocs &amp; CocoaPods"
 date: 2013-05-31 09:08
-categories: Alfred CocoaDocs CocoaPods
+categories: Alfred
 vanityurlpath: 1234
 twitter_description: Alfred 2 Custom Search for CocoaDocs &amp; CocoaPods.
 ---

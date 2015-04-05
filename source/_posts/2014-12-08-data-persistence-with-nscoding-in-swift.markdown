@@ -2,7 +2,7 @@
 layout: post
 title: "Data Persistence with NSCoding in Swift"
 date: 2014-12-08 12:52
-categories: Swift NSCoding NSKeyedArchiver NSKeyedUnarchiver Wager
+categories: Swift
 vanityurlpath:
 twitter_description: Data Persistence with NSCoding in Swift
 ---

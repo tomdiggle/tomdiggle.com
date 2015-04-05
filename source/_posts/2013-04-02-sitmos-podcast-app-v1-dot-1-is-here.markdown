@@ -2,7 +2,7 @@
 layout: post
 title: "SITMOS - Podcast App v1.1 is here"
 date: 2013-04-02 11:57
-categories: iOS SITMOS
+categories: iOS
 vanityurlpath: 1234
 twitter_description: Introducing SITMOS - Podcast App v1.1.
 ---

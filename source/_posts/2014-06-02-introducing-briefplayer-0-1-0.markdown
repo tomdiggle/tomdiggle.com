@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing BriefPlayer 0.1.0"
 date: 2014-06-02 21:22
-categories: JavaScript BriefPlayer SoundManager2
+categories: JavaScript
 vanityurlpath: 1234
 twitter_description: Introducing BriefPlayer 0.1.0.
 ---

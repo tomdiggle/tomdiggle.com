@@ -2,7 +2,7 @@
 layout: post
 title: "A Contact Form Using AJAX and PHP"
 date: 2014-10-20 15:00
-categories: JavaScript AJAX jQuery PHP HTML5
+categories: JavaScript
 vanityurlpath:
 twitter_description: A Contact Form Using AJAX and PHP
 ---
