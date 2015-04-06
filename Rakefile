@@ -7,7 +7,6 @@ source_dir = "source"
 posts_dir = "_posts"
 new_post_ext = "markdown"
 
-# Usage
 desc "Create a new post in #{source_dir}/#{posts_dir}"
 task :new_post, :title do |t, args|
   if args.title
@@ -35,8 +34,22 @@ task :new_post, :title do |t, args|
   end
 end
 
-## Helper Methods
+desc "Start Jekyll using the debug config"
+task :serve do
+  sh "jekyll serve -w --config _config_debug.yml"
+end
 
+desc "Build the production site"
+task :build do
+  sh "jekyll build --config _config.yml"
+end
+
+desc "Build the staging site"
+task :build_staging do
+  sh "jekyll build --config _config_debug.yml"
+end
+
+## Helper Methods
 def get_stdin(message)
   print message
   STDIN.gets.chomp
