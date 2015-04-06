@@ -99,6 +99,12 @@ a {
     color: $color__snow;
     border: none;
 
+    &:hover,
+    &:focus {
+        border-color: transparent;
+        background-color: transparent;
+    }
+
     &:after {
         font-family: $font-icons;
         content: '\e805';
