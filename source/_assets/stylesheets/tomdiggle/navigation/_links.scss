@@ -115,3 +115,30 @@ a {
 .link-more--reverse {
     color: $color__jet;
 }
+
+.pagination__link {
+    padding: .4em 0;
+    border: none;
+
+    @at-root #{&}--previous {
+        float: left;
+        text-align: left;
+
+        &:before {
+            font-family: $font-icons;
+            content: '\e80d';
+            margin-right: .6em;
+        }
+    }
+
+    @at-root #{&}--next {
+        float: right;
+        text-align: right;
+
+        &:after {
+            font-family: $font-icons;
+            content: '\e80e';
+            margin-left: .6em;
+    }
+}
+}

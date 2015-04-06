@@ -5,29 +5,4 @@
     @include breakpoint($breakpoint-tablet-max) {
         padding-left: 20%;
     }
-
-    @at-root #{&}__link {
-        padding: .4em 0;
-        border: none;
-    }
-    
-    @at-root #{&}__previous {
-        float: left;
-
-        &:before {
-            font-family: $font-icons;
-            content: '\e80d';
-            margin-right: .6em;
-        }
-    }
-    
-    @at-root #{&}__next {
-        float: right;
-
-        &:after {
-            font-family: $font-icons;
-            content: '\e80e';
-            margin-left: .6em;
-        }
-    }
 }
