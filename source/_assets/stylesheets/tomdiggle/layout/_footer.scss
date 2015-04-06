@@ -6,9 +6,12 @@
     
     a {
         color: $color__snow;
-        
-        &:hover {
+
+        &:hover,
+        &:focus {
             color: $color__deep-sky-blue;
+            border-color: transparent;
+            background-color: transparent;
         }
     }
         
