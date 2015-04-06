@@ -30,8 +30,8 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/posts
-  css_compressor: 
-  cache: false
+  js_compressor: uglifier
+  css_compressor: sass
 
 # Analytics
 google_analytics_tracking_id: UA-39506392-1
