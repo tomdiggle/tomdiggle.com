@@ -55,6 +55,7 @@ a {
     }
     
     @at-root #{&}--large {
+        margin-bottom: .1em;
         padding: .8em 3em;
         @include adjust-font-size-to(18px);
     }
