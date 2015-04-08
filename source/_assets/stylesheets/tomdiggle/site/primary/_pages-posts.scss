@@ -8,13 +8,13 @@
     background: $color__white-smoke;
     color: $color__jet;
     text-align: left;
-    border-bottom: 1px solid $separator-color;
+    border-bottom: 1px solid $color__light-grey;
 }
 
 .post {
     padding-bottom: 2em;
     margin-top: 1.4em;
-    border-bottom: 1px solid $separator-color;
+    border-bottom: 1px solid $color__light-grey;
     
     &:first-of-type{
         margin-top: 0;
