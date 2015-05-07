@@ -80,7 +80,12 @@ a {
 }
 
 .post__meta a {
+    color: tint($color__jet, 15%);
     border: none;
+
+    &:hover {
+        color: $color__deep-sky-blue;
+    }
 }
 
 .post__continue-reading {
@@ -139,6 +144,6 @@ a {
             font-family: $font-icons;
             content: '\e80e';
             margin-left: .6em;
+        }
     }
-}
 }
