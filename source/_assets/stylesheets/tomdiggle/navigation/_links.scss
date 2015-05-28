@@ -22,6 +22,9 @@ a {
 }
 
 .site-branding__link {
+    border-color: transparent;
+    background-color: transparent;
+        
     &:hover {
         border-color: transparent;
         background-color: transparent;
