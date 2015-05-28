@@ -5,9 +5,9 @@
 }
 
 body {
+    background: $color__background-body;
+    color: $color__text-main;
     font-family: $museo-sans-300;
-    color: $color__jet;
-    background: $color__jet;
 }
 
 ::selection {
