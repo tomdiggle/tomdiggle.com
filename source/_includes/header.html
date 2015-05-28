@@ -6,18 +6,14 @@
                 <li class="main-navigation__list"><a href="{{ site.baseurl }}/about/" class="main-navigation__link">About</a></li>
                 <li class="main-navigation__list"><a href="{{ site.baseurl }}/work/" class="main-navigation__link">Work</a></li>
                 <li class="main-navigation__list"><a href="{{ site.baseurl }}/contact/" class="main-navigation__link">Contact</a></li>
-                <li class="main-navigation__list"><a href="{{ site.baseurl }}/blog/" class="main-navigation__link">Blog</a></li>
+                <li class="main-navigation__list"><a href="{{ site.baseurl }}/" class="main-navigation__link">Blog</a></li>
             </menu>
         </div>
     </div>
-    {% if page.path == "index.html" %}
-        {% include custom/header_homepage.html %}
-    {% else %}
-        <div class="page__title">
-            <div class="container">
-                <h2>{{ page.title }}</h2>
-                <p>{{ page.description }}</p>
-            </div>
+    <div class="page__title">
+        <div class="container">
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.description }}</p>
         </div>
-    {% endif %}
+    </div>
 </header>
