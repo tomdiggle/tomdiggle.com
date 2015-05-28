@@ -6,19 +6,15 @@ twitter_description: Contact Tom Diggle.
 custom_js:
 - contact
 ---
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6">
-            <form action="{{ site.baseurl }}/assets/contact.php" method="post" id="form_contact" class="form-contact" role="form">
-                <div id="form_contact_message"></div>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
-                <button type="submit" id="form_contact_submit">Send Message</button>
-            </form>
-        </div>
-    </div>
+<div class="col-sm-6">
+    <form action="{{ site.baseurl }}/assets/contact.php" method="post" id="form_contact" class="form-contact" role="form">
+        <div id="form_contact_message"></div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+        <button type="submit" id="form_contact_submit">Send Message</button>
+    </form>
 </div>
