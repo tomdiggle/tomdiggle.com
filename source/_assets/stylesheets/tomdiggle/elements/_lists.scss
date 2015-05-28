@@ -3,14 +3,18 @@ ol {
 }
 
 .main-navigation {
+    padding: 0;
     font-family: $museo-sans-100;
     font-weight: normal;
     font-style: normal;
-    float: right;
-    list-style: none;
+    width: 100%;
     @include adjust-font-size-to(21px);
-    @include column-count(4);
+    @include column-count(3);
     @include column-gap(0);
+    
+    @include breakpoint($breakpoint__sm-min) {
+        padding: .3em 0 0;
+    }
 
     @at-root #{&}__list {
         text-align: center;

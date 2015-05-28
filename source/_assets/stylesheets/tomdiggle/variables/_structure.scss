@@ -7,6 +7,11 @@ $legacy-support-for-mozilla: false;
 $experimental-support-for-opera: false;
 
 // Layout
+$breakpoint__sm-min: 768px;
+$breakpoint__md-min: 992px;
+$breakpoint__lg-min: 1200px;
+
+// Unused
 $max-width: 1024px;
 $breakpoint-tablet-max: 1024px;
 $breakpoint-tablet-min: 611px;

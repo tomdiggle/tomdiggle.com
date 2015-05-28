@@ -21,6 +21,13 @@ a {
     }
 }
 
+.site-branding__link {
+    &:hover {
+        border-color: transparent;
+        background-color: transparent;
+    }
+}
+
 .main-navigation__link {
     color: $color__snow;
     border-color: transparent;
