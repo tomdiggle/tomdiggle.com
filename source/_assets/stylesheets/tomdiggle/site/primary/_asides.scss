@@ -2,8 +2,4 @@
     margin-bottom: 1em;
     color: tint($color__jet, 15%);
     @include adjust-font-size-to(14px);
-
-    @include breakpoint($breakpoint-tablet-max) {
-        padding-right: .4em;
-    }
 }

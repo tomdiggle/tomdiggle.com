@@ -37,6 +37,7 @@ h6 {
 .site-main section h2 {
     border-bottom: 1px $color__light-grey solid;
     margin-bottom: .6em;
+    padding-left: 15px;
 }
 
 .project__title {
@@ -45,12 +46,17 @@ h6 {
 
 .post__title {
     border: none;
+    padding-left: 15px;
 
     a {
         border: none;
     }
 
-    @include breakpoint($breakpoint-tablet-max) {
-        padding-left: 20%;
+    @include breakpoint($breakpoint__sm-min) {
+        padding-left: 27%;
+    }
+
+    @include breakpoint($breakpoint__md-min) {
+        padding-left: 18%;
     }
 }

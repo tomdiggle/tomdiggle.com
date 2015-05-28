@@ -6,13 +6,13 @@ twitter_description: iOS and Front End Developer.
 {% assign index = true %}
 {% for post in paginator.posts %}
 {% assign content = post.excerpt %}
-    <article class="post cf">
+    <article class="post col-xs-12">
         {% include post.html %}
     </article>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
-<div class="pagination cf">
+<div class="pagination col-xs-12">
     <nav class="cf" role="navigation">
     {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__link pagination__link--previous" title="View older posts">Older</a>

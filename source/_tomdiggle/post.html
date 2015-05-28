@@ -1,11 +1,11 @@
 ---
 layout: page
 ---
-<article class="post cf">
+<article class="post col-xs-12">
     {% include post.html %}
 </article>
 
-<div class="pagination cf">
+<div class="pagination col-xs-12">
     <nav role="navigation" class="cf">
     {% if page.previous %}
         <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__link pagination__link--previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
