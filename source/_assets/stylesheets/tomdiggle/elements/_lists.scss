@@ -10,7 +10,7 @@ ol {
     list-style: none;
     width: 100%;
     @include adjust-font-size-to(21px);
-    @include column-count(3);
+    @include column-count(2);
     @include column-gap(0);
     
     @include breakpoint($breakpoint__sm-min) {

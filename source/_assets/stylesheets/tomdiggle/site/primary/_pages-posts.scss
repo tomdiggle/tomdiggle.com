@@ -1,12 +1,12 @@
 .page {
     background: $color__snow;
-    padding: 1em 1em;
+    padding: 1em 0;
 }
 
 .page__title {
-    padding: .4em 1em .4em;
+    padding: .4em 0 .4em;
     background: $color__white-smoke;
-    color: $color__jet;
+    color: $color__text-main;
     text-align: left;
     border-bottom: 1px solid $color__light-grey;
 }
