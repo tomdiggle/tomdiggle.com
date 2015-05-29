@@ -15,7 +15,7 @@ twitter_description: iOS and Front End Developer.
 
 {% if paginator.total_pages > 1 %}
 <div class="container">
-    <div class="pagination col-xs-12">
+    <div class="pagination">
         <nav class="cf" role="navigation">
         {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__link pagination__link--previous" title="View older posts">Older</a>

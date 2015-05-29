@@ -2,7 +2,11 @@
     margin-bottom: 1em;
     text-align: center;
 
-    @include breakpoint($breakpoint-tablet-max) {
-        padding-left: 20%;
+    @include breakpoint($breakpoint__sm-min) {
+        padding-left: 26%;
+    }
+
+    @include breakpoint($breakpoint__md-min) {
+        padding-left: 17%;
     }
 }
