@@ -1,6 +1,9 @@
 {% if index %}
 <header class="post__header"><h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2></header>
+{% else %}
+<header class="post__header"><h2 class="post__title">{{ page.title }}</h2></header>
 {% endif %}
+<div class="row">
 <aside class="post__meta col-sm-3 col-md-2">
     {% include post/meta.html %}
 </aside>
@@ -10,3 +13,4 @@
     <a href="{{ post.url }}" class="post__continue-reading" title="Continue reading {{ post.title }}">Continue reading</a>
     {% endif %}
 </section>
+</div>
