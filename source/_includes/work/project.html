@@ -1,8 +1,8 @@
-<li id="{{ project.anchor }}" class="project cf">
-    <div class="image grid-60 grid-mobile-100">
-        <img src="{{ project.image | asset_path }}" alt="Preview of {{ project.title }}">
+<div id="{{ project.anchor }}" class="project col-xs-12">
+    <div class="col-sm-8">
+        <img src="{{ project.image | asset_path }}" alt="Preview of {{ project.title }}" class="project__image">
     </div>
-    <div class="project__info grid-33 grid-mobile-100">
+    <div class="project__info col-sm-4">
         <h3 class="project__title">{{ project.title }}<em><p><a href="{{ project.url }}" class="link-more link-more--reverse">{{ project.url }}</a></p></em></h3>
         <p class="project__copy">{{ project.description }}</p>
         <h4>Roles</h4>
@@ -10,4 +10,4 @@
         <h4>Launched</h4>
         <p class="project__copy">{{ project.launched }}</p>
     </div>
-</li>
+</div>
