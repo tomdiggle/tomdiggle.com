@@ -74,3 +74,8 @@ ol {
     @include inline-block;
     width: 100px;
 }
+
+.connect__list {
+    padding: 0 .7em 0 1em;
+    display: inline-block;
+}

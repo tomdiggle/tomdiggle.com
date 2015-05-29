@@ -1,73 +1,14 @@
 .site-footer {
-    background: $color__jet;
-    @include adjust-font-size-to(14px);
-    color: $color__white-smoke;
-    padding: 1em;
-    
-    a {
-        color: $color__snow;
+    padding: 1em 0;
+    text-align: center;
 
-        &:hover,
-        &:focus {
-            color: $color__deep-sky-blue;
-            border-color: transparent;
-            background-color: transparent;
-        }
-    }
-        
-    h3 {
-        color: tint($color__jet, 70%);
-        border-bottom: 1px solid tint($color__jet, 70%);
-    }
-    
-    .latest-post {
-        margin-right: 8%;
-        
-        .title {
-            margin-top: .6em;
-        }
-    
-        .excerpt {
-            margin: .2em 0;
-        }
-    }
-    
     .connect {
-        ul {
-            margin-top: .8em;
-            
-            li {
-                span {
-                    font-size: 26px;
-                }
-            }
-        }
-    }
-
-    .about-me {
-        float: right;
-
-        p {
-            margin-top: .8em;
-        }
-
-        img {
-            float: right;
-            max-width: 90px;
-            max-height: 87px;
-            display: inline;
-            margin-left: .4em;
+        @at-root #{&}__icon {
+            @include adjust-font-size-to(30px);
         }
     }
 
     .credits {
-        border-top: 1px tint($color__jet, 50%) solid;
-        margin-top: 1.5em;
         padding-top: 1em;
-
-        .rss {
-            text-align: right;
-            font-size: 2em;
-        }
     }
 }

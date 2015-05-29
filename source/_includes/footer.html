@@ -1,39 +1,20 @@
 <footer id="footer" class="site-footer" role="contentinfo">
     <div class="container">
-        <div class="latest-post grid-28 grid-tablet-100 grid-mobile-100">
-            <h3>Latest post</h3>
-            {% for post in site.posts limit:1 %}
-            <article>
-                <header><h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4></header>
-                <section>
-                    <p class="excerpt">{{ post.excerpt }}</p>
-                    <p class="continue"><a href="{{ post.url }}" class="link-more">Continue reading</a></p>
-                </section>
-            </article>
-            {% endfor %}
-        </div>
-        
-        <div class="connect grid-28 grid-tablet-100 grid-mobile-100">
-            <h3>Connect with me</h3>
-            <ul>
-            {% for account in site.data.social_accounts %}
-                <li><a href="{{ account.link }}"><span class="{{ account.css-selector }}"></span>{{ account.site }}</a></li>
-            {% endfor %}
-            </ul>
-        </div>
-        
-        <div class="about-me grid-28 grid-tablet-100 grid-mobile-100">
-            <h3>About me</h3>
-            <p>{% image tomdiggle_ellipse.png %} I'm a passionate iOS and front end web developer. I started by building <a href="{{ site.baseurl }}/work/#wagerapp">Wager</a> a betting odds calculator for iPhone that was released on the App Store in 2010. <a href="{{ site.baseurl }}/about/" class="link-more">Learn more about me</a></p>
-        </div>
-        
-        <div class="credits cf grid-100">
-            <div class="grid-60 grid-mobile-100">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <ul class="connect">
+                {% for account in site.data.social_accounts %}
+                    <li class="connect__list"><a href="{{ account.link }}" class="connect__link"><span class="connect__icon {{ account.css-selector }}"></span></a></li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div class="credits col-sm-4 col-sm-offset-4">
                 <p>Copyright &copy; 2014-2015 <a href="{{ site.baseurl }}/">{{ site.title }}</a>.</p> 
+                <!-- <div class="rss col-xs-6">
+                    <p><a href="{{ site.rssfeed }}" class="icon-rss-squared" title="Subscribe to {{ site.title }}"></a></p>
+                </div> -->
             </div>
-            <div class="rss grid-40 grid-mobile-100">
-                <p><a href="{{ site.rssfeed }}" class="icon-rss-squared" title="Subscribe to {{ site.title }}"></a></p>
-            </div>
+            
         </div>
     </div>
 </footer>

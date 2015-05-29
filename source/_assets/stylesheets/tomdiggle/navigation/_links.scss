@@ -161,3 +161,13 @@ a {
         }
     }
 }
+
+.connect__link {
+    border: none;
+
+    &:hover,
+    &:focus {
+        border-color: transparent;
+        background-color: transparent;
+    }
+}
