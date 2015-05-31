@@ -1,3 +1,19 @@
+/* About Page Body Class */
+.about {
+    .site-header {
+         background-image: url('/assets/images/home-cover-01.jpg');
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         min-height: 500px;
+    }
+}
+
+.page-title {
+    margin-top: 5em;
+    color: $color__snow;
+}
+
 /* Project shown on work page */
 .project {
     padding: 1.4em 0;

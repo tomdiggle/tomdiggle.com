@@ -1,7 +1,7 @@
 <header id="site-header" class="site-header">
     <div class="container">
         <div class="row">
-            <div class="site-branding col-sm-4">
+            <div class="site-branding center col-sm-4">
                 <a href="{{ site.baseurl }}/" class="site-branding__link">{% image logo.png class="site-branding__logo" %}</a>
             </div>
             <div class="col-sm-4 col-sm-offset-4">
@@ -12,12 +12,14 @@
             </div>
         </div>
     </div>
-    <!-- 
-<div class="page__title">
+    
+    {% if page.body_class %}
+    <div class="page-title center">
         <div class="container">
             <h2>{{ page.title }}</h2>
-            <p>{{ page.description }}</p>
+            <h3>{{ page.description }}</h3>
         </div>
     </div>
- -->
+    {% endif %}
+    
 </header>
