@@ -41,19 +41,3 @@ h6 {
 .project__retired {
     color: #e60000;
 }
-
-.post__title {
-    border: none;
-
-    a {
-        border: none;
-    }
-
-    @include breakpoint($breakpoint__sm) {
-        padding-left: 26%;
-    }
-
-    @include breakpoint($breakpoint__md) {
-        padding-left: 17%;
-    }
-}

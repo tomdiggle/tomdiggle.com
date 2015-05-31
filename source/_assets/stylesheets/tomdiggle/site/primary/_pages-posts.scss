@@ -8,15 +8,27 @@
     padding: 1.4em 0;
 }
 
-.post {
-    @at-root #{&}__footer {
-        @include breakpoint($breakpoint__sm) {
-            padding-left: 26%;
-        }
+.post-header {
+    @include breakpoint($breakpoint__sm) {
+        padding-left: 26%;
+    }
 
-        @include breakpoint($breakpoint__md) {
-            padding-left: 17%;
-        }
+    @include breakpoint($breakpoint__md) {
+        padding-left: 17%;
+    }
+    
+    @at-root #{&}__link {
+        border: none;
+    }
+}
+
+.post-footer {
+    @include breakpoint($breakpoint__sm) {
+        padding-left: 26%;
+    }
+
+    @include breakpoint($breakpoint__md) {
+        padding-left: 17%;
     }
 }
 
