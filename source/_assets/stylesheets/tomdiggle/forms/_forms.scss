@@ -1,18 +1,2 @@
 @import "buttons";
 @import "fields";
-
-.form-contact {
-    margin: 1em 0;
-
-    #form_contact_message {
-        text-align: center;
-
-        .error {
-            color: #ff1919;
-        }
-
-        .success {
-            color: #198c19;
-        }
-    }
-}
