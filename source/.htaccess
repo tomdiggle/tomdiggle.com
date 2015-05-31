@@ -15,13 +15,24 @@ Redirect 301 /cv /assets/tom-diggle-cv.pdf
 Redirect 301 /portfolio /work/
 Redirect 301 /hire /contact/
 
-Redirect 301 /2014/06/06/swift-resources/ /blog/2014/06/06/swift-resources/
-Redirect 301 /2014/06/02/introducing-briefplayer-0-1-0/ /blog/2014/06/02/introducing-briefplayer-0-1-0/
-Redirect 301 /2014/01/20/alfred-2-workflow-to-clean-up-open-with/ /blog/2014/01/20/alfred-2-workflow-to-clean-up-open-with/
-Redirect 301 /2013/05/31/alfred-2-custom-search-for-cocoadocs-and-cocoapods/ /blog/2013/05/31/alfred-2-custom-search-for-cocoadocs-and-cocoapods/
-Redirect 301 /2013/04/02/sitmos-podcast-app-v1-dot-1-is-here/ /blog/2013/04/02/sitmos-podcast-app-v1-dot-1-is-here/
-Redirect 301 /2012/07/01/tdinputview-for-ios/ /blog/2012/07/01/tdinputview-for-ios/
-Redirect 301 /2010/08/22/tdinputview-for-iphone/ /blog/2012/07/01/tdinputview-for-ios/
+Redirect 301 /2014/06/06/swift-resources/ /swift-resources/
+Redirect 301 /2014/06/02/introducing-briefplayer-0-1-0/ /introducing-briefplayer-0-1-0/
+Redirect 301 /2014/01/20/alfred-2-workflow-to-clean-up-open-with/ /alfred-2-workflow-to-clean-up-open-with/
+Redirect 301 /2013/05/31/alfred-2-custom-search-for-cocoadocs-and-cocoapods/ /alfred-2-custom-search-for-cocoadocs-and-cocoapods/
+Redirect 301 /2013/04/02/sitmos-podcast-app-v1-dot-1-is-here/ /sitmos-podcast-app-v1-dot-1-is-here/
+Redirect 301 /2012/07/01/tdinputview-for-ios/ /tdinputview-for-ios/
+Redirect 301 /2010/08/22/tdinputview-for-iphone/ /tdinputview-for-ios/
+
+Redirect 301 /blog/2015/03/30/my-wordpress-setup/ /my-wordpress/setup/
+Redirect 301 /blog/2014/12/08/data-persistence-with-nscoding-in-swift/ /data-persistence-with-nscoding-in-swift/
+Redirect 301 /blog/2014/10/20/a-contact-form-using-ajax-and-php/ /a-contact-form-using-ajax-and-php/ 
+Redirect 301 /blog/2014/09/28/a-new-beginning/ /a-new-beginning/
+Redirect 301 /blog/2014/06/06/swift-resources/ /swift-resources/
+Redirect 301 /blog/2014/06/02/introducing-briefplayer-0-1-0/ /introducing-briefplayer-0-1-0/
+Redirect 301 /blog/2014/01/20/alfred-2-workflow-to-clean-up-open-with/ /alfred-2-workflow-to-clean-up-open-with/
+Redirect 301 /blog/2013/05/31/alfred-2-custom-search-for-cocoadocs-and-cocoapods/ /alfred-2-custom-search-for-cocoadocs-and-cocoapods/
+Redirect 301 /blog/2013/04/02/sitmos-podcast-app-v1-dot-1-is-here/ /sitmos-podcast-app-v1-dot-1-is-here/
+Redirect 301 /blog/2012/07/01/tdinputview-for-ios/ /tdinputview-for-ios/
 
 Redirect 301 /tdnotificationpanel https://github.com/tomdiggle/TDNotificationPanel
 Redirect 301 /sitmosapp https://github.com/tomdiggle/sitmos

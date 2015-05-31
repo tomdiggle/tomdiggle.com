@@ -11,7 +11,7 @@ available_for_work: false
 # Build settings
 production: true
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /:title
 source: source
 destination: public
 layouts: ./_tomdiggle
@@ -22,7 +22,7 @@ gems:
   - jekyll-sitemap
   
 # Generate categories
-category_dir: /blog/categories
+category_dir: /categories
 
 assets:
   sources:
