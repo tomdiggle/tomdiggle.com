@@ -34,10 +34,10 @@ h6 {
     @include adjust-font-size-to(14px);
 }
 
-.site-main section h2 {
-    border-bottom: 1px $color__light-grey solid;
-    margin-bottom: .6em;
-}
+// .site-main section h2 {
+//     border-bottom: 1px $color__light-grey solid;
+//     margin-bottom: .6em;
+// }
 
 .project__title {
     line-height: normal;

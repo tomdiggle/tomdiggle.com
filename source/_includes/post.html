@@ -4,13 +4,13 @@
 <header class="post__header"><h2 class="post__title">{{ page.title }}</h2></header>
 {% endif %}
 <div class="row">
-<aside class="post__meta col-sm-3 col-md-2">
-    {% include post/meta.html %}
-</aside>
-<section class="post__content col-sm-9 col-md-10">
-    {{ content }}
-    {% if index %}
-    <a href="{{ post.url }}" class="post__continue-reading" title="Continue reading {{ post.title }}">Continue reading</a>
-    {% endif %}
-</section>
+    <aside class="post__meta col-sm-3 col-md-2">
+        {% include post/meta.html %}
+    </aside>
+    <div class="post__content col-sm-9 col-md-10">
+        {{ content }}
+        {% if index %}
+        <a href="{{ post.url }}" class="post__continue-reading" title="Continue reading {{ post.title }}">Continue reading</a>
+        {% endif %}
+    </div>
 </div>

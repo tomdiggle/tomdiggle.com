@@ -32,61 +32,53 @@
     }
 }
 
-/* TODO: Needs Refactoring */
-.blog-categories {
-    h2 {
+.category {
+    @at-root #{&}__title {
         display: none;
         
-        @include breakpoint($breakpoint-mobile-max) {
+        @include breakpoint($breakpoint__sm-min) {
             display: inline-block;
             float: left;
             border: none;
         }
     }
     
-    a {
+     @at-root #{&}__link {
         border: none;
-    }
+        
+        &:hover,
+        &:focus {
+            background-color: transparent;
+        }
+     }
     
-    article {
+    @at-root #{&}__post {
         position: relative;
         
-        @include breakpoint($breakpoint-mobile-max) {
+        @include breakpoint($breakpoint__sm-min) {
             padding-left: 5em;
             margin-left: 5em;
         }
+    }
+    
+    @at-root #{&}__pubdate {
+        color: tint($color__jet, 20%);
         
-        h3 {
-            border: none;
-        }
-        
-        time {
-            color: tint($color__jet, 20%);
+        @include breakpoint($breakpoint__sm-min) {
+            position: absolute;
+            text-align: right;
+            left: 0em;
+            top: .6em;
             
-            @include breakpoint($breakpoint-mobile-max) {
-                position: absolute;
-                text-align: right;
-                left: 0em;
-                top: .6em;
-                
-                .year {
-                    display: none;
-                }
+            .year {
+                display: none;
             }
         }
-        
-        .categories {
-            a {
-                color: tint($color__jet, 20%);
-                
-                // &:hover {
-//                     @extend .link-fadeinbg:hover;
-//                 }
-//                 
-//                 &:focus {
-//                     @extend .link-fadeinbg:focus;
-//                 }
-            }
+    }
+    
+    @at-root #{&}__categories {
+        a {
+            color: tint($color__jet, 20%);
         }
     }
 }
