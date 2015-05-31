@@ -34,11 +34,6 @@ h6 {
     @include adjust-font-size-to(14px);
 }
 
-// .site-main section h2 {
-//     border-bottom: 1px $color__light-grey solid;
-//     margin-bottom: .6em;
-// }
-
 .project__title {
     line-height: normal;
 }
@@ -50,11 +45,11 @@ h6 {
         border: none;
     }
 
-    @include breakpoint($breakpoint__sm-min) {
+    @include breakpoint($breakpoint__sm) {
         padding-left: 26%;
     }
 
-    @include breakpoint($breakpoint__md-min) {
+    @include breakpoint($breakpoint__md) {
         padding-left: 17%;
     }
 }

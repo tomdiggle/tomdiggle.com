@@ -80,19 +80,6 @@ a {
     }
 }
 
-.latest-work__image-link {
-    width: 100%;
-    border: none;
-}
-
-.latest-work__link {
-    border: none;
-    
-    &:hover {
-        background: transparent;
-    }
-}
-
 .post__meta a {
     color: tint($color__jet, 15%);
     border: none;
@@ -133,33 +120,6 @@ a {
 
 .link-more--reverse {
     color: $color__jet;
-}
-
-.pagination__link {
-    padding: .4em 0;
-    border: none;
-
-    @at-root #{&}--previous {
-        float: left;
-        text-align: left;
-
-        &:before {
-            font-family: $font-icons;
-            content: '\e80d';
-            margin-right: .6em;
-        }
-    }
-
-    @at-root #{&}--next {
-        float: right;
-        text-align: right;
-
-        &:after {
-            font-family: $font-icons;
-            content: '\e80e';
-            margin-left: .6em;
-        }
-    }
 }
 
 .connect__link {

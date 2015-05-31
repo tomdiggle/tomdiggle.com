@@ -2,11 +2,38 @@
     margin-bottom: 1em;
     text-align: center;
 
-    @include breakpoint($breakpoint__sm-min) {
+    @include breakpoint($breakpoint__sm) {
         padding-left: 26%;
     }
 
-    @include breakpoint($breakpoint__md-min) {
+    @include breakpoint($breakpoint__md) {
         padding-left: 17%;
+    }
+}
+
+.pagination__link {
+    padding: .4em 0;
+    border: none;
+
+    @at-root #{&}--previous {
+        float: left;
+        text-align: left;
+
+        &:before {
+            font-family: $font-icons;
+            content: '\e80d';
+            margin-right: .6em;
+        }
+    }
+
+    @at-root #{&}--next {
+        float: right;
+        text-align: right;
+
+        &:after {
+            font-family: $font-icons;
+            content: '\e80e';
+            margin-left: .6em;
+        }
     }
 }
