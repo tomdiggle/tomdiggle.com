@@ -7,24 +7,29 @@ twitter_description: A small collection of my latest work.
 
 <section id="freelance" class="container">
     <h2 id="freelance">Freelance</h2>
+    <hr>
     <div class="row">
         {% for project in site.data.work_freelance %}
             {% include work/project.html %}
         {% endfor %}
     </div>
+    <hr>
 </section>
 
 <section id="personal" class="container">
     <h2 id="personal">Personal</h2>
+    <hr>
     <div class="row">
         {% for project in site.data.work_personal %}
             {% include work/project.html %}
         {% endfor %}
     </div>
+    <hr>
 </section>
 
 <section id="open-source" class="container">
     <h2 id="open-source">Open Source</h2>
+    <hr>
     <div class="row">
         {% for project in site.data.work_opensource %}
             {% include work/project.html %}
