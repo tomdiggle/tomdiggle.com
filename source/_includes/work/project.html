@@ -9,5 +9,8 @@
         <p class="project__copy">{{ project.roles }}</p>
         <h4>Launched</h4>
         <p class="project__copy">{{ project.launched }}</p>
+        {% if project.retired %}
+        <h5 class="project__retired">Project Retired</h5>
+        {% endif %}
     </div>
 </div>
