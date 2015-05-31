@@ -1,4 +1,8 @@
+{% if page.cover_image %}
+<header id="site-header" class="site-header site-header__cover-image" style="background-image: url('{{ page.cover_image | asset_path }}');">
+{% else %}
 <header id="site-header" class="site-header">
+{% endif %}
     <div class="container">
         <div class="row">
             <div class="site-branding center col-sm-4">
@@ -13,7 +17,7 @@
         </div>
     </div>
     
-    {% if page.body_class %}
+    {% if page.cover_image %}
     <div class="page-title center">
         <div class="container">
             <h2>{{ page.title }}</h2>

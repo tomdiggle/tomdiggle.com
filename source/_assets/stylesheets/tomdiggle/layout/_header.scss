@@ -2,4 +2,11 @@
     padding: .4em 0 0;
     margin: 0 0 .6em;
     background-color: $color__jet;
+    
+    @at-root #{&}__cover-image {
+        background-position: center center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         min-height: 500px;
+    }
 }
