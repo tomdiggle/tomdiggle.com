@@ -1,7 +1,9 @@
 {% if index %}
 <header class="post__header"><h2 class="post__title"><a href="{{ post.url }}">{{ post.title }}</a></h2></header>
 {% else %}
+{% unless page.cover_image %}
 <header class="post__header"><h2 class="post__title">{{ page.title }}</h2></header>
+{% endunless %}
 {% endif %}
 <div class="row">
     <aside class="post__meta col-sm-3 col-md-2">
