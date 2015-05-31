@@ -10,3 +10,11 @@
         overflow: hidden;
     }
 }
+
+.widget-share-entry {
+    padding: 1.6em 0;
+    
+    @at-root #{&}__title {
+        margin-bottom: .6em;
+    }
+}

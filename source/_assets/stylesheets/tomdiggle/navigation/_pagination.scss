@@ -1,5 +1,5 @@
 .pagination {
-    margin-bottom: 1em;
+    padding: 1.6em 0;
     text-align: center;
 
     @include breakpoint($breakpoint__sm) {
@@ -12,7 +12,6 @@
 }
 
 .pagination__link {
-    padding: .4em 0;
     border: none;
 
     @at-root #{&}--previous {

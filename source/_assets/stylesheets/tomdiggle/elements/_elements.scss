@@ -29,6 +29,10 @@ hr {
     @include box-sizing(content-box);
 }
 
+.article-separator {
+    margin: 1.6em 0;
+}
+
 .post__content p:first-child {
     margin-top: 0;
 }

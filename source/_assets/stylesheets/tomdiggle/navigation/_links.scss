@@ -78,6 +78,42 @@ a {
             border: 1px $color__deep-sky-blue solid;
         }
     }
+    
+    @at-root #{&}--share {
+        font-family: $font-icons;
+        color: $color__jet;
+        border-color: #E0E0E0;
+        width: 60px;
+        height: 40px;
+        text-align: center;
+        @include border-radius(2px 2px);
+        
+        &:after {
+            font-family: inherit;
+            content: none;
+            margin: 0;
+        }
+    }
+    
+    @at-root #{&}--twitter:before {
+        content: '\e80f';
+    }
+    
+    @at-root #{&}--facebook:before {
+        content: '\e810';
+    }
+    
+    @at-root #{&}--googleplus:before {
+        content: '\e811';
+    }
+    
+    @at-root #{&}--linkedin:before {
+        content: '\e812';
+    }
+    
+    @at-root #{&}--mail:before {
+        content: '\e801';
+    }
 }
 
 .post__meta a {

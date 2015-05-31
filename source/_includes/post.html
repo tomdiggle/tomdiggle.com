@@ -14,3 +14,10 @@
         {% endif %}
     </div>
 </div>
+
+{% unless index %}
+<footer class="post__footer">
+    {% include post/share.html %}
+    <hr>
+</footer>
+{% endunless %}
