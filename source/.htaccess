@@ -13,7 +13,7 @@ Redirect 301 /atom.xml /feed.xml
 Redirect 301 /projects /work/
 Redirect 301 /cv /assets/tom-diggle-cv.pdf
 Redirect 301 /portfolio /work/
-Redirect 301 /hire /contact/
+Redirect 301 /hire /about/
 
 Redirect 301 /2014/06/06/swift-resources/ /swift-resources/
 Redirect 301 /2014/06/02/introducing-briefplayer-0-1-0/ /introducing-briefplayer-0-1-0/
