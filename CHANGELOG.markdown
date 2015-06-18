@@ -1,3 +1,10 @@
+### Version 1.2.0.1
+
+*Released on 18.06.2015*
+
+Change jjdiggle project image
+Remove unused preview images
+
 ### Version 1.0.5
 
 *Released on 30.03.2015*
