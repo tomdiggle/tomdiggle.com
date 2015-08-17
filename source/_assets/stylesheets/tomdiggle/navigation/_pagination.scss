@@ -12,7 +12,12 @@
 }
 
 .pagination__link {
+    color: $color__text-main;
     border: none;
+    
+    &:hover {
+        text-decoration: none;
+    }
 
     @at-root #{&}--previous {
         float: left;

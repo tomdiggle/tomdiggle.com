@@ -1,17 +1,15 @@
 a {
-    color: $color__link;
-    outline: none;
+    color: shade($color__link, 25%);
     text-decoration: none;
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px solid rgba($color__link, 0.4);
     @include single-transition(all, .3s, ease-in-out, 0);
 
+    &:hover {
+        color: $color__link;
+    }
+    
     &:hover,
     &:focus {
         color: $color__link-hover;
-        border-color: rgba($color__link, 0);
-        background-color: rgba($color__snow, 0.5);
     }
 
     &:before,
@@ -116,6 +114,14 @@ a {
     }
 }
 
+.post-header__link {
+    color: $color__text-main;
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .post__meta a {
     color: tint($color__jet, 15%);
     border: none;
@@ -126,9 +132,14 @@ a {
 }
 
 .post__continue-reading {
+    color: $color__text-main;
     margin-top: .2em;
     border: none;
     @include adjust-font-size-to(14px);
+    
+    &:hover {
+        text-decoration: none;
+    }
 
     &:after {
         font-family: $font-icons;
@@ -159,6 +170,7 @@ a {
 }
 
 .connect__link {
+    color: $color__text-main;
     border: none;
 
     &:hover,
