@@ -1,3 +1,15 @@
+### Version 1.2.0.3
+
+*Released on 24.08.2015*
+
+Add article Multiply Jekyll Config Files
+
+### Version 1.2.0.2
+
+*Released on 17.08.2015*
+
+Add article WordPress & Vagrant Workflow
+
 ### Version 1.2.0.1
 
 *Released on 18.06.2015*
