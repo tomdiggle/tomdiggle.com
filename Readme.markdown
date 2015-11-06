@@ -38,7 +38,7 @@ To build the site for the production server run:
 To create a new post run the following command:
 
 ```
-	rake new_post "Post Title"
+	rake new_post["Post Title"]
 ```
 
 This will create a new post file in the markdown format located in `source/_posts` directory.
