@@ -10,7 +10,7 @@ layout: compress
             <meta name="robots" content="noindex, nofollow">
         {% endunless %}
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="{{ site.description }}">
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
         <meta name="author" content="Tom Diggle">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@{{ site.twitter_user }}">
