@@ -7,7 +7,7 @@ categories: wager
 vanityurlpath:
 twitter_description: "Wager 4 released and the source is available on GitHub."
 ---
-Wager was the very first app I built for iOS back in 2010 and was released for iOS 4. It was the app I used to teach me Objective-C and now version 4 has been completely re-written in Swift 2. Wager is available to download from the [App Store](https://geo.itunes.apple.com/gb/app/wager/id378869159?mt=8){:target=“_blank”} and the source code is available on [GitHub](https://github.com/tomdiggle/wager){:target=“_blank”}.
+Wager was the very first app I built for iOS back in 2010 and was released for iOS 4. It was the app I used to learn Objective-C and now version 4 has been built from scratch using Swift 2. Wager is available to download from the [App Store](https://geo.itunes.apple.com/gb/app/wager/id378869159?mt=8){:target=“_blank”} and the source code is available on [GitHub](https://github.com/tomdiggle/wager){:target=“_blank”}.
 
 ## About Wager
 With Wager you can calculate the return and profit for Accumulators, Trixies, Patents, Yankees, Lucky 15s, Doubles and many more bet types. Each way is also supported.
@@ -18,21 +18,3 @@ With Wager you can calculate the return and profit for Accumulators, Trixies, Pa
 - Two different stake types Unit and Max Total
 - Multiple betting slips
 - Save betting slips
-
-Wager supports the following bet types:
-
-- Single
-- Double
-- Treble
-- Trixie
-- Patent
-- Lucky 15
-- Lucky 31
-- Lucky 63
-- Yankee
-- Fourfold
-- Fivefold
-- Sixfold
-- Sevenfold
-- Eightfold
-
