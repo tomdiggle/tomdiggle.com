@@ -22,3 +22,6 @@ public
 .asset-cache
 .sass-cache
 Gemfile.lock
+
+# Bower
+.bower_components
