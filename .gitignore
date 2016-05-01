@@ -19,6 +19,7 @@ Temporary Items
 # Jekyll
 public
 .jekyll-assets-cache
+.asset-cache
 .sass-cache
 Gemfile.lock
 
