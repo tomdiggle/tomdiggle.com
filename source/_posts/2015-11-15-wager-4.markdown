@@ -1,16 +1,16 @@
 ---
-layout: post
+layout: "post"
 title: "Wager 4"
 description: "Wager 4 released"
 date: 2015-11-15 19:43
-categories: ios
+categories: "iOS"
 vanityurlpath:
 twitter_description: "Wager 4 released."
 ---
-Wager was the very first app I built for iOS back in 2010 and was released for iOS 4. It was the app I used to learn Objective-C and now version 4 has been built from scratch using Swift. Wager is available to download from the [App Store](https://geo.itunes.apple.com/gb/app/wager/id378869159?mt=8){:target=“_blank”}.
+Wager was the very first app I built for iOS back in 2010 and was released for iOS 4. It was the app I used to learn Objective-C and now version 4 has been built from scratch using Swift. Wager is available to download from the [App Store](https://geo.itunes.apple.com/gb/app/wager/id378869159?mt=8).
 
 ### Meet Wager 4 for iOS
-{% image wager-4.png alt="Wager 4" class="post-img__medium" %}
+{% image wager-4.png alt:"Wager 4" class:"post-img__medium" %}
 
 ## About Wager
 With Wager you can calculate the return and profit for Accumulators, Trixies, Patents, Yankees, Lucky 15s, Doubles and many more bet types. Each way is also supported.
@@ -22,4 +22,4 @@ With Wager you can calculate the return and profit for Accumulators, Trixies, Pa
 - Multiple betting slips
 - Save betting slips
 
-If you find Wager useful, please take a couple of moments to leave a rating and review on the App Store. Thank you very much! 
+If you find Wager useful, please take a couple of moments to leave a rating and review on the App Store. Thank you very much!

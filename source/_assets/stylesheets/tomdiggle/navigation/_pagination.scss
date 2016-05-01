@@ -2,19 +2,19 @@
     padding: 1.6em 0;
     text-align: center;
 
-    @include breakpoint($breakpoint__sm) {
+    @include breakpoint($small-screen) {
         padding-left: 26%;
     }
 
-    @include breakpoint($breakpoint__md) {
+    @include breakpoint($medium-screen) {
         padding-left: 17%;
     }
 }
 
 .pagination__link {
-    color: $color__text-main;
+    color: $base-font-color;
     border: none;
-    
+
     &:hover {
         text-decoration: none;
     }

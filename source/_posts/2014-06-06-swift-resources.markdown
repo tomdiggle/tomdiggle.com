@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: "post"
 title: "Swift Resources"
 date: 2014-06-06 06:55
-categories: Swift
-vanityurlpath: 1234
-twitter_description: A List of great Swift resources.
+categories: "Swift"
+vanityurlpath:
+twitter_description: "A List of great Swift resources."
 ---
 
 The other day I managed to sit down and start to get to grips with Apple's new programming language Swift. Already there appears to be a huge amount of top quality learning material. Below I have listed resources that I found useful.
@@ -53,4 +53,3 @@ One of the best ways to learn is by looking at some sample code.
 
 ## Treehouse
 Last but not least, [Treehouse](http://teamtreehouse.com/library/topic:learn-ios) now offer a course on Swift. The course covers the basics, functions and optionals and walks you through building an app in Swift, great for the beginner.
-

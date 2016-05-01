@@ -1,17 +1,13 @@
-ol {
-    list-style-type: decimal;
-}
-
 .skills {
-    @include column-count(1);
-    
-    @include breakpoint($breakpoint__md) {
-       @include column-count(3);
+    columns: 1;
+
+    @include breakpoint($small-screen) {
+       columns: 31;
     }
 }
 
 .skill {
-    @include inline-block;
+    display: inline-block;
     width: 100px;
 }
 

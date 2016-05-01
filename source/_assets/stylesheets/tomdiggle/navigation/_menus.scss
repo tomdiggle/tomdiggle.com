@@ -5,11 +5,11 @@
     font-style: normal;
     list-style: none;
     width: 100%;
-    @include adjust-font-size-to(21px);
-    @include column-count(2);
-    @include column-gap(0);
-    
-    @include breakpoint($breakpoint__sm) {
+    font-size: modular-scale(1);
+    columns: 2;
+    columns-gap: 0;
+
+    @include breakpoint($small-screen) {
         padding: .3em 0 0;
     }
 

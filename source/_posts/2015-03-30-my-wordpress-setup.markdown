@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: "post"
 title: "My WordPress Setup"
 date: 2015-03-30 16:28
-categories: WordPress
+categories: "WordPress"
 vanityurlpath:
-twitter_description: Learn about my WordPress setup.
+twitter_description: "Learn about my WordPress setup."
 ---
 
 I have recently completed my first [WordPress](https://wordpress.org) site and would like to take the time to explain my local WordPress development environment and how I keep the production, staging and local sites in sync.

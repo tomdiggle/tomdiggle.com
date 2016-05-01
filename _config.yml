@@ -1,6 +1,6 @@
 # Site settings
-title: Tom Diggle
-email: tom@tomdiggle.com
+title: "Tom Diggle"
+email: "tom@tomdiggle.com"
 description: "iOS and front end web developer."
 baseurl: ""
 url: "http://tomdiggle.com"
@@ -9,29 +9,33 @@ rssfeed: "http://tomdiggle.com/feed"
 available_for_work: false
 
 # Build settings
-production: true
+production: false
 markdown: kramdown
-permalink: /:title
+permalink: /:title/
 source: source
 destination: public
-layouts: ./_tomdiggle
+layouts_dir: ./_tomdiggle
 paginate: 6
 paginate_path: "/page/:num"
 
 gems:
+  - jekyll-assets
+  - jekyll-paginate
   - jekyll-sitemap
-  
+
 # Generate categories
 category_dir: /categories
 
 assets:
   sources:
+    - _assets/stylesheets
     - _assets/images
     - _assets/javascripts
-    - _assets/stylesheets
+    - _assets/fonts
     - _assets/posts
-  js_compressor: uglifier
-  css_compressor: sass
+
+  features:
+    automatic_img_size: false
 
 # Analytics
 google_analytics_tracking_id: UA-39506392-1

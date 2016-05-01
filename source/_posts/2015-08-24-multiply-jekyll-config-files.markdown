@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: "post"
 title: "Multiply Jekyll Config Files"
 description: "Multiply Jekyll config files to make developing your site easier."
 date: 2015-08-24 15:22
-categories: jekyll
+categories: "Jekyll"
 vanityurlpath:
 twitter_description: "Multiply Jekyll config files to make developing your site easier."
 ---
@@ -30,7 +30,7 @@ The `production` option can be accessed in your template files using the `site` 
 Another example would be to not include any analytics code in local development or staging builds using an `if` statement.
 
 ~~~ ruby
-{{ "{% if site.production "}}%} 
+{{ "{% if site.production "}}%}
     ...
 {{ "{% endif "}}%}
 ~~~
@@ -97,4 +97,4 @@ rake build
 ## Conclusion
 Having two `_config.yml` files means that if you want to add a new option you have to remember to add it to both config files. While this is a slight inconvenience the benefits of being able to not include certain code in different builds is worth it.
 
-As always I would love to [hear](https://twitter.com/tomdiggle){:target=“_blank”} from you if you have any improvements, comments or any Jekyll tips of your own.
+As always I would love to [hear](https://twitter.com/tomdiggle) from you if you have any improvements, comments or any Jekyll tips of your own.

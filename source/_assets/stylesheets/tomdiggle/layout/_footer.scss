@@ -4,7 +4,7 @@
 
     .connect {
         @at-root #{&}__icon {
-            @include adjust-font-size-to(30px);
+            font-size: modular-scale(4);
         }
     }
 

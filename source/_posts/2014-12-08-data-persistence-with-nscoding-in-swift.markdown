@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: "post"
 title: "Data Persistence with NSCoding in Swift"
 date: 2014-12-08 12:52
-categories: Swift
+categories: "Swift"
 vanityurlpath:
-twitter_description: Data Persistence with NSCoding in Swift
+twitter_description: "Data Persistence with NSCoding in Swift"
 ---
 
 I have recently started to give [Wager](https://itunes.apple.com/gb/app/wager/id378869159?mt=8&uo=4) some much needed TLC by updating it for iOS 8 and rebuilding it in Swift. I decided to ditch Core Data and use NSCoding instead.

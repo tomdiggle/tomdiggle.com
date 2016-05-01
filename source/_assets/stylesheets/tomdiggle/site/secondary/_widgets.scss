@@ -1,9 +1,9 @@
 .widget-available-for-work {
     padding: 1em 0;
-    background: $color__white-smoke;
-    border-top: 1px $color__light-grey solid;
+    background: $white-smoke;
+    border-top: 1px $light-gray solid;
     border-bottom: none;
-    
+
     .get-in-touch {
         padding-top: 1.4em;
         text-align: center;
@@ -13,7 +13,7 @@
 
 .widget-share-entry {
     padding: 1.4em 0 2em;
-    
+
     @at-root #{&}__title {
         margin-bottom: .6em;
     }

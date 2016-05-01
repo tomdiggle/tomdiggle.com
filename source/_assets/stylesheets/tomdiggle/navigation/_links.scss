@@ -1,28 +1,7 @@
-a {
-    color: shade($color__link, 25%);
-    text-decoration: none;
-    @include single-transition(all, .3s, ease-in-out, 0);
-
-    &:hover {
-        color: $color__link;
-    }
-    
-    &:hover,
-    &:focus {
-        color: $color__link-hover;
-    }
-
-    &:before,
-    &:after {
-        pointer-events: none;
-        backface-visibility: hidden;
-    }
-}
-
 .site-branding__link {
     border-color: transparent;
     background-color: transparent;
-        
+
     &:hover {
         border-color: transparent;
         background-color: transparent;
@@ -30,30 +9,30 @@ a {
 }
 
 .main-navigation__link {
-    color: $color__snow;
+    color: $snow;
     border-color: transparent;
 
     &:hover,
     &:focus {
-        color: $color__link-hover;
-        border-color: $color__link-hover;
+        color: $action-color;
+        border-color: $action-color;
         background-color: transparent;
     }
 }
 
 .btn {
-    color: $color__deep-sky-blue;
-    border: 1px $color__deep-sky-blue solid;
+    color: $deep-sky-blue;
+    border: 1px $deep-sky-blue solid;
     padding: .4em .9em;
-    @include adjust-font-size-to(14px);
-    @include inline-block;
-    @include border-radius(4px 4px);
-    @include single-transition(all, .3s, ease-in-out, 0);
+    font-size: modular-scale(-1);
+    display: inline-block;
+    border-radius: 4px;
+    transition: color $base-duration $base-timing;
 
     &:hover,
     &:active {
-        color: $color__snow;
-        background: $color__deep-sky-blue;
+        color: $snow;
+        background: $deep-sky-blue;
     }
 
     &:after {
@@ -61,82 +40,82 @@ a {
         content: '\e804';
         margin-left: .6em;
     }
-    
+
     @at-root #{&}--large {
         margin-bottom: .1em;
         padding: .8em 3em;
-        @include adjust-font-size-to(18px);
+        font-size: modular-scale(1);
     }
 
     @at-root #{&}--white {
-        color: $color__snow;
-        border: 1px $color__snow solid;
+        color: $snow;
+        border: 1px $snow solid;
 
         &:hover {
-            border: 1px $color__deep-sky-blue solid;
+            border: 1px $deep-sky-blue solid;
         }
     }
-    
+
     @at-root #{&}--share {
         font-family: $font-icons;
-        color: $color__jet;
+        color: $jet;
         border-color: #E0E0E0;
         width: 60px;
         height: 40px;
         text-align: center;
-        @include border-radius(2px 2px);
-        
+        border-radius: 2px;
+
         &:after {
             font-family: inherit;
             content: none;
             margin: 0;
         }
     }
-    
+
     @at-root #{&}--twitter:before {
         content: '\e80f';
     }
-    
+
     @at-root #{&}--facebook:before {
         content: '\e810';
     }
-    
+
     @at-root #{&}--googleplus:before {
         content: '\e811';
     }
-    
+
     @at-root #{&}--linkedin:before {
         content: '\e812';
     }
-    
+
     @at-root #{&}--mail:before {
         content: '\e801';
     }
 }
 
 .post-header__link {
-    color: $color__text-main;
-    
+    color: $base-font-color;
+
     &:hover {
         text-decoration: none;
     }
 }
 
 .post__meta a {
-    color: tint($color__jet, 15%);
+    color: tint($jet, 15%);
     border: none;
 
     &:hover {
-        color: $color__deep-sky-blue;
+        color: $deep-sky-blue;
     }
 }
 
 .post__continue-reading {
-    color: $color__text-main;
+    color: $base-font-color;
     margin-top: .2em;
     border: none;
-    @include adjust-font-size-to(14px);
-    
+    font-size: modular-scale(-1);
+
     &:hover {
         text-decoration: none;
     }
@@ -149,7 +128,7 @@ a {
 }
 
 .link-more {
-    color: $color__snow;
+    color: $snow;
     border: none;
 
     &:hover,
@@ -166,11 +145,11 @@ a {
 }
 
 .link-more--reverse {
-    color: $color__jet;
+    color: $jet;
 }
 
 .connect__link {
-    color: $color__text-main;
+    color: $base-font-color;
     border: none;
 
     &:hover,

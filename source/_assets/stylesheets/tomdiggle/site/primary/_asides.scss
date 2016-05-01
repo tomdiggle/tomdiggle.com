@@ -1,5 +1,5 @@
 .post__meta {
     margin-bottom: 1em;
-    color: tint($color__jet, 15%);
-    @include adjust-font-size-to(14px);
+    color: tint($jet, 15%);
+    font-size: modular-scale(-1);
 }

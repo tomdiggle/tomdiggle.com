@@ -1,0 +1,62 @@
+// Breakpoints
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
+
+// Typography
+$museo-sans-100: "MuseoSans-100", Helvetica, sans-serif;
+$museo-sans-300: "MuseoSans-300", Helvetica, sans-serif;
+$museo-sans-500: "MuseoSans-500", Helvetica, sans-serif;
+$museo-500: "Museo-500", Georgia, Serif;
+$museo-300: "Museo-300", Georgia, Serif;
+$consolas: Consolas, Monaco, 'Andale Mono', monospace;
+
+$base-font-family: $museo-sans-300;
+$heading-font-family: $museo-300;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Icons
+$font-icons: "fontello";
+$fontello-id: 20386967;
+
+// Colors
+$deep-sky-blue: #00BFFF;
+$jet: #414141;
+$white-smoke: #F5F5F5;
+$snow: #FFFFFF;
+$light-gray: shade($white-smoke, 14%);
+
+// Font Colors
+$base-font-color: $jet;
+$action-color: $deep-sky-blue;
+$text-screen-color: #21759b;
+
+// Selection Colors
+$selection-background-color: $deep-sky-blue;
+$selection-color: $white-smoke;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: $snow;
+$secondary-background-color: tint($base-border-color, 75%);
+$background-screen-color: $snow;
+$background-hr-color: #E0E0E0;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

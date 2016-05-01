@@ -1,15 +1,15 @@
 blockquote {
-    background: $color__white-smoke;
+    background: $white-smoke;
     margin: 0 1.5em;
     padding: 1em .4em .4em;
-    border-left: 2px solid $color__deep-sky-blue;
+    border-left: 2px solid $deep-sky-blue;
 }
 
 pre {
     background: #F5F5F5;
     padding: .2em;
     font-family: $consolas;
-    @include adjust-font-size-to(14px);
+    font-size: modular-scale(-1);
     direction: ltr;
     text-align: left;
     white-space: pre;
@@ -18,14 +18,17 @@ pre {
     -moz-tab-size: 4;
     tab-size: 4;
     overflow: auto;
-    @include hyphens(none);
-    @include border-radius(6px, 6px);
+    border-radius: 6px;
 }
 
 :not(pre) > code {
     background: #F5F5F5;
     padding: .2em;
     font-family: $consolas;
-    @include adjust-font-size-to(14px);
-    @include border-radius(4px, 4px);
+    font-size: modular-scale(-1);
+    border-radius: 4px;
+}
+
+em {
+    font-size: modular-scale(-3);
 }

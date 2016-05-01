@@ -1,11 +1,11 @@
-@import "compass";
 @import "breakpoint";
+@import "vendor/bourbon/bourbon";
+@import "vendor/normalize/normalize";
 
-@import "tomdiggle/variables/variables";
-@import "compass/reset";
+@import "tomdiggle/base/base";
+@import "vendor/fontello";
 @import "tomdiggle/typography/typography";
 @import "tomdiggle/elements/elements";
-@import "tomdiggle/forms/forms";
 @import "tomdiggle/navigation/navigation";
 @import "tomdiggle/modules/accessibility";
 @import "tomdiggle/modules/clearings";

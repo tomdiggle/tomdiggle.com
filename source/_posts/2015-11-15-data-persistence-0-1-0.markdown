@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: "post"
 title: "Data Persistence 0.1.0"
 date: 2015-11-15 21:13
-categories: ios
+categories: "iOS"
 vanityurlpath:
 twitter_description:
 ---
-DataPersistence is a drop in class that allows easy persistance of data using NSKeyedArchiver/NSKeyedUnarchiver.
+DataPersistence is a drop in class that allows easy persistence of data using NSKeyedArchiver/NSKeyedUnarchiver.
 
 ## Usage
 DataPersistence has two class methods one to save data to disk and one to load data from disk.

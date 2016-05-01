@@ -1,12 +1,7 @@
 @import "lists";
 
-em {
-    font-size: .6em;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+section {
+    margin-bottom: .6em;
 }
 
 .post-img__medium {
@@ -16,22 +11,6 @@ img {
 
 .site-branding__logo {
     max-width: 220px;
-}
-
-label {
-    display: block;
-    margin-bottom: .4em;
-}
-
-section {
-    margin-bottom: .6em;
-}
-
-hr {
-    background: $color__background-hr;
-    border: 0;
-    height: 1px;
-    @include box-sizing(content-box);
 }
 
 .article-separator {

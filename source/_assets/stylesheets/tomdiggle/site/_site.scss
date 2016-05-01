@@ -1,32 +1,3 @@
-* {
-    @include box-sizing(border-box);
-
-    &:before,
-    &:after {
-        @include box-sizing(border-box);
-    }
-}
-
-html {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body {
-    background: $color__background-body;
-    color: $color__text-main;
-    font-family: $museo-sans-300;
-}
-
-::selection {
-    background: $color__deep-sky-blue;
-    color: $color__white-smoke;
-}
-
-::-moz-selection {
-    background: $color__deep-sky-blue;
-    color: $color__white-smoke;
-}
-
 @import "../layout/header";
 @import "primary/pages-posts";
 @import "primary/asides";
