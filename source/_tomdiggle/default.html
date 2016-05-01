@@ -39,9 +39,6 @@ layout: compress
         {{ content }}
 
         {% include footer.html %}
-        {% if site.production %}
-            {% include analytics/google.html %}
-        {% endif %}
 
         {% if page.custom_js %}
             {% for js_file in page.custom_js %}

@@ -37,9 +37,6 @@ assets:
   features:
     automatic_img_size: false
 
-# Analytics
-google_analytics_tracking_id: UA-39506392-1
-
 # Twitter
 twitter_user: tomdiggle
 twitter_tweet_button: true
