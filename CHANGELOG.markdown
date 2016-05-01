@@ -1,3 +1,11 @@
+### Version 1.3.0
+
+*Released on xx.xx.xxx*
+
+Update to Jekyll 3
+Add Bourbon
+Remove Compass
+
 ### Version 1.2.0.3
 
 *Released on 24.08.2015*
