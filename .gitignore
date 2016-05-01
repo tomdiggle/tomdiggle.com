@@ -22,6 +22,3 @@ public
 .asset-cache
 .sass-cache
 Gemfile.lock
-
-# BBEdit
-*.bbprojectd
