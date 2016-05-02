@@ -22,7 +22,7 @@ p {
 }
 
 a {
-    color: shade($action-color, 25%);
+    color: $action-color;
     text-decoration: none;
     transition: color $base-duration $base-timing;
 

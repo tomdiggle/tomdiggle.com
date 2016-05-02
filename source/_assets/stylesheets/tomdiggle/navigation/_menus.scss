@@ -1,19 +1,11 @@
 .main-navigation {
-    padding: 0;
-    font-family: $museo-sans-100;
-    font-weight: normal;
-    font-style: normal;
-    list-style: none;
-    width: 100%;
+    text-align: center;
+    font-family: $museo-sans-300;
     font-size: modular-scale(1);
-    columns: 2;
-    columns-gap: 0;
-
-    @include breakpoint($small-screen) {
-        padding: .3em 0 0;
-    }
 
     @at-root #{&}__list {
-        text-align: center;
+        padding: 0 .6em 0 0;
+        list-style: none;
+        display: inline-block;
     }
 }

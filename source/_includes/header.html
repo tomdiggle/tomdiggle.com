@@ -5,14 +5,20 @@
 {% endif %}
     <div class="container">
         <div class="row">
-            <div class="site-branding col-sm-4">
-                <a href="{{ site.baseurl }}/" class="site-branding__link">{% image logo.png class:"site-branding__logo" %}</a>
+            <div class="site-branding">
+                {% img tomdiggle-logo.png alt:"Tom Diggle" height:"100px" width:"100px" %}
+                <h1><a href="{{ site.baseurl }}" title="tomdiggle.com home page" class="site-branding__name">Tom Diggle</a></h1>
             </div>
-            <div class="col-sm-4 col-sm-offset-4">
-                <menu id="main-navigation" class="main-navigation">
-                    <li class="main-navigation__list"><a href="{{ site.baseurl }}/about/" class="main-navigation__link">About</a></li>
-                    <li class="main-navigation__list"><a href="{{ site.baseurl }}/work/" class="main-navigation__link">Work</a></li>
-                </menu>
+            <div>
+                <nav id="main-navigation" class="main-navigation">
+                    <ul>
+                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/#" class="main-navigation__link">Articles</a></li>
+                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/about/" class="main-navigation__link">About</a></li>
+                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/portfolio/" class="main-navigation__link">Portfolio</a></li>
+                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/my-apps/" class="main-navigation__link">My Apps</a></li>
+                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/projects/" class="main-navigation__link">Projects</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
@@ -25,5 +31,4 @@
         </div>
     </div>
     {% endif %}
-
 </header>
