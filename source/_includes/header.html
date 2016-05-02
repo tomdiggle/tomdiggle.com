@@ -3,25 +3,19 @@
 {% else %}
 <header id="site-header" class="site-header">
 {% endif %}
-    <div class="container">
-        <div class="row">
-            <div class="site-branding">
-                <a href="{{ site.baseurl }}/" title="tomdiggle.com home page">{% img tomdiggle-logo.png alt:"Tom Diggle" height:"100px" width:"100px" %}</a>
-                <h1><a href="{{ site.baseurl }}/" title="tomdiggle.com home page" class="site-branding__name">Tom Diggle</a></h1>
-            </div>
-            <div>
-                <nav id="main-navigation" class="main-navigation">
-                    <ul>
-                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/#" class="main-navigation__link">Articles</a></li>
-                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/about/" class="main-navigation__link">About</a></li>
-                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/portfolio/" class="main-navigation__link">Portfolio</a></li>
-                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/my-apps/" class="main-navigation__link">My Apps</a></li>
-                        <li class="main-navigation__list"><a href="{{ site.baseurl }}/projects/" class="main-navigation__link">Projects</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <div class="site-branding">
+        <a href="{{ site.baseurl }}/" title="tomdiggle.com home page">{% img tomdiggle-logo.png alt:"Tom Diggle" height:"100px" width:"100px" %}</a>
+        <h1><a href="{{ site.baseurl }}/" title="tomdiggle.com home page" class="site-branding__name">Tom Diggle</a></h1>
     </div>
+    <nav id="main-navigation" class="main-navigation">
+        <ul>
+            <li class="main-navigation__list"><a href="{{ site.baseurl }}/articles" class="main-navigation__link">Articles</a></li>
+            <li class="main-navigation__list"><a href="{{ site.baseurl }}/about/" class="main-navigation__link">About</a></li>
+            <li class="main-navigation__list"><a href="{{ site.baseurl }}/portfolio/" class="main-navigation__link">Portfolio</a></li>
+            <li class="main-navigation__list"><a href="{{ site.baseurl }}/my-apps/" class="main-navigation__link">My Apps</a></li>
+            <li class="main-navigation__list"><a href="{{ site.baseurl }}/projects/" class="main-navigation__link">Projects</a></li>
+        </ul>
+    </nav>
 
     {% if page.cover_image %}
     <div class="page-title center">
