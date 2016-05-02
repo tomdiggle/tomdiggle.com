@@ -1,3 +1,14 @@
 @import "links";
-@import "menus";
 @import "pagination";
+
+.main-navigation {
+    text-align: center;
+    font-family: $museo-sans-300;
+    font-size: modular-scale(1);
+
+    @at-root #{&}__list {
+        padding: 0 .6em 0 0;
+        list-style: none;
+        display: inline-block;
+    }
+}
