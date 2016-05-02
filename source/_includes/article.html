@@ -1,0 +1,30 @@
+{% if index %}
+<header class="article-header">
+    <h2 class="article-header__title">
+        <a href="{{ post.url }}" class="article-header__link" title="{{ post.title }}">{{ post.title }}</a>
+    </h2>
+    <p class="article-header__pubdate">{% include article/pubdate.html %}</p>
+</header>
+{% else %}
+<header class="article-header">
+    <h2 class="article-header__title">{{ page.title }}</h2>
+    <p class="article-header__pubdate">{% include article/pubdate.html %}</p>
+</header>
+{% endif %}
+
+{% if index %}
+<div class="article__excerpt">
+    {{ content }}
+</div>
+<div>
+    <a href="{{ post.url }}" class="article__continue-reading" title="Continue reading {{ post.title }}">Continue reading</a>
+</div>
+{% else %}
+<div class="article__content">
+    {{ content }}
+</div>
+
+<footer class="article-footer">
+    {% include article/share.html %}
+</footer>
+{% endif %}

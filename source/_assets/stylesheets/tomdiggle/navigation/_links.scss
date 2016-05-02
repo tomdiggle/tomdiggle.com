@@ -93,40 +93,6 @@
     }
 }
 
-.post-header__link {
-    color: $base-font-color;
-
-    &:hover {
-        text-decoration: none;
-    }
-}
-
-.post__meta a {
-    color: tint($jet, 15%);
-    border: none;
-
-    &:hover {
-        color: $deep-sky-blue;
-    }
-}
-
-.post__continue-reading {
-    color: $base-font-color;
-    margin-top: .2em;
-    border: none;
-    font-size: modular-scale(-1);
-
-    &:hover {
-        text-decoration: none;
-    }
-
-    &:after {
-        font-family: $font-icons;
-        content: '\e80e';
-        margin-left: .6em;
-    }
-}
-
 .link-more {
     color: $snow;
     border: none;

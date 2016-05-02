@@ -1,17 +1,16 @@
 ---
-layout: page
-title: Tom Diggle
-description: Blog and portfolio of iOS and web developer Tom Diggle
-twitter_description: iOS and Web Developer.
+layout: "page"
+title: "Tom Diggle"
+description: "Blog and portfolio of iOS and web developer Tom Diggle"
+twitter_description: "iOS and Web Developer."
 ---
 <div class="container">
 {% assign index = true %}
 {% for post in paginator.posts %}
-{% assign content = post.excerpt %}
-    <article class="post cf">
-        {% include post.html %}
+    {% assign content = post.excerpt %}
+    <article class="article">
+        {% include article.html %}
     </article>
-    <hr class="article-separator">
 {% endfor %}
 </div>
 

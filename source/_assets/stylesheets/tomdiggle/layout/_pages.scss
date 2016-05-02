@@ -1,37 +1,72 @@
+.site-main {
+    padding: 3em 0 0;
+}
+
 .page-title {
     margin-top: 5em;
     color: $snow;
 }
 
-/* Project shown on work page */
+// Project shown on work page
 .project {
     padding: 1.4em 0;
 }
 
-.post-header {
-    @include breakpoint($small-screen) {
-        padding-left: 26%;
+// Articles
+.article {
+    max-width: 940px;
+    padding: 0 0 2.4em;
+    margin: 0 auto;
+
+    @at-root #{&}__excerpt p {
+        margin: 0 0 .4em;
     }
 
-    @include breakpoint($medium-screen) {
-        padding-left: 17%;
+    @at-root #{&}__content {
+        padding: 1em 0 0;
+    }
+
+    @at-root #{&}__continue-reading {
+        color: $base-font-color;
+
+        &:hover {
+            text-decoration: none;
+            color: $action-color;
+        }
+
+        &:after {
+            font-family: $font-icons;
+            content: '\e80e';
+            margin-left: .6em;
+        }
+    }
+}
+
+.article-header {
+    padding: 0 0 0;
+
+    @at-root #{&}__title {
+        font-size: modular-scale(2);
+        margin: 0;
+    }
+
+    @at-root #{&}__pubdate {
+        margin: 0;
+        color: tint($jet, 15%);
+        font-size: modular-scale(-1);
     }
 
     @at-root #{&}__link {
-        border: none;
+        color: $base-font-color;
+
+        &:hover {
+            color: $action-color;
+            text-decoration: none;
+        }
     }
 }
 
-.post-footer {
-    @include breakpoint($small-screen) {
-        padding-left: 26%;
-    }
-
-    @include breakpoint($medium-screen) {
-        padding-left: 17%;
-    }
-}
-
+// Category
 .category {
     @at-root #{&}__title {
         display: none;
