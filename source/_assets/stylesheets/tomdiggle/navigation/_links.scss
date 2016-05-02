@@ -46,51 +46,6 @@
         padding: .8em 3em;
         font-size: modular-scale(1);
     }
-
-    @at-root #{&}--white {
-        color: $snow;
-        border: 1px $snow solid;
-
-        &:hover {
-            border: 1px $deep-sky-blue solid;
-        }
-    }
-
-    @at-root #{&}--share {
-        font-family: $font-icons;
-        color: $jet;
-        border-color: #E0E0E0;
-        width: 60px;
-        height: 40px;
-        text-align: center;
-        border-radius: 2px;
-
-        &:after {
-            font-family: inherit;
-            content: none;
-            margin: 0;
-        }
-    }
-
-    @at-root #{&}--twitter:before {
-        content: '\e80f';
-    }
-
-    @at-root #{&}--facebook:before {
-        content: '\e810';
-    }
-
-    @at-root #{&}--googleplus:before {
-        content: '\e811';
-    }
-
-    @at-root #{&}--linkedin:before {
-        content: '\e812';
-    }
-
-    @at-root #{&}--mail:before {
-        content: '\e801';
-    }
 }
 
 .link-more {
