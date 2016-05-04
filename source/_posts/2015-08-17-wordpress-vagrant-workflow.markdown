@@ -67,7 +67,7 @@ Once VV is installed, the command below will create a WordPress site named `site
 
 `vv create --debug -n {site-name} -d {site-url}.dev -u {site-url} --username {username} --password {password} --email {email}`
 
-{% image vv-terminal.png alt="VV Terminal" class="post-img__medium" %}
+{% img vv-terminal.png alt:"VV Terminal" class:"post-img__medium" %}
 
 Here are a few other VV commands you will find useful:
 
@@ -82,7 +82,7 @@ VV has many features and is updated regularly so the documentation on [GitHub](h
 ## Using Varying Vagrant Vagrants
 When creating the site, VV will run the command `vagrant up --provision` which will initialize the site by running provisioning scripts to make sure everything is set up correctly. It will also start the virtual machine that powers VVV and make the site visible at the url `http://site-name.dev`. You will be able to log in to the WordPress admin panel using the username and password you set when creating the site.
 
-{% image vvv-dashboard.png alt="VVV Dashboard" class="post-img__medium" %}
+{% img vvv-dashboard.png alt:"VVV Dashboard" class:"post-img__medium" %}
 
 Below are the most common Vagrant commands you’ll be using. It’s worth reading the [documentation](https://docs.vagrantup.com/v2/) because there are plenty more.
 
@@ -103,7 +103,7 @@ Now, if you want to install a plugin make sure you start in the corresponding di
 
 `vassh wp plugin install contact-form-7 --activate`
 
-{%  image vassh-plugin-install.png alt:"Installing a WordPress plugin with Vassh" class:"post-img__medium" %}
+{%  img vassh-plugin-install.png alt:"Installing a WordPress plugin with Vassh" class:"post-img__medium" %}
 
 That’s it, the plugin is now installed.
 
