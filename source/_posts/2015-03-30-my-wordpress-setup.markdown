@@ -1,12 +1,11 @@
 ---
-layout: "post"
-title: "My WordPress Setup"
+layout: post
+title: My WordPress Setup
+description: Learn about my WordPress setup.
 date: 2015-03-30 16:28
-categories: "WordPress"
+categories: WordPress
 vanityurlpath:
-twitter_description: "Learn about my WordPress setup."
 ---
-
 I have recently completed my first [WordPress](https://wordpress.org) site and would like to take the time to explain my local WordPress development environment and how I keep the production, staging and local sites in sync.
 
 This is not a "how to setup” guide, I am merely documenting the tools I use because it took me quite some time to find the right setup that meets my goal of having a configurable sandboxed environment that is consistent and can be distributed between team members. No more it works on my machine bugs.

@@ -1,10 +1,10 @@
 ---
-layout: "post"
-title: "WordPress &amp; Vagrant Workflow"
+layout: post
+title: WordPress &amp; Vagrant Workflow
+description: A WordPress & Vagrant workflow to improve your local WordPress development.
 date: 2015-08-17 19:40
-categories: "WordPress"
+categories: WordPress
 vanityurlpath:
-twitter_description: "A WordPress & Vagrant workflow to improve your local WordPress development."
 ---
 I while back I posted about [my WordPress setup](http://tomdiggle.com/my-wordpress-setup) which covers the tools I use for my local WordPress development. In this article I will be going more in-depth about how to set everything up. At the end of this article you will have a configurable sandboxed environment that is consistent and can be distributed between team members.
 

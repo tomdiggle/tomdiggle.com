@@ -1,11 +1,10 @@
 ---
-layout: "post"
-title: "Multiply Jekyll Config Files"
-description: "Multiply Jekyll config files to make developing your site easier."
+layout: post
+title: Multiply Jekyll Config Files
+description: Multiply Jekyll config files to make developing your site easier.
 date: 2015-08-24 15:22
-categories: "Jekyll"
+categories: Jekyll
 vanityurlpath:
-twitter_description: "Multiply Jekyll config files to make developing your site easier."
 ---
 Here is an example of how having multiply Jekyll `_config.yml` files can make it easier when developing your site locally or building it for the staging or production servers.
 

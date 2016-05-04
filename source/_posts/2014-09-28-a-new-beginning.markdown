@@ -1,10 +1,10 @@
 ---
-layout: "post"
-title: "A New Beginning"
+layout: post
+title: A New Beginning
+description: A new beginning for tomdiggle.com.
 date: 2014-09-28 16:00
-categories: "General"
+categories: General
 vanityurlpath:
-twitter_description: "A new beginning for tomdiggle.com."
 ---
 
 You might or might not have noticed, my website looks a little different. I’ve completely changed the entire design and switched from [Octopress](http://octopress.org) to [Jekyll](http://jekyllrb.com).

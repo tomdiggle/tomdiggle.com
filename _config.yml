@@ -2,12 +2,19 @@
 title: Tom Diggle
 email: tom@tomdiggle.com
 description: iOS and front end web developer.
+logo: /assets/tomdiggle-logo.png
 author: Tom Diggle
 baseurl: ""
 url: http://tomdiggle.com
-vanityurl: http://diggle.co
-rssfeed: http://tomdiggle.com/feed
+vanity_url: http://diggle.co
+rssfeed: feed
 available_for_work: false
+twitter:
+    username: tomdiggle
+social:
+    links:
+        - https://twitter.com/tomdiggle
+        - https://github.com/tomdiggle
 
 # Build settings
 markdown: kramdown
@@ -18,6 +25,7 @@ layouts_dir: ./_tomdiggle
 paginate: 6
 paginate_path: /page/:num
 
+# Gems
 gems:
   - jekyll-assets
   - jekyll-paginate
@@ -27,6 +35,7 @@ gems:
 # Generate categories
 category_dir: /categories
 
+# Jekyll Assets
 assets:
   sources:
     - _assets/stylesheets
@@ -37,7 +46,3 @@ assets:
 
   features:
     automatic_img_size: false
-
-# Twitter
-twitter_user: tomdiggle
-twitter_tweet_button: true

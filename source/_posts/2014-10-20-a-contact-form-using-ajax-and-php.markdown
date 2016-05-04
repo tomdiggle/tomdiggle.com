@@ -1,12 +1,11 @@
 ---
-layout: "post"
-title: "A Contact Form Using AJAX and PHP"
+layout: post
+title: A Contact Form Using AJAX and PHP
+description: A Contact Form Using AJAX and PHP.
 date: 2014-10-20 15:00
-categories: "JavaScript"
+categories: JavaScript
 vanityurlpath:
-twitter_description: "A Contact Form Using AJAX and PHP"
 ---
-
 In this blog post, you’ll learn how to create a website contact form that uses JavaScript and AJAX to submit the form and PHP to validate and send the form data via email. This example uses [XMLHttpRequest](http://en.wikipedia.org/wiki/XMLHttpRequest) instead of popular JavaScript library [jQuery](http://jquery.com). The code for the contact form can be found on [GitHub](https://github.com/tomdiggle/contact-form).
 
 ## Requirements
