@@ -1,11 +1,12 @@
 # Site settings
-title: "Tom Diggle"
-email: "tom@tomdiggle.com"
-description: "iOS and front end web developer."
+title: Tom Diggle
+email: tom@tomdiggle.com
+description: iOS and front end web developer.
+author: Tom Diggle
 baseurl: ""
-url: "http://tomdiggle.com"
-vanityurl: "http://diggle.co"
-rssfeed: "http://tomdiggle.com/feed"
+url: http://tomdiggle.com
+vanityurl: http://diggle.co
+rssfeed: http://tomdiggle.com/feed
 available_for_work: false
 
 # Build settings
@@ -15,12 +16,13 @@ source: source
 destination: public
 layouts_dir: ./_tomdiggle
 paginate: 6
-paginate_path: "/page/:num"
+paginate_path: /page/:num
 
 gems:
   - jekyll-assets
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Generate categories
 category_dir: /categories
