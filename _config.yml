@@ -9,7 +9,6 @@ rssfeed: "http://tomdiggle.com/feed"
 available_for_work: false
 
 # Build settings
-production: false
 markdown: kramdown
 permalink: /:title/
 source: source
