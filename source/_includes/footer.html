@@ -1,20 +1,13 @@
 <footer id="footer" class="site-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4 col-sm-offset-4">
-                <ul class="connect">
-                {% for account in site.data.social_accounts %}
-                    <li class="connect__list"><a href="{{ account.link }}" class="connect__link"><span class="connect__icon {{ account.css-selector }}"></span></a></li>
-                {% endfor %}
-                </ul>
-            </div>
-            <div class="credits col-sm-4 col-sm-offset-4">
-                <p>Copyright &copy; 2014-2016 {{ site.title }}.</p>
-                <!-- <div class="rss col-xs-6">
-                    <p><a href="{{ site.rssfeed }}" class="icon-rss-squared" title="Subscribe to {{ site.title }}"></a></p>
-                </div> -->
-            </div>
-
-        </div>
+    <ul class="connect">
+    {% for account in site.data.social_accounts %}
+        <li class="connect__list"><a href="{{ account.link }}" class="connect__link"><span class="connect__icon {{ account.css-selector }}"></span></a></li>
+    {% endfor %}
+    </ul>
+    <div class="credits">
+        <p>Copyright &copy; 2014-2016 {{ site.title }}.</p>
+        <!-- <div class="rss col-xs-6">
+            <p><a href="{{ site.rssfeed }}" class="icon-rss-squared" title="Subscribe to {{ site.title }}"></a></p>
+        </div> -->
     </div>
 </footer>
