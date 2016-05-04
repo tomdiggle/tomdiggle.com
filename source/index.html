@@ -6,13 +6,13 @@ twitter_description: "iOS and Web Developer."
 ---
 {% assign index = true %}
 
-<section class="articles">
-    <h1>Recent Articles</h1>
+<section class="posts">
+    <h1>Recent Posts</h1>
 
     {% for post in paginator.posts %}
         {% assign content = post.excerpt %}
-        <article class="article">
-            {% include article.html %}
+        <article class="post">
+            {% include post.html %}
         </article>
     {% endfor %}
 </section>

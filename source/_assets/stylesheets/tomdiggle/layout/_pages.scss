@@ -12,13 +12,13 @@
     padding: 1.4em 0;
 }
 
-// Articles
-.articles {
+// Posts
+.posts {
     max-width: 768px;
     margin: 0 auto;
 }
 
-.article {
+.post {
     padding: 0 0 2.4em;
 
     @at-root #{&}__excerpt p {
@@ -45,7 +45,7 @@
     }
 }
 
-.article-header {
+.post-header {
     padding: 0 0 0;
 
     @at-root #{&}__title {

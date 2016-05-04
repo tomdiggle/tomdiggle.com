@@ -1,12 +1,10 @@
 {% capture date %}{{ page.date }}{{ post.date }}{% endcapture %}
-<time pubdate datetime="{{ date }}">
 {% assign d = date | date: "%d" %}
-{{ date | date: "%b" }}
+<time pubdate datetime="{{ date }}">{{ date | date: "%b" }}
 {% case d %}
     {% when '1' or '21' or '31' %}{{ d }}st,
     {% when '2' or '22' %}{{ d }}nd,
     {% when '3' or '23' %}{{ d }}rd,
     {% else %}{{ d }}th,
 {% endcase %}
-{{ date | date: "%Y" }}
-</time>
+{{ date | date: "%Y" }}</time>

@@ -1,7 +1,7 @@
 {% if page.cover_image %}
-<header id="site-header" class="site-header site-header__cover-image" style="background-image: url('{{ page.cover_image | asset_path }}');">
+    <header id="site-header" class="site-header site-header__cover-image" style="background-image: url('{{ page.cover_image | asset_path }}');">
 {% else %}
-<header id="site-header" class="site-header">
+    <header id="site-header" class="site-header">
 {% endif %}
     <div class="site-branding">
         <a href="{{ site.baseurl }}/" title="tomdiggle.com home page">{% img tomdiggle-logo.png alt:"Tom Diggle" height:"100px" width:"100px" %}</a>
@@ -9,7 +9,7 @@
     </div>
     <nav id="main-navigation" class="main-navigation">
         <ul>
-            <li class="main-navigation__list"><a href="{{ site.baseurl }}/articles" class="main-navigation__link">Articles</a></li>
+            <li class="main-navigation__list"><a href="{{ site.baseurl }}/blog" class="main-navigation__link">Blog</a></li>
             <li class="main-navigation__list"><a href="{{ site.baseurl }}/about/" class="main-navigation__link">About</a></li>
             <li class="main-navigation__list"><a href="{{ site.baseurl }}/portfolio/" class="main-navigation__link">Portfolio</a></li>
             <li class="main-navigation__list"><a href="{{ site.baseurl }}/my-apps/" class="main-navigation__link">My Apps</a></li>

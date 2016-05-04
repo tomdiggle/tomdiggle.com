@@ -1,0 +1,26 @@
+{% if index %}
+    <header class="post-header">
+        <h2 class="post-header__title">
+            <a href="{{ post.url }}" class="post-header__link" title="{{ post.title }}">{{ post.title }}</a>
+        </h2>
+        <p class="post-header__pubdate">{% include post/pubdate.html %}</p>
+    </header>
+{% else %}
+    <header class="post-header">
+        <h2 class="post-header__title">{{ page.title }}</h2>
+        <p class="post-header__pubdate">{% include post/pubdate.html %}</p>
+    </header>
+{% endif %}
+
+{% if index %}
+    <div class="post__excerpt">
+        {{ content }}
+    </div>
+    <div>
+        <a href="{{ post.url }}" class="post__continue-reading" title="Continue reading {{ post.title }}">Continue reading</a>
+    </div>
+{% else %}
+    <div class="post__content">
+        {{ content }}
+    </div>
+{% endif %}
