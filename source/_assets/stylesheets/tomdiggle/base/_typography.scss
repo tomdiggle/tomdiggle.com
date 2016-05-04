@@ -13,8 +13,13 @@ h5,
 h6 {
     font-family: $heading-font-family;
     font-size: modular-scale(1);
+    font-weight: normal;
     line-height: $heading-line-height;
     margin: 0 0 $small-spacing;
+}
+
+h1 {
+    font-size: modular-scale(3);
 }
 
 p {
