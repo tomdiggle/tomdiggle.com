@@ -1,23 +1,26 @@
 - title: Mark McNally Cycling
-  url: http://markmcnallycycling.co.uk
+  url: markmcnallycycling.co.uk
   description: Mark approached me to create a website that would help raise his profile as a professional cyclist and increase his fan base. The new website uses a custom responsive theme for WordPress. The custom build is very flexible and makes use of the WordPress Theme Customization API and a custom Results plugin that allow Mark to perform regular updates easily without hassle.
+  image: mark-mcnally-cycling.jpg
+  icon: mark-mcnally-cycling-icon.png
   roles: Design, HTML, CSS, JavaScript and WordPress integration
   launched: May, 2015
-  image: project-markmcnallycycling-01.jpg
   anchor: markmcnallycycling
 
 - title: NSBrief
-  url: http://nsbrief.com
+  url: nsbrief.com
   description: I worked with Saul to redesign and build the website for the NSBrief podcast. The redesign supports mobile, tablet and desktop and has a built in audio player that allows each episode to be played through the browser.
+  image: nsbrief.jpg
+  icon: nsbrief-icon.png
   roles: Design, HTML, CSS, JavaScript and ruhoh integration
   launched: May, 2014
-  image: project-nsbrief-01.jpg
   anchor: nsbrief
 
 - title: J.J. Diggle
-  url: https://jjdiggle.com
+  url: jjdiggle.com
   description: I worked with J.J. Diggle to design and build their new website that showcases their services, displays the contact information of both stores and allows customers to easily contact them through the site.
+  image: jjdiggle.jpg
+  icon: jjdiggle-icon.png
   roles: Design, HTML, CSS/Sass, JavaScript, PHP and Jekyll integration
   launched: January, 2014
-  image: project-jjd-01.jpg
   anchor: jjdiggle

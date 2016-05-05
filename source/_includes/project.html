@@ -1,0 +1,30 @@
+<article id="{{ project.anchor }}" class="project">
+    <header class="project__header">
+        {% img '{{ project.icon }}' width:"60" height:"60" class:"project__icon" alt:"Icon of {{ project.title }}" %}
+        <h2 class="project__title">{{ project.title }}
+            <em>
+                <p>
+                    <a href="http://{{ project.url }}" class="link-more link-more--reverse">{{ project.url }}</a>
+                </p>
+            </em>
+        </h2>
+    </header>
+
+    <hr class="project__spacer">
+
+    <div class="">
+        {% img '{{ project.image }}' width:"940" height:"640" class:"project__image" alt:"Preview of {{ project.title }}" %}
+    </div>
+
+    <p class="project__copy">{{ project.description }}</p>
+
+    <footer class="project__footer">
+        <h4>Roles</h4>
+        <p class="project__copy">{{ project.roles }}</p>
+        <h4>Launched</h4>
+        <p class="project__copy">{{ project.launched }}</p>
+        {% if project.retired %}
+            <h5 class="project__retired">Project Retired</h5>
+        {% endif %}
+    </footer>
+</article>

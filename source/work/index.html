@@ -2,15 +2,13 @@
 layout: page
 title: Work
 description: You can see some of my work below. As I complete more, I'll add it here.
-twitter_description: A small collection of my latest work.
 ---
-
 <section id="freelance" class="container">
     <h2 id="freelance">Freelance</h2>
     <hr>
     <div class="row">
-        {% for project in site.data.work_freelance %}
-            {% include work/project.html %}
+        {% for project in site.data.portfolio %}
+            
         {% endfor %}
     </div>
     <hr>
@@ -21,7 +19,7 @@ twitter_description: A small collection of my latest work.
     <hr>
     <div class="row">
         {% for project in site.data.work_personal %}
-            {% include work/project.html %}
+
         {% endfor %}
     </div>
     <hr>
@@ -32,7 +30,7 @@ twitter_description: A small collection of my latest work.
     <hr>
     <div class="row">
         {% for project in site.data.work_opensource %}
-            {% include work/project.html %}
+
         {% endfor %}
     </div>
 </section>

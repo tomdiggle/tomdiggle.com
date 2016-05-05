@@ -7,7 +7,8 @@ blockquote {
 
 pre {
     background: #F5F5F5;
-    padding: .2em;
+    padding: .4em;
+    margin: 1em 0 1.2em;
     font-family: $consolas;
     font-size: modular-scale(-1);
     direction: ltr;
@@ -30,5 +31,5 @@ pre {
 }
 
 em {
-    font-size: modular-scale(-3);
+    font-size: modular-scale(-2);
 }
