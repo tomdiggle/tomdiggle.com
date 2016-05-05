@@ -37,7 +37,7 @@ end
 
 desc "Start Jekyll using the debug config"
 task :serve do
-  sh "jekyll serve -w --config _config_debug.yml"
+  sh "jekyll serve -w"
 end
 
 desc "Build the production site"
