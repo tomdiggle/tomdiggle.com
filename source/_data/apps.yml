@@ -6,13 +6,3 @@
   roles: Design, Objective-C and Swift
   launched: July, 2010
   anchor: wagerapp
-
-- title: SITMOS
-  url: tomdiggle.com/sitmosapp
-  description: Stay up to date with each episode of SITMOS (Stuck in the Middle of Somewhere) podcast on your iPhone or iPod Touch. The source code is released under the MIT license.
-  image: project-sitmos-01.jpg
-  icon: tmp.png
-  roles: Design, Objective-C and Core Data
-  launched: October, 2012
-  anchor: sitmosapp
-  retired: true
