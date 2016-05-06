@@ -3,7 +3,9 @@ title: Tom Diggle
 email: tom@tomdiggle.com
 description: Blog and portfolio of iOS and web developer Tom Diggle
 logo: /assets/tomdiggle-logo.png
-author: Tom Diggle
+author:
+    site: Tom Diggle
+    twitter: tomdiggle
 baseurl: ""
 url: http://tomdiggle.com
 vanity_url: http://diggle.co
