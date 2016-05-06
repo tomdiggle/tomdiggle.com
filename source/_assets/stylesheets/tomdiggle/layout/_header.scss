@@ -1,13 +1,6 @@
 .site-header {
     padding: 1.6em 0 0;
     text-align: center;
-
-    @at-root #{&}__cover-image {
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 500px;
-    }
 }
 
 .site-branding {

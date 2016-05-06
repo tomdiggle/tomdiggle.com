@@ -1,8 +1,4 @@
-{% if page.cover_image %}
-    <header id="site-header" class="site-header site-header__cover-image" style="background-image: url('{{ page.cover_image | asset_path }}');">
-{% else %}
-    <header id="site-header" class="site-header">
-{% endif %}
+<header id="site-header" class="site-header">
     <div class="site-branding">
         <a href="{{ site.baseurl }}/" title="tomdiggle.com home page">{% img tomdiggle-logo.png alt:"Tom Diggle" height:"100px" width:"100px" %}</a>
         <h1 class="site-branding__name"><a href="{{ site.baseurl }}/" title="tomdiggle.com home page" class="site-branding__link">Tom Diggle</a></h1>
