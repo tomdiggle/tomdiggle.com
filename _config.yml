@@ -9,7 +9,7 @@ author:
 baseurl: ""
 url: http://tomdiggle.com
 vanity_url: http://diggle.co
-rssfeed: feed
+rssfeed: /feed
 available_for_work: false
 twitter:
     username: tomdiggle
