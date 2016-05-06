@@ -62,6 +62,9 @@
         // max-height: 640px;
     }
 
+    @at-root #{&}__copy {
+        margin: .6em 0;
+    }
 }
 
 // Posts

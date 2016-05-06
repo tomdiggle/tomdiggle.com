@@ -20,11 +20,11 @@
 
     <footer class="project__footer">
         <h4>Roles</h4>
-        <p class="project__copy">{{ project.roles }}</p>
+        <p>{{ project.roles }}</p>
         <h4>Launched</h4>
-        <p class="project__copy">{{ project.launched }}</p>
+        <p>{{ project.launched }}</p>
         {% if project.retired %}
-            <h5 class="project__retired">Project Retired</h5>
+            <p><strong>Update: </strong>This Project is now retired.</p>
         {% endif %}
     </footer>
 </article>
