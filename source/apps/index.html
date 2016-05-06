@@ -1,0 +1,14 @@
+---
+layout: page
+title: My Apps
+description: You can see some of my work below. As I complete more, I'll add it here.
+---
+<div class="container">
+    <div class="projects">
+        <section id="portfolio">
+            {% for project in site.data.apps %}
+                {% include project.html %}
+            {% endfor %}
+        </section>
+    </div>
+</div>
