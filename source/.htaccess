@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
 RewriteRule .* – [F,L]
 
 ErrorDocument 404 /404.html
@@ -8,9 +8,8 @@ ErrorDocument 404 /404.html
 Redirect 301 /feed /feed.xml
 Redirect 301 /rss /feed.xml
 Redirect 301 /atom.xml /feed.xml
-Redirect 301 /projects /work/
 Redirect 301 /cv /assets/tom-diggle-cv.pdf
-Redirect 301 /portfolio /work/
+Redirect 301 /work/ /portfolio
 Redirect 301 /hire /about/
 
 Redirect 301 /2014/06/06/swift-resources/ /swift-resources/
