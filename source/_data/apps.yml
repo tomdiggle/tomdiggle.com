@@ -1,8 +1,8 @@
 - title: Wager
   url: getwagerapp.com
   description: With Wager you can calculate the return and profit for Accumulators, Trixies, Patents, Yankees, Lucky 15s, Doubles and many more bet types. Each way is also supported.
-  image: project-wager-01.jpg
-  icon: tmp.png
+  image: wager.jpg
+  icon: wager-icon.png
   roles: Design, Objective-C and Swift
   launched: July, 2010
   anchor: wagerapp
