@@ -35,11 +35,6 @@ task :new_post, :title do |t, args|
   end
 end
 
-desc "Start Jekyll using the debug config"
-task :serve do
-  sh "jekyll serve -w"
-end
-
 desc "Build the production site"
 task :build do
   sh "JEKYLL_ENV=production jekyll build --config _config.yml"
