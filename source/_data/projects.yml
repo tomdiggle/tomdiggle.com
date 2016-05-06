@@ -1,5 +1,5 @@
 - title: BriefPlayer
-  url: http://briefplayer.com
+  url: briefplayer.com
   description: A simple JavaScript library allowing easy audio streaming using SoundManager2.
   roles: HTML, CSS and JavaScript
   launched: May, 2014
@@ -7,7 +7,7 @@
   anchor: briefplayer
 
 - title: TDNotificationPanel
-  url: http://tomdiggle.com/tdnotificationpanel
+  url: tomdiggle.com/tdnotificationpanel
   description: TDNotificationPanel is a drop in class that displays a notification which can contain a title, subtitle, icon, progress bar or activity indicator.
   roles: Design and Objective-C
   launched: Febuary, 2013
