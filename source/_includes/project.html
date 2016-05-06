@@ -1,7 +1,12 @@
 <article id="{{ project.anchor }}" class="project">
     <header class="project__header">
-        {% img '{{ project.icon }}' width:"60" height:"60" class:"project__icon" alt:"Icon of {{ project.title }}" %}
-        <h2 class="project__title">{{ project.title }}
+        {% if project.icon %}
+            {% img '{{ project.icon }}' width:"60" height:"60" class:"project__icon" alt:"Icon of {{ project.title }}" %}
+            <h2 class="project__title">
+        {% else %}
+            <h2>
+        {% endif %}
+        {{ project.title }}
             <em>
                 <p>
                     <a href="http://{{ project.url }}" class="link-more link-more--reverse">{{ project.url }}</a>
@@ -12,9 +17,11 @@
 
     <hr class="project__spacer">
 
-    <div class="">
-        {% img '{{ project.image }}' width:"940" height:"640" class:"project__image" alt:"Preview of {{ project.title }}" %}
-    </div>
+    {% if project.image %}
+        <div>
+            {% img '{{ project.image }}' width:"940" height:"640" class:"project__image" alt:"Preview of {{ project.title }}" %}
+        </div>
+    {% endif %}
 
     <p class="project__copy">{{ project.description }}</p>
 
