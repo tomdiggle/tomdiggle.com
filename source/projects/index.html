@@ -1,0 +1,14 @@
+---
+layout: page
+title: Projects
+description:
+---
+<div class="container">
+    <div class="projects">
+        <section id="projects">
+            {% for project in site.data.projects %}
+                {% include project.html %}
+            {% endfor %}
+        </section>
+    </div>
+</div>
