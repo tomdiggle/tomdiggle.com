@@ -11,4 +11,14 @@
         list-style: none;
         display: inline-block;
     }
+
+    @at-root #{&}__link {
+        color: $jet;
+
+        &:hover,
+        &:focus {
+            color: $action-color;
+            text-decoration: none;
+        }
+    }
 }

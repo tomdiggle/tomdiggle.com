@@ -1,13 +1,3 @@
-.main-navigation__link {
-    color: $jet;
-
-    &:hover,
-    &:focus {
-        color: $action-color;
-        text-decoration: none;
-    }
-}
-
 .btn {
     color: $deep-sky-blue;
     border: 1px $deep-sky-blue solid;
