@@ -7,20 +7,14 @@
             <h2>
         {% endif %}
         {{ project.title }}
-            <em>
-                <p>
-                    <a href="http://{{ project.url }}" class="link-more link-more--reverse">{{ project.url }}</a>
-                </p>
-            </em>
+            <em><p><a href="http://{{ project.url }}" class="link-more link-more--reverse">{{ project.url }}</a></p></em>
         </h2>
     </header>
 
     <hr class="project__spacer">
 
     {% if project.image %}
-        <div>
-            {% img '{{ project.image }}' width:"940" height:"640" class:"project__image" alt:"Preview of {{ project.title }}" %}
-        </div>
+        <div>{% img '{{ project.image }}' width:"940" height:"640" class:"project__image" alt:"Preview of {{ project.title }}" %}</div>
     {% endif %}
 
     <p class="project__copy">{{ project.description }}</p>
