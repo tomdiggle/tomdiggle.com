@@ -1,16 +1,3 @@
-.skills {
-    columns: 1;
-
-    @include breakpoint($small-screen) {
-       columns: 31;
-    }
-}
-
-.skill {
-    display: inline-block;
-    width: 100px;
-}
-
 .connect__list {
     padding: 0 .7em 0 1em;
     display: inline-block;
