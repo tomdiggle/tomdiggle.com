@@ -26,10 +26,14 @@
     <p class="project__copy">{{ project.description }}</p>
 
     <footer class="project__footer">
-        <h4>Roles</h4>
-        <p>{{ project.roles }}</p>
-        <h4>Launched</h4>
-        <p>{{ project.launched }}</p>
+        {% if project.roles %}
+            <h4>Roles</h4>
+            <p>{{ project.roles }}</p>
+        {% endif %}
+        {% if project.launched %}
+            <h4>Launched</h4>
+            <p>{{ project.launched }}</p>
+        {% endif %}
         {% if project.retired %}
             <p><strong>Update: </strong>This Project is now retired.</p>
         {% endif %}

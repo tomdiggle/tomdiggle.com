@@ -1,13 +1,9 @@
-- title: BriefPlayer
-  url: briefplayer.com
-  description: A simple JavaScript library allowing easy audio streaming using SoundManager2.
-  roles: HTML, CSS and JavaScript
-  launched: May, 2014
-  anchor: briefplayer
+- title: TCDInputView
+  url: github.com/tomdiggle/TCDInputView
+  description: TCDInputView is an open source custom input view which is displayed when a text field becomes the first responder written in Swift.
+  anchor: tcdinputview
 
-- title: TDNotificationPanel
-  url: tomdiggle.com/tdnotificationpanel
-  description: TDNotificationPanel is a drop in class that displays a notification which can contain a title, subtitle, icon, progress bar or activity indicator.
-  roles: Design and Objective-C
-  launched: Febuary, 2013
-  anchor: tdnotificationpanel
+- title: DataPersistence
+  url: github.com/tomdiggle/datapersistence
+  description: DataPersistence is a drop in class that allows easy persistance of data using NSKeyedArchiver/NSKeyedUnarchiver written in Swift.
+  anchor: datapersistence
