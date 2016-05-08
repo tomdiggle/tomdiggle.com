@@ -4,12 +4,9 @@ title: My Apps
 description: Apps that I've designed, developed and published myself.
 ---
 <div class="container">
-    <div class="posts">
-        <p>
-            Below are apps that I've designed, created and published myself. You can view the work I've done for clients <a href="{{ site.baseurl }}/portfolio/">on my portfolio</a>.
-        </p>
-    </div>
     <div class="projects">
+        <h2>My Apps</h2>
+        <p>Below are apps that I've designed, developed and published myself. You can view the work I've done for clients <a href="{{ site.baseurl }}/portfolio/">on my portfolio</a>.</p>
         <section id="my-apps">
             {% for project in site.data.apps %}
                 {% include project.html %}
