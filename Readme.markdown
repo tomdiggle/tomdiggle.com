@@ -14,10 +14,10 @@ To get started run the following commands:
 To serve the site run:
 
 ```
-	rake serve
+	jekyll serve
 ```
 
-This will run the site at `http://127.0.0.1:4000` using the debug config. It will also watch for any changes and recompile the site if any are detected.
+This will run the site at `http://127.0.0.1:4000` using a development environment. It will also watch for any changes and recompile the site if any are detected.
 
 ## Building
 To build the site for the staging server run:
@@ -26,7 +26,7 @@ To build the site for the staging server run:
 	rake build_staging
 ```
 
-The site will be built into the `public` directory using the debug config.
+The site will be built into the `public` directory using a development environment.
 
 To build the site for the production server run:
 
