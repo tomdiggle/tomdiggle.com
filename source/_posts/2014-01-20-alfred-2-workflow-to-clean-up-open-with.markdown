@@ -6,7 +6,7 @@ date: 2014-01-20 17:27
 categories: Alfred
 vanityurlpath:
 ---
-My "Open With" menu option was getting way out of hand and I can never remember the command to clean it up so, I created [this Alfred 2 workflow](https://github.com/tomdiggle/CleanUpOpenWith).
+My "Open With" menu option was getting way out of hand and I can never remember the command to clean it up so, I created this Alfred 2 workflow.
 
 ## Usage
 {% img cleanupow-alfred.jpg alt:"Clean up Open With" %}
@@ -14,4 +14,6 @@ My "Open With" menu option was getting way out of hand and I can never remember 
 Once installed all you need to do is type `cleanupow` into Alfred and hit enter. Open With will be rebuilt and Finder will relaunch.
 
 ## Enjoy
-You can get the workflow on [Github](https://github.com/tomdiggle/CleanUpOpenWith). If anyone wants to, they can help pretty it up by designing an icon.
+~~You can get the workflow on GitHub. If anyone wants to, they can help pretty it up by designing an icon.~~
+
+**Update: Apple have fixed this bug in El Capitan, so I have removed it from GitHub**
