@@ -35,10 +35,17 @@
 
     @at-root #{&}__title {
         margin: 0;
+        padding: 0;
+        font-size: modular-scale(1);
+    }
+
+    @at-root #{&}__title--icon {
+        margin: 0;
         padding: 0 0 0 .4em;
         display: inline-block;
         position: absolute;
         top: 10px;
+        font-size: modular-scale(1);
     }
 
     @at-root #{&}__icon {
