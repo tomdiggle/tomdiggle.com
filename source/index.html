@@ -4,25 +4,32 @@ title: Blog and Portfolio
 description:
 ---
 {% assign homepage = true %}
+<div class="container">
+    <section id="bio">
+        <div class="posts">
+            <p>Hi, I’m Tom, a UK based iOS and web developer. This is my blog where I write mostly about iOS and web development. If you're curious you can read more <a href="{{ site.baseurl }}/about/" title="Learn more about me">about me</a>, view my <a href="{{ site.baseurl }}/portfolio/" title="View work I've done">portfolio</a> or <a href="{{ site.baseurl }}/apps/" title="VMy apps">my apps</a> I've published.</p>
+        </div>
+    </section>
 
-<section class="posts">
-    <h1>Recent Posts</h1>
+    <section class="posts">
+        <h2>Recent Posts</h2>
 
-    {% for post in paginator.posts %}
-        {% assign content = post.excerpt %}
-        <article class="post">
-            {% include post.html %}
-        </article>
-    {% endfor %}
+        {% for post in paginator.posts %}
+            {% assign content = post.excerpt %}
+            <article class="post">
+                {% include post.html %}
+            </article>
+        {% endfor %}
 
-    {% if paginator.total_pages > 1 %}
-        <nav class="pagination">
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__link pagination__link--previous" title="View older posts">Older</a>
+        {% if paginator.total_pages > 1 %}
+            <nav class="pagination">
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__link pagination__link--previous" title="View older posts">Older</a>
+            {% endif %}
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__link pagination__link--next" title="View newer posts">Newer</a>
+            {% endif %}
+            </nav>
         {% endif %}
-        {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pagination__link pagination__link--next" title="View newer posts">Newer</a>
-        {% endif %}
-        </nav>
-    {% endif %}
-</section>
+    </section>
+</div>
