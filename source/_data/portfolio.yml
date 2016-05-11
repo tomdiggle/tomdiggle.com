@@ -3,7 +3,7 @@
   description: Mark approached me to create a website that would help raise his profile as a professional cyclist and increase his fan base. The new website uses a custom responsive theme for WordPress. The custom build is very flexible and makes use of the WordPress Theme Customization API and a custom Results plugin that allow Mark to perform regular updates easily without hassle.
   image: mark-mcnally-cycling.jpg
   icon: mark-mcnally-cycling-icon.png
-  roles: Design, HTML, CSS, JavaScript and WordPress integration
+  roles: Responsive web design & development, reporting & analytics, WordPress integration, support & maintenance
   launched: May, 2015
   anchor: markmcnallycycling
 
@@ -12,7 +12,7 @@
   description: I worked with Saul to redesign and build the website for the NSBrief podcast. The redesign supports mobile, tablet and desktop and has a built in audio player that allows each episode to be played through the browser.
   image: nsbrief.jpg
   icon: nsbrief-icon.png
-  roles: Design, HTML, CSS, JavaScript and ruhoh integration
+  roles: Responsive web design & development and ruhoh integration
   launched: May, 2014
   anchor: nsbrief
 
@@ -21,6 +21,6 @@
   description: I worked with J.J. Diggle to design and build their new website that showcases their services, displays the contact information of both stores and allows customers to easily contact them through the site.
   image: jjdiggle.jpg
   icon: jjdiggle-icon.png
-  roles: Design, HTML, CSS/Sass, JavaScript, PHP and Jekyll integration
+  roles: Responsive web design & development, Reporting & analytics, custom contact form, Jekyll integration, support & maintenance
   launched: January, 2014
   anchor: jjdiggle
