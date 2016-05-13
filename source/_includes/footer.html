@@ -3,11 +3,9 @@
     {% for account in site.data.social_accounts %}
         <li class="connect__list"><a href="{{ account.link }}" class="connect__link"><span class="connect__icon {{ account.css-selector }}"></span></a></li>
     {% endfor %}
+        <li class="connect__list"><a href="{{ site.rssfeed }}" class="connect__link"><span class="connect__icon icon-rss-squared"></span></a></li>
     </ul>
     <div class="credits">
         <p>Copyright &copy; 2014-2016 {{ site.author.site }}.</p>
-        <!-- <div class="rss col-xs-6">
-            <p><a href="{{ site.rssfeed }}" class="icon-rss-squared" title="Subscribe to {{ site.title }}"></a></p>
-        </div> -->
     </div>
 </footer>
