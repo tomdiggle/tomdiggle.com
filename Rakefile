@@ -37,12 +37,12 @@ end
 
 desc "Build the production site"
 task :build do
-  sh "JEKYLL_ENV=production jekyll build --config _config.yml"
+  sh "JEKYLL_ENV=production jekyll build"
 end
 
 desc "Build the staging site"
 task :build_staging do
-  sh "JEKYLL_ENV=staging jekyll build --config _config.yml"
+  sh "JEKYLL_ENV=staging jekyll build"
 end
 
 ## Helper Methods
