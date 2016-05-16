@@ -5,11 +5,11 @@ layout: compress
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        {% seo %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         {% unless jekyll.environment == "production" %}
             <meta name="robots" content="noindex, nofollow">
         {% endunless %}
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% seo %}
         <link rel="shortcut icon" type="image/x-icon" href="{{ 'favicon.ico' | asset_path }}">
         <link rel="apple-touch-icon" href="{{ 'favicon.png' | asset_path }}">
         <link rel="apple-touch-icon" sizes="76x76" href="{{ 'favicon.png' | asset_path }}">
