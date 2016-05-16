@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 ruby '2.3.0'
 
 gem 'jekyll', '~> 3.1.3'
-gem 'jekyll-assets', '~> 2.2.5'
+gem 'jekyll-assets', '~> 2.2.6'
 gem 'jekyll-paginate', '~> 1.1.0'
 gem 'jekyll-sitemap', '~> 0.10.0'
 gem 'jekyll-seo-tag', '~> 1.4.0'
