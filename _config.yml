@@ -39,6 +39,8 @@ category_dir: /categories
 
 # Jekyll Assets
 assets:
+  digest: false
+
   sources:
     - _assets/stylesheets
     - _assets/images
