@@ -5,7 +5,7 @@
 To get started run the following commands:
 
 ```
-	git clone git@bitbucket.org:tomdiggle/tomdiggle.com.git
+	git clone git@github.com:tomdiggle/tomdiggle.com.git
 	cd tomdiggle.com
 	bundle install
 ```
