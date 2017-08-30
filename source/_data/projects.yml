@@ -1,3 +1,8 @@
+- title: Betting Calculator
+  url: gitlab.com/tomdiggle/betting-calculator
+  description: Betting calculator is a betting odds calculator written in PHP 7. That can calculate the return and profit for Accumulators, Trixies, Patents, Yankees, Lucky 15s, Doubles and many more bet types. Each way is also supported.
+  anchor: betting-calculator
+
 - title: TCDInputView
   url: github.com/tomdiggle/TCDInputView
   description: TCDInputView is an open source custom input view which is displayed when a text field becomes the first responder written in Swift.
