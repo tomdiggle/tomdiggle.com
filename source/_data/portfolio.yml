@@ -1,3 +1,11 @@
+- title: WoodBuzz
+  url: woodbuzz.co.uk
+  description: WoodBuzz approached me to create a website to help improve their brand and showcase some of their work and services. The site also has a contact form for customers to easily contact them.
+  roles: Responsive web design & development, reporting & analytics, custom contact form, Jekyll integration, support & maintenance
+  icon: woodbuzz-icon.png
+  launched: January, 2017
+  anchor: woodbuzz
+
 - title: Mark McNally Cycling
   url: markmcnallycycling.co.uk
   description: Mark approached me to create a website that would help raise his profile as a professional cyclist and increase his fan base. The new website uses a custom responsive theme for WordPress. The custom build is very flexible and makes use of the WordPress Theme Customization API and a custom Results plugin that allow Mark to perform regular updates easily without hassle.
